@@ -20,13 +20,11 @@
         </div>
 
         <!-- Categories -->
-        <div>
-            <table>
-                <th> LIVING </th>
-                <th> BEDROOM </th>
-                <th> DINING </th>
-                <th> <a href="html/Search_results.html"> LOUNGE </a> </th>
-            </table>
+        <div class = "nav-categories">   
+            <p> LIVING </p>
+            <p> BEDROOM </p>
+            <p> DINING </p>
+            <p> <a href="html/Search_results.html"> LOUNGE </a> </p>        
         </div>
 
         <!-- Search Bar and Cart -->
@@ -58,35 +56,28 @@
 
         <h2> Shop By Category </h2>
 
-        <div>
-            <table>
-                <!-- Category Images -->
-                <tr>
-                
-                    <td>  
-                        <a href = "html/Search_results.html"> 
-                            <img src="images/Categories/Lounge.png" alt = "Lounge chair" id = "product-image">
-                        </a>
-                    </td>
-                    <td> <img src="images/Categories/Bedroom.png" alt = "bed" id = "product-image"> </td>
-                    <td> <img src="images/Categories/Dining.png" alt = "Dining table" id = "product-image"> </td>
-                    <td> <img src="images/Categories/Living.png" alt = "Coffee table" id = "product-image"> </td>
-                </tr>
-
-                <!-- Category Names -->
-                <tr>
-                    <td>  
-                        <a href = "html/Search_results.html"> 
-                            <h4> Lounge </h4>
-                        </a>
-                    </td>
-                    <td> <h4> Bed </h4> </td>
-                    <td> <h4> Dining </h4> </td>
-                    <td> <h4> Living </h4> </td>
-                </tr>
-
-            </table>
+        <div class = "category-card">  
+            <a href = "html/Search_results.html"> 
+                <img class = "category-card-img" src="images/Categories/Lounge.png" alt = "Lounge chair" id = "product-image">
+                <p class = "category-card-name"> Lounge </p>
+            </a>   
         </div>
+
+        <div class = "category-card">           
+            <img class = "category-card-img" src="images/Categories/Bedroom.png" alt = "bed" id = "product-image">
+            <p class = "category-card-name"> Bed </p>
+        </div>
+
+        <div class = "category-card">           
+            <img class = "category-card-img" src="images/Categories/Dining.png" alt = "Dining table" id = "product-image">
+            <p class = "category-card-name"> Dining </p>  
+        </div>
+
+        <div class = "category-card">   
+            <img class = "category-card-img" src="images/Categories/Living.png" alt = "Coffee table" id = "product-image">   
+            <p class = "category-card-name"> Living </p>
+        </div>
+
 
     </div>
 
@@ -95,36 +86,18 @@
 
         <h2> New In </h2>
 
-        <div> 
-            <table>
+        <div class = "product-card">
+            <img class = "product-card-image" src= "Images/Lounges/Koala.png" alt = "Koala Lounging Sofa" id = "product-image">
+            <p class = "product-card-title"> Koala Lounging Sofa </p>
+            <p class = "product-card-price"> $1599 </p>
+        </div>
 
-                <!-- Product Images -->
-                <tr>
-                    <td> <img src= "Images/Lounges/Koala.png" alt = "Koala Lounging Sofa" id = "product-image"> </td>
-                    <td> 
-                        <a href = "html/Lounge_product.html">
-                        <img src="Images/Lounges/LOUNGE_SEYMOUR_11.png" alt = "Seymour Lounge" id = "product-image"> 
-                        </a> 
-                    </td> 
-                </tr>
-
-                <!-- Product Names -->
-                <tr>
-                    <td> <h6> Koala Lounging Sofa </h6> </td>
-                    <td> 
-                        <a href = "html/Lounge_product.html">
-                        <h6> Seymour Lounge </h6> 
-                        </a>
-                    </td>
-                </tr>
-            
-                <!-- Product Price -->
-                <tr>
-                    <td> <h5> $1599 </h5>  </td>
-                    <td> <h5> $1799 </h5>  </td>
-                </tr>
-            
-            </table>
+        <div class = "product-card">
+            <a href = "html/Lounge_product.html">
+                <img class = "product-card-image" src="Images/Lounges/LOUNGE_SEYMOUR_11.png" alt = "Seymour Lounge" id = "product-image"> 
+            </a> 
+            <p class = "product-card-title"> Seymour Lounge </p>
+            <p class = "product-card-price"> $1799 </p>
         </div>
 
         <button type="button"> View More </button>
