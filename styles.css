@@ -19,6 +19,11 @@
     width: 200px;
 }
 
+.Footer-icon {
+    height: 30px;
+    width: 30px;
+}
+
 body {
     background-color: #F2F5F4;
 }
