@@ -2,28 +2,32 @@
     <!-- Navigation Bar -->
     <nav class = "cluster">
         <!-- Company Logo -->
-        <div>
-            <a href = "/">
-                <img src="Images/Home/OZ_Logo_(Transparent).png" alt = "OZ Furniture Logo: Outline of Australia" id = "logo">
-            </a>
-        </div>
-
+        <!-- Link ruins css for some reason -->
+        <!-- <a href = "index.html"> -->
+            <img id="logo" src="Images/Home/OZ_Logo_(Transparent).png" alt = "OZ Furniture Logo: Outline of Australia">
+        <!-- </a> -->
         <!-- Categories -->
         
-        <ul class = "cluster heading"> 
-            <li> LIVING </li>
-            <li> BEDROOM </li>
-            <li> DINING </li>
-            <li> <a href="Search_results.html"> LOUNGE </a> </li>       
+        <ul class = "cluster"> 
+            <li class = "menu"> LIVING </li>
+            <li class = "menu"> BEDROOM </li>
+            <li class = "menu"> DINING </li>
+            <li class = "menu"> <a href="Search_results.html"> LOUNGE </a> </li>       
         </ul> 
-       
-        <!-- Search Bar and Cart -->
+
+         <!-- Search Bar and Cart -->
         <div class = "cluster">
-            <p> SEARCH </p>
-            <img src="Images/Line 3.png" alt = "Straight Line">
-            <img src="Images/Home/Search.svg" alt = "Search Bar" id = "search">         
+            <div class = "search">
+                <p class = "basic-text"> SEARCH </p>
+                <img src="Images/Home/Search.svg" alt = "Search Bar" id = "search">
+                <img src="Images/Line 3.png" alt = "Straight Line">  
+            </div>       
             <a href = "cart.html">
                 <img src="Images/Home/shopping-cart.png" alt = "Shopping Cart" id = "Cart">
             </a>
         </div>
+       
+        
     </nav>
+
+   
