@@ -7,9 +7,25 @@
     box-sizing: inherit;
 }
 
-.menu {
+/* Set font for headings */
+.heading {
     font-family: var(--font-primary);
 }
+
+/* Styling Navigation Bar */
+.cluster {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cluster > * {
+    margin: 0.2rem;
+}
+
+
 
 #logo {
     height: 15%;
@@ -37,5 +53,5 @@
 }
 
 body {
-    background-color: #F2F5F4;
+    background-color: var(--colour-primary);
 }

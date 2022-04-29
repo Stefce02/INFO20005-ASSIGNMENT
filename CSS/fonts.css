@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Questrial&display=swap');
 
 :root {
+    /* Fonts and Sizing */
     --font-primary: 'Playfair Display', serif;
     --font-secondary: 'Questrial', sans-serif;  
+    --font-size-h1: 72px;
+    --font-size-h2: 64px;
+    --font-size-h3: 48px; 
+    
+    /* Colour Palette */
+    --colour-primary: #F2F5F4;
+    --colour-secondary: #EDF2F1;
+    --colour-other: rgb(255, 255, 255, 0.8);
+    --colour-text: #3B393F;
+    --colour-number: #000000;
+    --colour-btn: #A38FCC;
+    --colour-valid: rgb(80, 207, 164, 0.8);
 }
