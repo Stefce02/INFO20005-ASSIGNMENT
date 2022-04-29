@@ -1,15 +1,14 @@
-html {
+:root {
     box-sizing: border-box;
   }
   *, *:before, *:after {
     box-sizing: inherit;
 }
 
-#Logo {
-    height: 60px;
-    width: 150px;
+#logo {
+    height: 15%;
+    width: 15%;
 }
-
 
 #search {
     height: 30px;
