@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Questrial&display=swap');
-
+@import url("fonts.css");
 
 :root {
     box-sizing: border-box;
   }
   *, *:before, *:after {
     box-sizing: inherit;
+}
+
+.menu {
+    font-family: var(--font-primary);
 }
 
 #logo {
