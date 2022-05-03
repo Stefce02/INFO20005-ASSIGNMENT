@@ -37,7 +37,7 @@ h2 {
     font-size: 30px;
 }
 
-/* Styling Navigation Bar */
+/* Navigation Bar */
 .cluster {
     display: flex;
     flex-wrap: wrap;
@@ -57,6 +57,11 @@ h2 {
 .menu-icon{
     height: 35px;
     width: 35px;
+}
+
+#logo {
+    height: 20%;
+    width: 20%;
 }
 
 /* Home page Image + Text */
@@ -110,6 +115,7 @@ h2 {
     padding-top: 75px;
 }
 
+/* Category Options */
 .category-card__name {
     font-size: var(--font-size-h3);
     font-family: var(--font-primary);
@@ -124,6 +130,8 @@ h2 {
     margin-left: 50px;
     margin-right: 50px;
 }
+
+/* Product Cards */
 
 .product-card__title {
     font-size: 36px;
@@ -149,6 +157,8 @@ h2 {
     margin-right: 100px;
 }
 
+/* About Us Section */
+
 .about {
     font-size: 32px;
     font-family: var(--font-secondary);
@@ -161,6 +171,8 @@ h2 {
 .about > p {
     padding-bottom: 33px;
 }
+
+/* Footer */
 
 .footer-icons {
     display: flex;
@@ -177,11 +189,6 @@ h2 {
     margin-right: 20px; 
 }
 
-
-#logo {
-    height: 20%;
-    width: 20%;
-}
 
 .chat {
     height: 30px;
