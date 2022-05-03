@@ -143,10 +143,10 @@ h2 {
 }
 
 .product-card__image {
-    height: 350px;
-    width: 450px;
-    margin-left: 150px;
-    margin-right: 150px;
+    height: 400px;
+    width: 550px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .about {
@@ -162,12 +162,28 @@ h2 {
     padding-bottom: 33px;
 }
 
+.footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icons > img {
+    height: 75px;
+    width: 90px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    margin-right: 20px; 
+}
+
+
 #logo {
     height: 20%;
     width: 20%;
 }
 
-.Footer-icon {
+.chat {
     height: 30px;
     width: 30px;
 }
