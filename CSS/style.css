@@ -43,20 +43,17 @@ body {
     margin: 2rem;
 }
 
+.menu-icon{
+    height: 35px;
+    width: 35px;
+}
+
 #logo {
     height: 20%;
     width: 20%;
 }
 
-#search {
-    height: 50px;
-    width: 50px;
-}
 
-#Cart {
-    height: 50px;
-    width: 50px;
-}
 
 #product-image {
     height: 150px;
