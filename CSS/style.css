@@ -23,17 +23,12 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px;
     padding-top: 150px;
 }
 
 .basic-text {
     font-family: var(--font-secondary);
     font-size: 30px;
-}
-
-.uline {
-    text-decoration: underline;
 }
 
 /* Set font for headings */
@@ -107,11 +102,12 @@ h2 {
     padding-bottom: 150px;
 }
 
-.categories {
+.subsection {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding-top: 75px;
 }
 
 .category-card__name {
@@ -129,9 +125,28 @@ h2 {
     margin-right: 50px;
 }
 
-#product-image{
-    height: 250px;
-    width: 300px;
+.product-card__title {
+    font-size: 36px;
+    font-family: var(--font-secondary);
+    color: var(--colour-text);
+    text-align: center;
+}
+
+.product-card__price {
+    font-size: var(--font-size-h3);
+    font-family: var(--font-secondary);
+    color: var(--colour-text);
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 40px;
+}
+
+.product-card__image {
+    height: 350px;
+    width: 450px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 
