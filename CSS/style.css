@@ -149,6 +149,18 @@ h2 {
     margin-right: 150px;
 }
 
+.about {
+    font-size: 32px;
+    font-family: var(--font-secondary);
+    text-align: center;
+    padding-top: 35px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.about > p {
+    padding-bottom: 33px;
+}
 
 #logo {
     height: 20%;
