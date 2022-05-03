@@ -26,11 +26,6 @@ h2 {
     padding-top: 125px;
 }
 
-.basic-text {
-    font-family: var(--font-secondary);
-    font-size: 30px;
-}
-
 /* Set font for headings */
 .menu {
     font-family: var(--font-primary);
@@ -55,13 +50,37 @@ h2 {
 }
 
 .menu-icon{
-    height: 35px;
-    width: 35px;
+    height: 42.5px;
+    width: 42.5px;
+    filter: var(--colour-icons);
 }
 
 #logo {
     height: 20%;
     width: 20%;
+}
+
+.search-text {
+    font-family: var(--font-secondary);
+    font-size: 20px;
+    position: absolute;
+    right: 10.125em;
+    top: 2.125em;
+    opacity: 50%;
+}
+
+.search-icon {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 4em;
+    top: 2.125em;
+}
+
+.search-underline {
+    position: absolute;
+    right: 4em;
+    top: 4.375em;
 }
 
 /* Home page Image + Text */
