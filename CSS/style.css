@@ -127,8 +127,8 @@ h2 {
 .category-card__img {
     height: 250px;
     width: 300px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 /* Product Cards */
@@ -163,7 +163,7 @@ h2 {
     font-size: 32px;
     font-family: var(--font-secondary);
     text-align: center;
-    padding-top: 35px;
+    padding-top: 50px;
     padding-left: 250px;
     padding-right: 250px;
 }
@@ -212,13 +212,17 @@ h2 {
 .btn-more {
     font-size: 50px;
     font-family: var(--font-secondary);
-    color: var(--colour-text);
+    color: black;
     width: 1300px;
     height: 100px;
     border-radius: 15px;
     background-color: var(--colour-primary);
-    border-color: var(--colour-btn-more);
+    border-color: black;
     border-width: 1px;
     box-shadow: 0px 0px 6px black;
+}
+
+.btn-more:hover {
+    box-shadow: 0px 0px 12.5px black;
 }
 
