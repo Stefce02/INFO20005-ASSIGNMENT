@@ -56,9 +56,11 @@ h2 {
 }
 
 #logo {
-    height: 20%;
-    width: 20%;
+    height: 6.5em;
+    width: 18em;
 }
+
+/* only works at one size - need to change */
 
 .search-text {
     font-family: var(--font-secondary);
