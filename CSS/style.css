@@ -11,6 +11,20 @@ body {
     background-color: var(--colour-primary);
 }
 
+h1 {
+    font-size: var(--font-size-h1);
+    font-family: var(--font-primary);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    font-family: var(--font-primary);
+    color: var(--colour-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .basic-text {
     font-family: var(--font-secondary);
     font-size: 30px;
@@ -48,12 +62,53 @@ body {
     width: 35px;
 }
 
+/* Home page Image + Text */
+.home-image-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+
+    position: relative;
+}
+
+.home-image {
+    height: 501px;
+    width: 920px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    position: absolute;
+}
+
+#tranparent-back {
+    height:450px;
+    width: 700px;
+    margin-left: 40px;
+    opacity: 15%;
+}
+
+.home-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--colour-text);
+    font-family: var(--font-primary);
+}
+
+.slogan {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 200px;
+}
+
 #logo {
     height: 20%;
     width: 20%;
 }
-
-
 
 #product-image {
     height: 150px;
