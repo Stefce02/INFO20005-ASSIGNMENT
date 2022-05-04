@@ -203,8 +203,8 @@ h3 {
     font-size: 32px;
     font-family: var(--font-secondary);
     text-align: center;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 20rem;
+    padding-right: 20rem;
 }
 
 .about > p {
