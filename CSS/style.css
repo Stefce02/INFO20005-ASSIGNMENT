@@ -15,6 +15,10 @@ a {
     display: inline-block;
 }
 
+a:visited {
+    color: black;
+}
+
 /* Headings */
 
 h1 {
@@ -46,7 +50,7 @@ h3 {
 
 }
 
-.h3-other {
+.sub-heading {
     padding-top: 2rem;
     font-family: var(--font-secondary);
 }
@@ -295,7 +299,6 @@ h3 {
     grid-template-rows: 15rem auto;
     column-gap: 11rem;
     padding: 2rem 1rem 0.5rem 3rem;
-    
 }
 
 .product-image {
@@ -366,5 +369,5 @@ h3 {
     box-shadow: 0px 0px 6px black;
     text-shadow:  0px 0px 5px black;
 }
-}
+
 
