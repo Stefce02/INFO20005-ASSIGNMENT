@@ -11,6 +11,8 @@ body {
     background-color: var(--colour-primary);
 }
 
+/* Headings */
+
 h1 {
     font-size: var(--font-size-h1);
     font-family: var(--font-primary);
@@ -24,6 +26,19 @@ h2 {
     align-items: center;
     justify-content: center;
     padding-top: 125px;
+}
+
+.h2-left {
+    display: block;
+    padding: 2rem 0rem 2rem var(--left-indent);
+}
+
+
+h3 {
+    font-size: var(--font-size-h3);
+    font-family: var(--font-primary);
+    padding: 0rem 0rem 2rem var(--left-indent);
+
 }
 
 /* Set font for headings */
@@ -42,7 +57,7 @@ h2 {
 }
 
 .cluster > * {
-    margin: 0.5rem;
+    margin: 1rem 3rem 1rem 3rem;
 }
 
 .menu {
@@ -222,8 +237,53 @@ h2 {
     bottom: 20px;
 }
 
-/* Buttons */
+/* Page History */
 
+.history {
+    font-size: 20px;
+    font-family: var(--font-primary);
+    padding: 2rem 0rem 2rem var(--left-indent);
+}
+
+/* Product Filter */
+.filter {
+    padding: 0.5rem 0rem 0.5rem var(--left-indent);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.filter > .btn-more {
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+}
+
+/* Product Listing */
+.product-card__title {
+    font-size: 36px;
+    font-family: var(--font-secondary);
+    color: var(--colour-text);
+    text-align: center;
+}
+
+.product-card__price {
+    font-size: var(--font-size-h3);
+    font-family: var(--font-secondary);
+    color: var(--colour-text);
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 40px;
+}
+
+.product-card__image {
+    height: 400px;
+    width: 550px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Buttons */
 /* responsive resize needed */
 .btn-more-container {
     text-align: center;
@@ -245,5 +305,11 @@ h2 {
 
 .btn-more:hover {
     box-shadow: 0px 0px 12.5px black;
+}
+
+.btn-more--small {
+    font-size: 25px;
+    width: 10rem;
+    height: 3rem;
 }
 
