@@ -18,4 +18,7 @@
     --colour-btn: #A38FCC;
     --colour-btn-more: #707070;
     --colour-valid: rgb(80, 207, 164, 0.8);
+
+    /* Positioning */
+    --left-indent: 3.2rem;
 }

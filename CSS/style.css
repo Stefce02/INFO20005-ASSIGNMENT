@@ -11,6 +11,10 @@ body {
     background-color: var(--colour-primary);
 }
 
+a {
+    display: inline-block;
+}
+
 /* Headings */
 
 h1 {
@@ -26,11 +30,12 @@ h2 {
     align-items: center;
     justify-content: center;
     padding-top: 125px;
+    padding-bottom: 5rem;
 }
 
 .h2-left {
     display: block;
-    padding: 2rem 0rem 2rem var(--left-indent);
+    padding: 2rem 0rem 0rem var(--left-indent);
 }
 
 
@@ -148,12 +153,11 @@ h3 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 75px;
 }
 
 /* Category Options */
 .category-card__name {
-    font-size: var(--font-size-h3);
+    font-size: 40px;
     font-family: var(--font-primary);
     color: var(--colour-text);
     text-decoration: underline;
@@ -161,8 +165,8 @@ h3 {
 }
 
 .category-card__img {
-    height: 250px;
-    width: 300px;
+    height: 200px;
+    width: 250px;
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -182,13 +186,13 @@ h3 {
     color: var(--colour-text);
     text-decoration: underline;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 1rem;
     margin-bottom: 40px;
 }
 
 .product-card__image {
-    height: 400px;
-    width: 550px;
+    height: 350px;
+    width: 500px;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -199,7 +203,6 @@ h3 {
     font-size: 32px;
     font-family: var(--font-secondary);
     text-align: center;
-    padding-top: 50px;
     padding-left: 250px;
     padding-right: 250px;
 }
@@ -220,7 +223,6 @@ h3 {
 .footer-icons > img {
     height: 75px;
     width: 90px;
-    margin-top: 50px;
     margin-bottom: 150px;
     margin-right: 20px; 
     filter: var(--colour-icons)
@@ -257,31 +259,16 @@ h3 {
     margin-right: 4rem;
     margin-bottom: 2rem;
 }
-
 /* Product Listing */
-.product-card__title {
-    font-size: 36px;
-    font-family: var(--font-secondary);
-    color: var(--colour-text);
-    text-align: center;
-}
 
-.product-card__price {
-    font-size: var(--font-size-h3);
-    font-family: var(--font-secondary);
-    color: var(--colour-text);
-    text-decoration: underline;
-    text-align: center;
-    padding-top: 10px;
+/* Image doesn't resize the same as the other */
+#danish {
+    height: 200px;
+    width: 500px;
+    margin-top: 100px;
     margin-bottom: 40px;
 }
 
-.product-card__image {
-    height: 400px;
-    width: 550px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
 
 /* Buttons */
 /* responsive resize needed */
