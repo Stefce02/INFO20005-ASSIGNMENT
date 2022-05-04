@@ -46,6 +46,11 @@ h3 {
 
 }
 
+.h3-other {
+    padding-top: 2rem;
+    font-family: var(--font-secondary);
+}
+
 /* Set font for headings */
 .menu {
     font-family: var(--font-primary);
@@ -302,11 +307,12 @@ h3 {
     grid-row-end: 3;
     border: 1px solid black;
     border-radius: 5px;
-    
 }
 
-.product-sub-image {
-    grid-column-start: 1;
+.description {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-text);
+    color: var(--colour-btn-more);
 }
 
 /* Buttons */
@@ -329,7 +335,7 @@ h3 {
     box-shadow: 0px 0px 6px black;
 }
 
-.btn-more:hover {
+.btn-more:hover, .btn-buy:hover {
     box-shadow: 0px 0px 12.5px black;
 }
 
@@ -337,5 +343,28 @@ h3 {
     font-size: 25px;
     width: 10rem;
     height: 3rem;
+}
+
+.btn-cart {
+    width: 580px;
+    height: 75px;
+    font-size: 35px;
+    border-color: var(--colour-btn-more);
+    color:  var(--colour-text);
+}
+
+.btn-buy {
+    font-size: 35px;
+    font-family: var(--font-secondary);
+    color: white;
+    width: 580px;
+    height: 75px;
+    border-radius: 15px;
+    background-color: var(--colour-btn);
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 0px 0px 6px black;
+    text-shadow:  0px 0px 5px black;
+}
 }
 

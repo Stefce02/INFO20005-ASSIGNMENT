@@ -7,12 +7,14 @@
     --font-size-h1: 72px;
     --font-size-h2: 64px;
     --font-size-h3: 48px; 
+    --font-size-text: 36px;
     
     /* Colour Palette */
     --colour-primary: #F2F5F4;
     --colour-secondary: #EDF2F1;
     --colour-other: rgb(255, 255, 255, 0.8);
     --colour-text: #3B393F;
+    --colour-text-other: #707070;
     --colour-icons: invert(22%) sepia(8%) saturate(438%) hue-rotate(219deg) brightness(92%) contrast(93%);
     --colour-number: #000000;
     --colour-btn: #A38FCC;
