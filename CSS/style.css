@@ -255,9 +255,8 @@ h3 {
     margin-right: 4rem;
     margin-bottom: 2rem;
 }
-/* Product Listing */
 
-/* Image doesn't resize the same as the other */
+/* Image of Danish sofa doesn't resize the same as the other */
 #danish {
     height: 200px;
     width: 500px;
@@ -265,6 +264,25 @@ h3 {
     margin-bottom: 40px;
 }
 
+/* Product Listing */
+
+.product-title {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-h1);
+    padding: 0.5rem 1rem 0.5rem 3rem;
+    display: inline-block;
+}
+
+.product-price {
+    font-family: var(--font-secondary);
+    font-size: 78px;
+    padding-left: 42rem;
+    display: inline-block;
+}
+
+.in-stock {
+    filter: var(--colour-valid);
+}
 
 /* Buttons */
 /* responsive resize needed */

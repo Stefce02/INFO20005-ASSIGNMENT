@@ -17,7 +17,7 @@
     --colour-number: #000000;
     --colour-btn: #A38FCC;
     --colour-btn-more: #707070;
-    --colour-valid: rgb(80, 207, 164, 0.8);
+    --colour-valid: invert(97%) sepia(10%) saturate(2536%) hue-rotate(80deg) brightness(85%) contrast(89%);;
 
     /* Positioning */
     --left-indent: 3.2rem;
