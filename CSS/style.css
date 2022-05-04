@@ -284,6 +284,31 @@ h3 {
     filter: var(--colour-valid);
 }
 
+.product-image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 15rem auto;
+    column-gap: 11rem;
+    padding: 2rem 1rem 0.5rem 3rem;
+    
+}
+
+.product-image {
+    height: 500px;
+    width: 900px;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+
+.product-sub-image {
+    grid-column-start: 1;
+}
+
 /* Buttons */
 /* responsive resize needed */
 .btn-more-container {
