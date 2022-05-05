@@ -13,11 +13,12 @@ body {
 
 a {
     display: inline-block;
+    color: black;
     text-decoration: none;
 }
 
 a:visited {
-    color: black;
+    text-decoration: underline;
 }
 
 /* Headings */
@@ -31,9 +32,7 @@ h2 {
     font-size: var(--font-size-h2);
     font-family: var(--font-primary);
     color: var(--colour-text);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     padding-top: 125px;
     padding-bottom: 5rem;
 }
@@ -129,7 +128,6 @@ h3 {
     align-items: center;
     justify-content: center;
     margin: auto;
-
     position: absolute;
 }
 
@@ -350,6 +348,14 @@ h3 {
 
 .open-and-close {
     padding-right: 7rem;
+    display: inline-block;
+}
+
+/* Cart */
+.cart-heading > .open-and-close {
+    position: absolute;
+    right: var(--left-indent);
+    top: 9.25em;
 }
 
 /* Buttons */
