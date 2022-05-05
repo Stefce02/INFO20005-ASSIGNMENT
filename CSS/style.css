@@ -378,6 +378,21 @@ h3 {
     color: var(--colour-text);
 }
 
+.order-total {
+    font-size: var(--font-size-h2);
+    font-family: var(--font-secondary);
+    color: var(--colour-text);
+    opacity: 60%;
+    text-align: center;
+}
+
+.order-total-price {
+    font-size: var(--font-size-h1);
+    font-family: var(--font-secondary);
+    color: var(--colour-text);
+    text-decoration: underline;
+    text-align: center;
+}
 
 
 /* Buttons */
