@@ -312,17 +312,58 @@ h3 {
     border-radius: 5px;
 }
 
-.description {
+.description-txt {
     font-family: var(--font-secondary);
     font-size: var(--font-size-text);
     color: var(--colour-btn-more);
+    padding-left: var(--left-indent);
 }
+
+.product-info {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.purchase-btns {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.divider {
+    width: 96rem;
+    padding-left: var(--left-indent);
+    padding-top: 2rem;
+}
+
+.other-info > .divider {
+    padding-top: 0rem;
+}
+
+.other-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.open-and-close {
+    padding-right: 7rem;
+}
+
+
 
 /* Buttons */
 /* responsive resize needed */
 .btn-more-container {
     text-align: center;
     padding-top: 5em;
+}
+
+.btn-cart-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 7.5rem;
 }
 
 .btn-more {
@@ -349,7 +390,7 @@ h3 {
 }
 
 .btn-cart {
-    width: 580px;
+    width: 550px;
     height: 75px;
     font-size: 35px;
     border-color: var(--colour-btn-more);
@@ -360,7 +401,7 @@ h3 {
     font-size: 35px;
     font-family: var(--font-secondary);
     color: white;
-    width: 580px;
+    width: 550px;
     height: 75px;
     border-radius: 15px;
     background-color: var(--colour-btn);
