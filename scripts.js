@@ -10,3 +10,5 @@ $(function() {
 });
 
 // Can just copy and paste the code in each page (rubric incorrect)
+
+// onclick="newWindow(' + waypointas + ');">
