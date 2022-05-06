@@ -1,6 +1,6 @@
 @import url("fonts.css");
 
-:root {
+html {
     box-sizing: border-box;
   }
   *, *:before, *:after {
@@ -139,9 +139,7 @@ h3 {
 }
 
 .home-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     color: var(--colour-text);
     font-family: var(--font-primary);
 }
@@ -207,8 +205,8 @@ h3 {
     font-size: 32px;
     font-family: var(--font-secondary);
     text-align: center;
-    padding-left: 20rem;
-    padding-right: 20rem;
+    /* padding-left: 20rem;
+    padding-right: 20rem; */
 }
 
 .about > p {
@@ -419,6 +417,7 @@ h3 {
     border-color: black;
     border-width: 1px;
     box-shadow: 0px 0px 6px black;
+    
 }
 
 .btn-more:hover, .btn-buy:hover {
