@@ -44,30 +44,60 @@
         </div>
 
         <!-- Personal Information -->
-        <div class = "personal-info">
 
-            <ol class = "checkout-steps">
-                <li> 1. Personal Information </li>
-                <li> 2. </li>
-                <li> 3. </li>
-                <li> Finished </li>
-            </ol>
+        <ol class = "checkout-steps">
+            <li> 1. Personal Information </li>
+            <li> 2. </li>
+            <li> 3. </li>
+            <li> Finished </li>
+        </ol>
 
-            <div class = "form">
-                <p class = "half-box"> First Name </p>
-                <p class = "half-box"> Last Name </p>
-                <p class = "full-box"> Email Name </p>
-                <p class = "full-box"> Phone (Optional) </p>
-                <p class = "half-box"> Address </p>
-                <p class = "half-box"> Apartment, suite, etc. (Optional) </p>
-                <p class = "third-box"> Region </p>
-                <p class = "half-box"> City </p>
-                <p class = "half-box"> Post Code </p>
+        <form class = "personal-info">
+
+            <div class = "float-input">
+                <label for = "full-name"> First Name </label>
+                <input id = "full-name" class = "half-box"> </input>
             </div>
 
-            <button class = "btn"> Continue </button>
+            <div class = "float-input">
+                <label for = "email"> Email </label>
+                <input id = "email" class = "full-box" type="email"> </input>
+            </div>
 
-        </div>
+            <div class = "float-input">
+                <label for = "phone"> Phone (Optional) </label>
+                <input id = "phone" class = "full-box" type="number"> </input>
+            </div>
+
+            <div class = "float-input">
+                <label for = "address"> Address </label>
+                <input id = "address" class = "half-box"> </input>
+            </div>
+
+            <div class = "float-input">
+                <label for = "address-other">  Apartment, suite, etc. (Optional) </label>
+                <input id = "address-other" class = "half-box"> </input>
+            </div>
+
+            <div class = "float-input">
+                <label for = "region"> Region </label>
+                <input id = "region class = "third-box"> </input>
+            </div>
+
+            <div class = "float-input">
+                <label for = "city"> City </label>
+                <input id = "city" class = "half-box"> </input>
+            </div>
+
+            <div class = "float-input">
+                <label for = "post-code"> Post Code </label>
+                <input id = "post-code" class = "half-box"> </input>
+            </div>
+            
+        </form>
+
+        <button class = "btn"> Continue </button>
+
 
     </div>
 

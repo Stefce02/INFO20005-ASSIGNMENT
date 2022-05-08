@@ -19,7 +19,8 @@
     --colour-number: #000000;
     --colour-btn: #A38FCC;
     --colour-btn-more: #424242;
-    --colour-valid: invert(97%) sepia(10%) saturate(2536%) hue-rotate(80deg) brightness(85%) contrast(89%);;
+    --colour-valid: invert(97%) sepia(10%) saturate(2536%) hue-rotate(80deg) brightness(85%) contrast(89%);
+    --colour-input: #E8EDEC;
 
     /* Positioning */
     --left-indent: 3.2rem;
