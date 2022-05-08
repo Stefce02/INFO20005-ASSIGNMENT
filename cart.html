@@ -14,22 +14,26 @@
     <!-- Title -->
     <div class = "cart-heading">
         <h2> Your Cart </h2>
-        <img class = "open-and-close" src = "Images/Close.png" alt = "cross">
+        <!-- <img class = "open-and-close" src = "Images/Close.png" alt = "cross"> -->
     </div>
 
     <!-- Page divider -->
-    <!-- <img class = "divider" src = "Images/Divider.png" alt = "straight line as divider"> -->
+    <div class = "divider"></div>
 
     <!-- Cart Summary -->
     <div class = "cart-summary">
-        <img class = "cart-image" src="Images/Lounges/LOUNGE_SEYMOUR_11.png" alt = "Seymour Lounge" id = "product-image">
-        <p class = "cart-title"> Seymour Lounge </p>
-        <p class = "cart-price"> $1799 </p>
-        <!-- figure out how to implement -->
-        <input class="input-quantity"> </input>
+        <div class = "cart-product"> 
+            <img class = "cart-image" src="Images/Lounges/LOUNGE_SEYMOUR_11.png" alt = "Seymour Lounge" id = "product-image">
+            <div class = "cart-product-info">
+                <p class = "cart-product-title"> Seymour Lounge </p>
+                <p class = "cart-product-price"> $1799 </p>
+                <input class="input-quantity"> </input>
+            </div>  
+        </div>    
         <img class = "open-and-close" src = "Images/Close.png" alt = "cross">
-        <img class = "divider" src = "Images/Divider.png" alt = "straight line as divider">
     </div>
+
+    <div class = "divider"></div>
 
     <!-- Clear cart (change to make smaller first)-->
     <div class = "btn-more-container">
@@ -37,13 +41,15 @@
     </div>
 
     <!-- Final Information -->
-    <div>
+    <div class = "order-info">
         <p class="order-total"> Total </p>
         <p class="order-total-price"> $1799</p>
     </div>
 
     <!-- Checkout Button -->
-    <a href="checkout.html"><button class="btn-buy"> Checkout </button></a> 
+    <div class = "btn-buy-container">
+        <a href="checkout.html"><button class="btn-buy btn-buy--large"> Checkout </button></a> 
+    </div>
 
 </body>
 </html>

@@ -369,19 +369,6 @@ h3 {
     margin-left: var(--left-indent);
 }
 
-.cart-title {
-    font-size: var(--font-size-text);
-    font-family: var(--font-secondary);
-    color: var(--colour-text);
-    opacity: 90%;
-}
-
-.cart-price {
-    font-size: 38px;
-    font-family: var(--font-secondary);
-    color: var(--colour-text);
-}
-
 .order-total {
     font-size: var(--font-size-h2);
     font-family: var(--font-secondary);
@@ -398,6 +385,42 @@ h3 {
     text-align: center;
 }
 
+.cart-summary {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+
+.cart-product {
+    display: flex;
+    align-items: flex-start;
+}
+
+.cart-product-info {
+    padding-left: 2%;
+}
+
+.cart-product-title {
+    font-size: var(--font-size-text);
+    font-family: var(--font-secondary);
+    color: var(--colour-text);
+    opacity: 90%;
+    padding-bottom: 5%;
+}
+
+.cart-product-price {
+    font-size: 38px;
+    font-family: var(--font-secondary);
+    color: var(--colour-text);
+    text-decoration: underline;
+    padding-bottom: 27.5%;
+}
+
+.order-info {
+    padding: 5%;
+}
+
 
 /* Buttons */
 /* responsive resize needed */
@@ -412,6 +435,12 @@ h3 {
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-right: 7.5rem;
+}
+
+.btn-buy-container {
+    margin-left: 10%;
+    max-width: 80%;
+    padding-bottom: 5rem;
 }
 
 .btn-more {
@@ -460,14 +489,33 @@ h3 {
     text-shadow:  0px 0px 5px black;
 }
 
+.btn-buy--large {
+    width: 100%;
+
+}
 /* Input Boxes */
 
 .input-quantity {
-    width: 75px;
-    height: 25px;
+    width: 50%;
+    height: 3em;
     text-align: center;
     border-color: black;
     border-width: 0.5px;
     box-shadow: 0px 0px 3px black;
     font-family: var(--font-secondary);
+    background-color: #FFFF;
 }
+
+
+
+
+
+
+/* .close::after {
+    display: inline-block;
+    content: "\00d7";
+    font-size: 8em;
+    padding-right: 7rem;
+} */
+
+/* \002b - plus symbol code */
