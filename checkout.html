@@ -20,18 +20,76 @@
         <p class = "history"> Home > Lounge Room > Seymour Lounge > Checkout </p>
     </div>
 
-    <!-- Checkout -->
-    <div>
-        <h3> Checkout </h3>
+    <!-- Checkout Information-->
+    <div class = "sidebar-container">
+
+        <!-- Forms -->
+        <div class = "not-sidebar">
+            <h3> Checkout </h3>
+            <ol class = "checkout-steps">
+                <li> 1. Personal Information </li>
+                <li> 2. </li>
+                <li> 3. </li>
+                <li> Finished </li>
+            </ol>
+
+            <form class = "personal-info">
+
+                <div class = "float-input">
+                    <label for = "full-name"> First Name </label>
+                    <input id = "full-name" class = "half-box"> </input>
+                </div>
+
+                <div class = "float-input">
+                    <label for = "email"> Email </label>
+                    <input id = "email" class = "full-box" type="email"> </input>
+                </div>
+
+                <div class = "float-input">
+                    <label for = "phone"> Phone (Optional) </label>
+                    <input id = "phone" class = "full-box" type="number"> </input>
+                </div>
+
+                <div class = "float-input">
+                    <label for = "address"> Address </label>
+                    <input id = "address" class = "half-box"> </input>
+                </div>
+
+                <div class = "float-input">
+                    <label for = "address-other">  Apartment, suite, etc. (Optional) </label>
+                    <input id = "address-other" class = "half-box"> </input>
+                </div>
+
+                <div class = "float-input">
+                    <label for = "region"> Region </label>
+                    <input id = "region class = "third-box"> </input>
+                </div>
+
+                <div class = "float-input">
+                    <label for = "city"> City </label>
+                    <input id = "city" class = "half-box"> </input>
+                </div>
+
+                <div class = "float-input">
+                    <label for = "post-code"> Post Code </label>
+                    <input id = "post-code" class = "half-box"> </input>
+                </div>
+                
+            </form>
+
+            <button class = "btn"> Continue </button>
+
+        </div>
 
         <!-- Order Summary -->
-        <div class = "order-summary">
+        <div class = "order-summary sidebar">
             <h3> Order Summary </h3>
 
-            <img class = "order-summary-image" src="Images/Lounges/LOUNGE_SEYMOUR_11.png" alt = "Seymour Lounge" id = "product-image">
+            <img class = "cart-image" src="Images/Lounges/LOUNGE_SEYMOUR_11.png" alt = "Seymour Lounge" id = "product-image">
             <p class = "order-summary-title"> Seymour Lounge </p>
             <p class = "order-summary-price"> $1799 </p>
             <p class = "quantity"> 1 </p>
+
 
             <p class = "discount"> Discount Code </p>
             <button class="btn" type="button"> Apply </button>
@@ -42,62 +100,6 @@
                 <p class="order-total-price"> $1799</p>
             </div>
         </div>
-
-        <!-- Personal Information -->
-
-        <ol class = "checkout-steps">
-            <li> 1. Personal Information </li>
-            <li> 2. </li>
-            <li> 3. </li>
-            <li> Finished </li>
-        </ol>
-
-        <form class = "personal-info">
-
-            <div class = "float-input">
-                <label for = "full-name"> First Name </label>
-                <input id = "full-name" class = "half-box"> </input>
-            </div>
-
-            <div class = "float-input">
-                <label for = "email"> Email </label>
-                <input id = "email" class = "full-box" type="email"> </input>
-            </div>
-
-            <div class = "float-input">
-                <label for = "phone"> Phone (Optional) </label>
-                <input id = "phone" class = "full-box" type="number"> </input>
-            </div>
-
-            <div class = "float-input">
-                <label for = "address"> Address </label>
-                <input id = "address" class = "half-box"> </input>
-            </div>
-
-            <div class = "float-input">
-                <label for = "address-other">  Apartment, suite, etc. (Optional) </label>
-                <input id = "address-other" class = "half-box"> </input>
-            </div>
-
-            <div class = "float-input">
-                <label for = "region"> Region </label>
-                <input id = "region class = "third-box"> </input>
-            </div>
-
-            <div class = "float-input">
-                <label for = "city"> City </label>
-                <input id = "city" class = "half-box"> </input>
-            </div>
-
-            <div class = "float-input">
-                <label for = "post-code"> Post Code </label>
-                <input id = "post-code" class = "half-box"> </input>
-            </div>
-            
-        </form>
-
-        <button class = "btn"> Continue </button>
-
 
     </div>
 

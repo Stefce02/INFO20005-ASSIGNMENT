@@ -422,6 +422,25 @@ h3 {
     padding: 5%;
 }
 
+/* Checkout */
+.sidebar-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sidebar{
+    flex-basis: 40rem;
+    flex-grow: 1;
+}
+
+.not-sidebar{
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 50%;
+}
+     
+
 
 /* Buttons */
 /* responsive resize needed */
@@ -532,10 +551,6 @@ input {
     height: 3em;
     background-color: var(--colour-input);
     font-family: var(--font-secondary);
-}
-
-input::spelling-error {
-    border: red;
 }
 
 
