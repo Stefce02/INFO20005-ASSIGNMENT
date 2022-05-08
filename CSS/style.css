@@ -64,19 +64,22 @@ h3 {
 .cluster {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
 }
 
 .cluster > * {
-    margin: 1rem 3rem 1rem 3rem;
+    /* top, right, bottom, left*/
+    margin: 1rem 2rem 1rem 2rem;
 }
 
 .menu-icon{
     height: 42.5px;
     width: 42.5px;
     filter: var(--colour-icons);
+    position: relative;
+    top: 0.25em;
 }
 
 #logo {
@@ -86,6 +89,7 @@ h3 {
 
 .search {
     position: relative;
+    margin-right: 0rem;
 }
 
 .search-icon {
@@ -94,7 +98,9 @@ h3 {
     position: absolute;
     top: 0.5em;
     right: 0em;
+    filter: var(--colour-icons)
 }
+
 
 /* Home page Image + Text */
 .home-image-back {
@@ -299,6 +305,7 @@ h3 {
     font-size: var(--font-size-text);
     color: var(--colour-btn-more);
     padding-left: var(--left-indent);
+    padding-right: var(--left-indent);
 }
 
 .product-info {
@@ -541,14 +548,6 @@ input {
     font-family: var(--font-secondary);
 }
 
-.search > input {
-    /* border-top: none;
-    border-left: none;
-    border-right: none; */
-    background-color: transparent;
-    font-size: 30px;
-}
-
 .search > input, textarea {
     border-top: none;
     border-left: none;
@@ -557,11 +556,11 @@ input {
     resize: none;
     outline: none;
     padding-top: 1rem;
-    padding-bottom: 0.5em;
-    width: 7em;
+    padding-bottom: 0.76em;
+    width: 10em;
     height: 50px;
+    font-size: 20px;
 }
-
 
 
 
