@@ -38,14 +38,14 @@ h2 {
 
 .h2-left {
     display: block;
-    padding: 2rem 0rem 0rem var(--left-indent);
+    padding: 2rem 0rem 0rem var(--indent);
 }
 
 
 h3 {
     font-size: var(--font-size-h3);
     font-family: var(--font-primary);
-    padding: 0rem 0rem 2rem var(--left-indent);
+    padding: 0rem 0rem 2rem var(--indent);
 
 }
 
@@ -133,6 +133,19 @@ h3 {
     text-align: center;
     color: var(--colour-text);
     font-family: var(--font-primary);
+}
+
+#line-through{
+    position: relative;
+}
+
+#line-through > span {
+    position: absolute;
+    width: 40%;
+    border-top: 2px solid var(--colour-text-other);
+    left: 30%;
+    top: 70%;
+    opacity: 10%;
 }
 
 .slogan {
@@ -237,12 +250,12 @@ h3 {
 .history {
     font-size: 20px;
     font-family: var(--font-primary);
-    padding: 2rem 0rem 2rem var(--left-indent);
+    padding: 2rem 0rem 2rem var(--indent);
 }
 
 /* Product Filter */
 .filter {
-    padding: 0.5rem 0rem 0.5rem var(--left-indent);
+    padding: 0.5rem 0rem 0.5rem var(--indent);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -304,8 +317,8 @@ h3 {
     font-family: var(--font-secondary);
     font-size: var(--font-size-text);
     color: var(--colour-btn-more);
-    padding-left: var(--left-indent);
-    padding-right: var(--left-indent);
+    padding-left: var(--indent);
+    padding-right: var(--indent);
 }
 
 .product-info {
@@ -323,7 +336,7 @@ h3 {
     background-color: black;
     height: 1px;
     width: 90%;
-    margin-left: var(--left-indent);
+    margin-left: var(--indent);
     margin-top: 2rem;
 }
 .other-info > .divider {
@@ -360,7 +373,7 @@ h3 {
     height: 10%;
     border: 1px solid black;
     border-radius: 5px;
-    margin-left: var(--left-indent);
+    margin-left: var(--indent);
 }
 
 .order-total {
