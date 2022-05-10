@@ -1,0 +1,88 @@
+
+/* Home page Image + Text */
+.home-image-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 2.5%;
+}
+
+.home-image {
+    max-height: 501px;
+    max-width: 920px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: absolute;
+}
+
+#tranparent-back {
+    height:450px;
+    width: 700px;
+    margin-left: 40px;
+    opacity: 10%;
+}
+
+.home-text {
+    text-align: center;
+    color: var(--colour-text);
+    font-family: var(--font-primary);
+}
+
+#line-through{
+    position: relative;
+}
+
+#line-through > span {
+    position: absolute;
+    width: 40%;
+    border-top: 2px solid var(--colour-text-other);
+    left: 30%;
+    top: 70%;
+    opacity: 10%;
+}
+
+.slogan {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 150px;
+}
+
+.subsection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Category Options */
+.category-card__name {
+    font-size: 40px;
+    font-family: var(--font-primary);
+    color: var(--colour-text);
+    text-decoration: underline;
+    text-align: center;
+}
+
+.category-card__img {
+    height: 200px;
+    width: 250px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* About Us Section */
+
+.about {
+    font-size: 32px;
+    font-family: var(--font-secondary);
+    text-align: center;
+    /* padding-left: 20rem;
+    padding-right: 20rem; */
+}
+
+.about > p {
+    padding-bottom: 33px;
+}
