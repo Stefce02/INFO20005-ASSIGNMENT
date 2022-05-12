@@ -51,6 +51,10 @@
 }
 
 /* Category Options */
+.category-card {
+    padding-bottom: 2.5em;
+}
+
 .category-card__name {
     font-size: 40px;
     font-family: var(--font-primary);
@@ -60,16 +64,16 @@
 }
 
 .category-card__img {
-    height: 200px;
-    width: 250px;
-    margin-left: 40px;
-    margin-right: 40px;
+    height: 12em;
+    width: 15em;
+    margin-left: 4em;
+    margin-right: 4em;
 }
 
 /* About Us Section */
 
 .about {
-    font-size: 32px;
+    font-size: 25px;
     font-family: var(--font-secondary);
     text-align: center;
     /* padding-left: 20rem;
