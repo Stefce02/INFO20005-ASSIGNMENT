@@ -2,19 +2,19 @@
 .cluster {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
 }
 
 .cluster > * {
     /* top, right, bottom, left*/
-    margin: 1rem 2rem 1rem 2rem;
+    margin: 0.5em 1em 0.5em 1em;
 }
 
 .menu-icon{
-    height: 42.5px;
-    width: 42.5px;
+    height: 2.5em;
+    width: 2.5em;
     filter: var(--colour-icons);
     position: relative;
     top: 0.25em;
@@ -31,8 +31,10 @@
 }
 
 .search-icon {
-    height: 30px;
-    width: 30px;
+    /* height: 30px;
+    width: 30px; */
+    height: 2em;
+    width: 2em;
     position: absolute;
     top: 0.5em;
     right: 0em;
@@ -43,6 +45,7 @@
     background-color: var(--colour-primary);
     z-index: 1;
     position: fixed;
+    width: 100%;
 }
 
 .spacer {

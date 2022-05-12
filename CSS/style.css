@@ -68,7 +68,7 @@ h3 {
 /* Set font for headings */
 .menu {
     font-family: var(--font-primary);
-    font-size: 30px;
+    font-size: 2em;
 }
 
 /* Footer */
@@ -88,7 +88,6 @@ h3 {
 }
 
 /* Chat Icon */
-
 .chat {
     height: 60px;
     width: 60px;
@@ -99,7 +98,6 @@ h3 {
 }
 
 /* Page History */
-
 .history {
     font-size: 20px;
     font-family: var(--font-primary);
@@ -174,10 +172,9 @@ h3 {
 
 .btn-buy--large {
     width: 100%;
-
 }
-/* Input Boxes */
 
+/* Input Boxes */
 .input-quantity {
     width: 40%;
     height: 2em;
@@ -227,8 +224,8 @@ input {
     padding-top: 1rem;
     padding-bottom: 0.76em;
     width: 10em;
-    height: 50px;
-    font-size: 20px;
+    height: 2.5em;
+    font-size: 1.25em;
 }
 
 
