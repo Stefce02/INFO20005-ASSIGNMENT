@@ -50,13 +50,6 @@
     padding-bottom: 150px;
 }
 
-.subsection {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
 /* Category Options */
 .category-card__name {
     font-size: 40px;

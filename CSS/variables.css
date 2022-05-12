@@ -8,6 +8,11 @@
     --font-size-h2: 64px;
     --font-size-h3: 48px; 
     --font-size-text: 32px;
+
+    --font-size-price-big: 40px;
+    --font-size-title-big: 35px;
+    --font-size-price-small: 30px;
+    --font-size-title-small: 25px;
     
     /* Colour Palette */
     --colour-primary: #F2F5F4;

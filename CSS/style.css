@@ -104,6 +104,13 @@ h3 {
     padding: 2rem 0rem 2rem var(--indent);
 }
 
+.subsection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Buttons */
 /* responsive resize needed */
 .btn-more-container {

@@ -1,27 +1,42 @@
 /* Product Cards */
 
 .product-card__title {
-    font-size: 36px;
+    font-size: var(--font-size-title-big);
     font-family: var(--font-secondary);
     color: var(--colour-text);
     text-align: center;
 }
 
 .product-card__price {
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-price-big);
     font-family: var(--font-secondary);
     color: var(--colour-text);
     text-decoration: underline;
     text-align: center;
-    padding-top: 1rem;
-    margin-bottom: 40px;
+    padding-top: 0.5rem;
+    margin-bottom: 0.5em;
 }
 
 .product-card__image {
-    height: 350px;
-    width: 500px;
-    margin-left: 100px;
-    margin-right: 100px;
+    height: 20em;
+    width: 25em;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: -1.5em;
+    margin-top: -1.5em;
+}
+
+.product-card__image--small {
+    height: 15em;
+    width: 20em;
+}
+
+.product-card__price--small {
+    font-size: var(--font-size-price-small);
+}
+
+.product-card__title--small {
+    font-size: var(--font-size-title-small);
 }
 
 /* Image of Danish sofa doesn't resize the same as the other */
