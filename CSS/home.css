@@ -1,5 +1,6 @@
 
 /* Home page Image + Text */
+
 .home-image-back {
     display: flex;
     align-items: center;
@@ -9,8 +10,6 @@
 }
 
 .home-image {
-    max-height: 501px;
-    max-width: 920px;
     display: flex;
     align-items: center;
     justify-content: center;

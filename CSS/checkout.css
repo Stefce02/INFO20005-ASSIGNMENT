@@ -1,22 +1,5 @@
 
 /* Checkout */
-.sidebar-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.sidebar{
-    flex-basis: 30rem;
-    flex-grow: 1;
-}
-
-.not-sidebar{
-    flex-basis: 0;
-    flex-grow: 999;
-    min-width: 50%;
-}
-     
 .order-summary {
     border-color: black;
     border: 1px solid black;

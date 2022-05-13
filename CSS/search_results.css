@@ -48,14 +48,47 @@
 }
 
 /* Product Filter */
-.filter {
+.sort {
     padding: 0.5rem 0rem 0.5rem var(--indent);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.filter > .btn-more {
+.sort > .btn-more {
     margin-right: 4rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
+
+.filter {
+    background-color: var(--colour-tertiary);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: var(--indent);
+    margin-top: var(--indent);
+}
+
+.filter-name {
+    font-family: var(--font-secondary);
+    font-size: 28px;
+    color: var(--colour-text);
+}
+
+.filter-option {
+    border-bottom: 1px;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: var(--indent);
+    margin-right: var(--indent);
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.75em;
+}
+
+.open {
+    margin-left: auto;
+    height: 2em;
+}
+
