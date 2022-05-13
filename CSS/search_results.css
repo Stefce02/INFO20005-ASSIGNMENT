@@ -27,8 +27,18 @@
 }
 
 .product-card__image--small {
-    height: 15em;
-    width: 20em;
+    height: 12em;
+    width: 17em;
+    
+}
+
+.sidebar-container > .subsection > .product-card {
+    margin-right: 5em;
+}
+
+.sidebar-container > .subsection {
+    justify-content: flex-start;
+    margin-left: 7em;
 }
 
 .product-card__price--small {
