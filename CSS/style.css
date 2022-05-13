@@ -39,7 +39,7 @@ h2 {
     font-family: var(--font-primary);
     color: var(--colour-text);
     text-align: center;
-    padding-top: 125px;
+    padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
@@ -52,7 +52,7 @@ h2 {
 h3 {
     font-size: var(--font-size-h3);
     font-family: var(--font-primary);
-    padding: 0rem 0rem 2rem var(--indent);
+    padding: 0rem 0rem 1.5rem var(--indent);
 }
 
 .h3-other {
@@ -80,11 +80,15 @@ h3 {
 }
 
 .footer-icons > img {
-    height: 75px;
-    width: 90px;
-    margin-bottom: 150px;
+    width: 3em;
+    margin-bottom: 5em;
     margin-right: 20px; 
+    margin-top: -2em;
     filter: var(--colour-icons)
+}
+
+.footer-title {
+    font-size: var(--font-size-h3);
 }
 
 /* Chat Icon */
@@ -164,6 +168,11 @@ h3 {
 
 .btn--medium {
     width: 25em;
+}
+
+.btn--small {
+    width: 5em;
+    font-size: 1.5em;
 }
 
 .button {
