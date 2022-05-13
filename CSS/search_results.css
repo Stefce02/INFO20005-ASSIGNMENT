@@ -68,6 +68,11 @@
     margin-top: var(--indent);
 }
 
+.filter > h3 {
+    margin-top: 0.5em;
+    color: var(--colour-text);
+}
+
 .filter-name {
     font-family: var(--font-secondary);
     font-size: 28px;
@@ -85,6 +90,10 @@
     display: flex;
     align-items: center;
     padding-bottom: 0.75em;
+}
+
+.filter-option ~ .filter-option {
+    margin-top: 2em;
 }
 
 .open {
