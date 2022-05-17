@@ -167,16 +167,16 @@ h3 {
 }
 
 .btn--medium {
-    width: 25em;
+    width: 50%;
 }
 
 .btn--small {
-    width: 12.5em;
+    width: 100%;
     margin-bottom: 0.5em;
 }
 
 .btn--xsmall {
-    width: 5em;
+    width: 10%;
     font-size: 1.5em;
 }
 
@@ -186,6 +186,7 @@ h3 {
     align-items: center;
     justify-content: center;
     margin-top: 5em;
+    width: 100%;
 }
 
 /* Input Boxes */
@@ -251,3 +252,5 @@ input {
 } */
 
 /* \002b - plus symbol code */
+
+
