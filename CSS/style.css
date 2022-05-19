@@ -220,7 +220,7 @@ h3 {
 }
 
 input {
-    width: 20em;
+    width: 21.5em;
     height: 3em;
     background-color: var(--colour-input);
     font-family: var(--font-secondary);

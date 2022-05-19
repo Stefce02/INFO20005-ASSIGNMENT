@@ -92,6 +92,10 @@
     justify-content: space-between;
 }
 
+.discount > #code {
+    width: 0em;
+}
+
 .discount > .btn {
     width: 25%;
     height: 2.4em;
