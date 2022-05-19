@@ -11,56 +11,51 @@
 </head>
 <body>
 
-    <!-- Title -->
-    <div class = "cart-heading">
-        <h2> Your Cart </h2>
-        <!-- <img class = "open-and-close" src = "Images/Close.png" alt = "cross"> -->
-    </div>
-
-    <!-- Page divider -->
-    <div class = "divider"></div>
-
-    <!-- Cart Summary -->
-    <div class = "cart-summary">
-        <div class = "cart-product"> 
-            <img class = "cart-image" src="Images/Lounges/LOUNGE_SEYMOUR_11.png" alt = "Seymour Lounge" id = "product-image">
-            <div class = "cart-product-info">
-                <p class = "cart-product-title"> Seymour Lounge </p>
-                <p class = "cart-product-price"> $1799 </p>
-                <input class="input-quantity" type="number"> </input>
-            </div>  
-        </div>    
-        <img class = "open-and-close" src = "Images/Close.png" alt = "cross">
-    </div>
-
-    <div class = "divider"></div>
-
-    <div class = "discount">
-        <div class = "float-input">
-            <label for = "code"> Discount Code </label>
-            <input id = "code" class = "half-box"> </input>
+    <div class = "background">
+        <!-- Title -->
+        <div class = "cart-heading">
+            <h2> Your Cart </h2>
+            <!-- <img class = "close" src = "Images/Close.png" alt = "cross"> -->
         </div>
+
+        <!-- Cart Summary -->
+        <div class = "cart-summary">
+            <div class = "cart-product"> 
+                <img class = "cart-image" src="Images/Lounges/LOUNGE_SEYMOUR_11.png" alt = "Seymour Lounge" id = "product-image">
+                <div class = "cart-product-info">
+                    <p class = "cart-product-title"> Seymour Lounge </p>
+                    <p class = "cart-product-price"> $1799 </p>
+                    <input class="input-quantity" type="number"> </input>
+                </div>  
+                <img class = "open" src = "Images/Close.png" alt = "cross">
+            </div>    
+        </div>
+
+        <div class = "discount">
+            <div class = "float-input">
+                <label for = "code"> Discount Code </label>
+                <input id = "code" class = "half-box"> </input>
+            </div>
+            <button class = "btn btn-tertiary btn--xsmall"> Apply </button>
+        </div>
+
+        <!-- Final Information -->
+        <div class = "order-info">
+            <p class="order-total"> Total </p>
+            <p class="order-total-price"> $1799</p>
+        </div>
+
+        <!-- Checkout Button -->
+        <!-- <div class = "button"> -->
+            <a href="checkout.html"><button class="btn btn-primary btn--medium"> Checkout </button></a> 
+        <!-- </div> -->
+
+            <!-- Clear cart (change to make smaller first)-->
+        <div class = "button">
+            <button class = "btn btn-secondary btn--medium">  Checkout with Afterpay  </button>
+        </div>
+
+        <div class = "spacer"></div>
     </div>
-
-    <button class = "btn btn-tertiary btn--small"> Apply </button>
-
-    <!-- Final Information -->
-    <div class = "order-info">
-        <p class="order-total"> Total </p>
-        <p class="order-total-price"> $1799</p>
-    </div>
-
-    <!-- Checkout Button -->
-    <div class = "button">
-        <a href="checkout.html"><button class="btn btn-primary btn--medium"> Checkout </button></a> 
-    </div>
-
-        <!-- Clear cart (change to make smaller first)-->
-    <div class = "button">
-        <button class = "btn btn-secondary btn--medium">  Checkout with Afterpay  </button>
-    </div>
-
-    <div class = "spacer"></div>
-
 </body>
 </html>
