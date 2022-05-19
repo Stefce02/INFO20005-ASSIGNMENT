@@ -9,6 +9,10 @@ $(function() {
     $(".footer").load("footer.html");
 });
 
-// Can just copy and paste the code in each page (rubric incorrect)
+// Insert footer at bottom of all pages
+$(function() {
+    $(".cart").load("cart.html");
+});
+
 
 // onclick="newWindow(' + waypointas + ');">
