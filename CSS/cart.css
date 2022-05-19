@@ -21,7 +21,7 @@
     border-left: none;
     border-right: none;
     margin-bottom: 1em;
-    width: 85%;
+    width: 80%;
 }
 
 .cart-heading > h2 {
@@ -37,7 +37,7 @@
 
 /* Order Summary */
 .cart-summary {
-    width: 85%;
+    width: 80%;
     height: 50%;
     border-bottom: 1px;
     border: 1px solid black;
