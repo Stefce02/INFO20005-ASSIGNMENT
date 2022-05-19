@@ -146,8 +146,19 @@
     text-decoration: underline;
 }
 
-/* Checkout button */
+/* Checkout buttons */
 
-.background > .button {
+.checkout-btns {
+    width: 32em;
+}
+
+.background > .checkout-btns > .button {
+    margin-top: 0em;
+}
+
+.background > .checkout-btns > .button >.btn {
+    font-size: var(--font-size-title-small);
     margin-top: 1em;
+    width: 85%;
+    height: 2em;
 }
