@@ -9,10 +9,13 @@ $(function() {
     $(".footer").load("footer.html");
 });
 
-// Insert footer at bottom of all pages
-$(function() {
-    $(".cart").load("cart.html");
-});
+// $(function() {
+//     $(".cart").load("cart.html");
+// });
 
+// function toggleResponsive {
+//     //   var navbar = document.getElementById("myTopnav");
+//     //   navbar.classList.toggle("myTopnav");
+//     // }
 
 // onclick="newWindow(' + waypointas + ');">

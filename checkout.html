@@ -83,10 +83,50 @@
         </div>
 
         <!-- Order Summary -->
-        <div class = "order-summary sidebar">
-            <h3 class = "h3-other"> Order Summary </h3>
+        <div class = "background order-summary sidebar">
+            <h3 class = "h3-other cart cart-heading"> Order Summary </h3>
 
-            <div class = "summary-info">
+            <div class = "cart-product"> 
+                <img class = "cart-image" src="Images/Lounges/LOUNGE_SEYMOUR_11.png" alt = "Seymour Lounge" id = "product-image">
+                <div class = "cart-product-info">
+                    <p class = "cart-product-title"> Seymour Lounge </p>
+                    <input class="input-quantity" type="number"> </input>
+                </div>  
+                <p class = "cart-product-price"> $1799 </p>
+
+            </div> 
+            
+            <div class = "discount">
+                <div class = "float-input">
+                    <label for = "code"> Discount Code </label>
+                    <input id = "code" class = "half-box"> </input>
+                </div>
+                <button class = "btn btn-tertiary btn--xsmall"> Apply </button>
+            </div>
+    
+            <!-- Other Information -->
+            <div class = "other-information">
+                <div class = "sub-info">
+                    <p> Sub-Total </p>
+                    <p> $1619.10 </p>
+                </div>
+                <div class = "sub-info">
+                    <p> GST </p>
+                    <p> $179.90 </p>
+                </div>
+                <div class = "sub-info">
+                    <p> Shipping </p>
+                    <p> ? </p>
+                </div>
+            </div>
+    
+            <!-- Final Information -->
+            <div class = "order-info">
+                <p class="order-total"> Total </p>
+                <p class="order-total-price"> $1799</p>
+            </div>
+
+            <!-- <div class = "summary-info">
                 <img class = "order-summary-image" src="Images/Lounges/LOUNGE_SEYMOUR_11.png" alt = "Seymour Lounge" id = "product-image">
                 <p class = "order-summary-title"> Seymour Lounge </p>
                 <p class = "order-summary-price"> $1799 </p>
@@ -96,11 +136,11 @@
             <p class = "discount"> Discount Code </p>
             <button class="btn btn-tertiary btn--small" type="button"> Apply </button>
 
-            <!-- Pricing Information -->
+            Pricing Information
             <div class="order-total">
                 <p class="order-total"> Total </p>
                 <p class="order-total-price"> $1799</p>
-            </div>
+            </div> -->
         </div>
 
     </div>
