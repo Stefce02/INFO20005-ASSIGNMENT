@@ -25,7 +25,7 @@
     <div class = "sidebar-container">
 
         <!-- Forms -->
-        <div class = "not-sidebar">
+        <div class = "checkout not-sidebar">
             <h3> Checkout </h3>
             <ol class = "checkout-steps">
                 <li> 1. Personal Information </li>
@@ -78,19 +78,21 @@
                 
             </form>
 
+            <button class = "btn btn-secondary btn--small"> Go Back </button>
             <button class = "btn btn-primary btn--small"> Continue </button>
 
         </div>
 
         <!-- Order Summary -->
-        <div class = "background order-summary sidebar">
+        <div class = "order-summary sidebar">
             <h3 class = "h3-other cart cart-heading"> Order Summary </h3>
 
             <div class = "cart-product"> 
                 <img class = "cart-image" src="Images/Lounges/LOUNGE_SEYMOUR_11.png" alt = "Seymour Lounge" id = "product-image">
                 <div class = "cart-product-info">
                     <p class = "cart-product-title"> Seymour Lounge </p>
-                    <input class="input-quantity" type="number"> </input>
+                    <p class = "quantity-value"> 1 </p>
+                    <!-- <input class="input-quantity" type="number"> </input> -->
                 </div>  
                 <p class = "cart-product-price"> $1799 </p>
 
@@ -125,22 +127,6 @@
                 <p class="order-total"> Total </p>
                 <p class="order-total-price"> $1799</p>
             </div>
-
-            <!-- <div class = "summary-info">
-                <img class = "order-summary-image" src="Images/Lounges/LOUNGE_SEYMOUR_11.png" alt = "Seymour Lounge" id = "product-image">
-                <p class = "order-summary-title"> Seymour Lounge </p>
-                <p class = "order-summary-price"> $1799 </p>
-                <p class = "quantity"> 1 </p>
-            </div>
-
-            <p class = "discount"> Discount Code </p>
-            <button class="btn btn-tertiary btn--small" type="button"> Apply </button>
-
-            Pricing Information
-            <div class="order-total">
-                <p class="order-total"> Total </p>
-                <p class="order-total-price"> $1799</p>
-            </div> -->
         </div>
 
     </div>
