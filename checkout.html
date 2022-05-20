@@ -37,52 +37,115 @@
                     <li class = "not"> Finished </li>
                 </ol>
 
-                <form class = "personal-info">
+                <div class="step-1">
+                    <form class="login">
+                        <div class = "float-input">
+                            <label for = "Username"> Username/Email </label>
+                            <input id = "Username" type="email"> </input>
+                        </div>
+    
+                        <div class = "float-input">
+                            <label for = "full-name"> Password</label>
+                            <input id = "full-name"> </input>
+                        </div>
+                        <p class="forgot"> Forgot Password? </pc>
+                    </form>
 
-                    <div class = "float-input">
-                        <label for = "full-name"> First Name </label>
-                        <input id = "full-name" class = "half-box"> </input>
+                    <button class = "btn btn-secondary btn--medium"> Login </button>
+                    <button class = "btn btn-primary btn--medium"> Sign Up </button>
+                    <button class = "btn btn-secondary btn--medium"> Continue as Guest </button>
+
+                </div>
+                
+                <div class="step-2">
+                    <form class = "personal-info">
+
+                        <div class = "float-input">
+                            <label for = "full-name"> First Name </label>
+                            <input id = "full-name" class = "half-box"> </input>
+                        </div>
+    
+                        <div class = "float-input">
+                            <label for = "email"> Email </label>
+                            <input id = "email" class = "full-box" type="email"> </input>
+                        </div>
+    
+                        <div class = "float-input">
+                            <label for = "phone"> Phone (Optional) </label>
+                            <input id = "phone" class = "full-box" type="number"> </input>
+                        </div>
+    
+                        <div class = "float-input">
+                            <label for = "address"> Address </label>
+                            <input id = "address" class = "half-box"> </input>
+                        </div>
+    
+                        <div class = "float-input">
+                            <label for = "address-other">  Apartment, suite, etc. (Optional) </label>
+                            <input id = "address-other" class = "half-box"> </input>
+                        </div>
+    
+                        <div class = "float-input">
+                            <label for = "region"> Region </label>
+                            <input id = "region class = "third-box"> </input>
+                        </div>
+    
+                        <div class = "float-input">
+                            <label for = "city"> City </label>
+                            <input id = "city" class = "half-box"> </input>
+                        </div>
+    
+                        <div class = "float-input">
+                            <label for = "post-code"> Post Code </label>
+                            <input id = "post-code" class = "half-box"> </input>
+                        </div>
+                        
+                    </form>
+    
+                    <button class = "btn btn-secondary btn--xsmall"> Go Back </button>
+                    <button class = "btn btn-primary btn--xsmall"> Continue </button>
+                </div>
+
+                <div class="step-3">
+                    <div class="payment-options">
+                        <input type="radio"> </input>
+                        <image src="Images/Afterpay_Logo_Black-1.png" alt="Afterpay Logo"></image>
+                       
+                        <input type="radio"> </input>
+                        <image src="Images/PayPal-Logo.png" alt="Paypal Logo"></image>
+
+                        <input type="radio"> </input>
+                        <image src="Images/visa-mastercard-icon-6.jpg" alt="Credit card logos"></image>
                     </div>
 
-                    <div class = "float-input">
-                        <label for = "email"> Email </label>
-                        <input id = "email" class = "full-box" type="email"> </input>
-                    </div>
+                    <form class = "personal-info">
 
-                    <div class = "float-input">
-                        <label for = "phone"> Phone (Optional) </label>
-                        <input id = "phone" class = "full-box" type="number"> </input>
-                    </div>
+                        <div class = "float-input">
+                            <label for = "card-name"> Card Name </label>
+                            <input id = "card-name" class = "half-box"> </input>
+                        </div>
+    
+                        <div class = "float-input">
+                            <label for = "email"> Card Number </label>
+                            <input id = "email" class = "full-box"> </input>
+                        </div>
+    
+                        <div class = "float-input">
+                            <label for = "phone"> Card Expiry Date </label>
+                            <input id = "phone" class = "full-box" type="month"> </input>
+                        </div>
+    
+                        <div class = "float-input">
+                            <label for = "address"> Card CVN </label>
+                            <input id = "address" class = "half-box"> </input>
+                        </div>
+                        
+                    </form>
+    
+                    <button class = "btn btn-secondary btn--xsmall"> Go Back </button>
+                    <button class = "btn btn-primary btn--xsmall"> Pay Now </button>
+                </div>
 
-                    <div class = "float-input">
-                        <label for = "address"> Address </label>
-                        <input id = "address" class = "half-box"> </input>
-                    </div>
-
-                    <div class = "float-input">
-                        <label for = "address-other">  Apartment, suite, etc. (Optional) </label>
-                        <input id = "address-other" class = "half-box"> </input>
-                    </div>
-
-                    <div class = "float-input">
-                        <label for = "region"> Region </label>
-                        <input id = "region class = "third-box"> </input>
-                    </div>
-
-                    <div class = "float-input">
-                        <label for = "city"> City </label>
-                        <input id = "city" class = "half-box"> </input>
-                    </div>
-
-                    <div class = "float-input">
-                        <label for = "post-code"> Post Code </label>
-                        <input id = "post-code" class = "half-box"> </input>
-                    </div>
-                    
-                </form>
-
-                <button class = "btn btn-secondary btn--xsmall"> Go Back </button>
-                <button class = "btn btn-primary btn--xsmall"> Continue </button>
             </div>
 
         </div>
