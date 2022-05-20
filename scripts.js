@@ -9,6 +9,7 @@ $(function() {
     $(".footer").load("footer.html");
 });
 
+// Open cart
 $(function() {
     $("#cart").load("cart.html");
 });
@@ -20,20 +21,12 @@ function cartDisplay(){
     cart.classList.toggle("cart-shown");
 }
 
-// var cartIcon = document.getElementById("cart-icon");
-
-// if(cartIcon) {
-//     cartIcon.addEventListener("click", display);
-// }
-
-// function display() {
-//     console.log("click");
-// }
-
-
-// cartIcon.addEventListener('click', function handleClick(event) {
-//     console.log("click");
-//     event.target.classList.add('bg-yellow');
-// });
-
-// onclick="newWindow(' + waypointas + ');">
+function nextStep(){
+    console.log("clicked");
+    var next = document.getElementById("next");
+    next.classList.toggle("display-none");
+    if(next.classList.contains("display-none")){
+        var step = document.getElementById("step");
+        step.classlist.remove("display-none");
+    }
+}

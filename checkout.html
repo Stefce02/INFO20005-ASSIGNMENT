@@ -37,27 +37,33 @@
                     <li class = "not"> Finished </li>
                 </ol>
 
-                <div class="step-1">
+                <!-- Step 1: Login -->
+                <div class="step-1" id="next">
                     <form class="login">
                         <div class = "float-input">
                             <label for = "Username"> Username/Email </label>
-                            <input id = "Username" type="email"> </input>
+                            <input id = "Username" type="email" class = "full-box"> </input>
                         </div>
     
                         <div class = "float-input">
                             <label for = "full-name"> Password</label>
-                            <input id = "full-name"> </input>
+                            <input id = "full-name" class = "full-box" type="password"> </input>
                         </div>
                         <p class="forgot"> Forgot Password? </pc>
                     </form>
 
-                    <button class = "btn btn-secondary btn--medium"> Login </button>
-                    <button class = "btn btn-primary btn--medium"> Sign Up </button>
-                    <button class = "btn btn-secondary btn--medium"> Continue as Guest </button>
+                    <div class="login-btns">
+                        <button class = "btn btn-tertiary btn--medium" onclick="nextStep()"> Login </button>
+                        <p> </p>
+                        <button class = "btn btn-primary btn--medium"> Sign Up </button>
+                        <button class = "btn btn-secondary btn--medium"> Continue as Guest </button>
+                    </div>
+                    
 
                 </div>
                 
-                <div class="step-2">
+                <!-- Step 2: Shipping Information -->
+                <div  id="step" class="step-2 display-none">
                     <form class = "personal-info">
 
                         <div class = "float-input">
@@ -106,7 +112,9 @@
                     <button class = "btn btn-primary btn--xsmall"> Continue </button>
                 </div>
 
-                <div class="step-3">
+
+                <!-- Payment Information -->
+                <div class="step-3 display-none">
                     <div class="payment-options">
                         <input type="radio"> </input>
                         <image src="Images/Afterpay_Logo_Black-1.png" alt="Afterpay Logo"></image>

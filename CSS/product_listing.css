@@ -70,14 +70,6 @@
     
 }
 
-/* .description-txt {
-    font-family: var(--font-secondary);
-    font-size: var(--font-size-text);
-    color: var(--colour-btn-more);
-    padding-left: var(--indent);
-    padding-right: var(--indent);
-} */
-
 .purchase-btns {
     display: flex;
     flex-wrap: wrap;

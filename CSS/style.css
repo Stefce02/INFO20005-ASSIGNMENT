@@ -134,15 +134,14 @@ h3 {
 
 .not-sidebar{
     flex-basis: 0;
-    flex-grow: 999;
+    flex-grow: 500;
     min-width: 50%;
 }
 
 /* Cart */
-
 .cart-hidden {
     position: fixed;
-    right: -20em;
+    right: -200em;
 
 }
 
@@ -240,7 +239,7 @@ h3 {
     padding-top: 0.55em;
     padding-left: 0.85em;
     position: absolute;   
-    opacity: 35%; 
+    opacity: 50%; 
 }
 
 input {
@@ -249,6 +248,10 @@ input {
     background-color: var(--colour-input);
     font-family: var(--font-secondary);
 }
+
+/* .half-box {
+    width: 0%;
+} */
 
 .search > input, textarea {
     border-top: none;

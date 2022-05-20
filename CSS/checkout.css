@@ -5,7 +5,7 @@
     border-radius: 5px;
     background-color: var(--colour-tertiary);
     margin: 4.4em var(--indent) var(--indent) var(--indent); 
-    height: 35em;
+    height: 35rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -122,12 +122,20 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 5em;
-    display: none;
+    padding-bottom: 3em;
+    /* display: none; */
 }
 
 .step-1 > * {
-    padding-bottom: 1em;
+    padding-bottom: 1.25em;
+}
+
+.login > .float-input > input {
+    width: 33.5em;
+}
+
+.login > * {
+    padding-bottom: 0.75em;
 }
 
 .forgot {
@@ -136,19 +144,45 @@
     opacity: 60%;
 }
 
+.login-btns {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+
+.login-btns > * {
+    margin-bottom: 0.5em;
+}
+
+.login-btns > p {
+    border: 1.5px solid black;
+    width: 50%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 0.75em;
+}
+
 /* Person Information */
 .step-2 {
-    display: none;
+    /* display: none; */
 }
 
 /* Payment */
 .step-3 {
-    display: hidden;
+    /* display: none; */
 }
 
 .payment-options > * {
     height: 4em;
     width: 8em;
 }
+
+.display-none {
+    display: none;
+}
+
+
 
 
