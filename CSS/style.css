@@ -161,7 +161,8 @@ h3 {
 .btn {
     font-family: var(--font-secondary);
     padding: 0.5em 0.75em;
-    font-size: 2em;
+    font-size: 1.5em;
+    
     border: 1.5px solid black; 
     border-radius: 2px;
     text-align: center;
@@ -191,6 +192,7 @@ h3 {
     width: 50%;
 }
 
+/* Fix in product listing */
 .btn--small {
     width: 100%;
     margin-bottom: 0.5em;
