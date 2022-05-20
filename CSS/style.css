@@ -107,9 +107,9 @@ h3 {
 
 /* Page History */
 .history {
-    font-size: 20px;
+    font-size: 15px;
     font-family: var(--font-primary);
-    padding: 2rem 0rem 2rem var(--indent);
+    padding: 1rem 0rem 1.5rem var(--indent);
 }
 
 
@@ -128,7 +128,7 @@ h3 {
 }
 
 .sidebar{
-    flex-basis: 25rem;
+    flex-basis: 27.5rem;
     flex-grow: 1;
 }
 
@@ -162,7 +162,7 @@ h3 {
     font-family: var(--font-secondary);
     padding: 0.5em 0.75em;
     font-size: 1.5em;
-    
+
     border: 1.5px solid black; 
     border-radius: 2px;
     text-align: center;
@@ -200,7 +200,7 @@ h3 {
 
 .btn--xsmall {
     width: 10%;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .button {

@@ -4,7 +4,7 @@
     border: 1px solid black;
     border-radius: 5px;
     background-color: var(--colour-tertiary);
-    margin: var(--indent);
+    margin: 4.4em var(--indent) var(--indent) var(--indent); 
     height: 35em;
     display: flex;
     align-items: center;
@@ -70,9 +70,49 @@
     border: 1px solid black;
     border-radius: 5px;
     background-color: var(--colour-tertiary);
-    margin: var(--indent);
+    margin-left: var(--indent);
     height: 35em;
     /* display: flex;
     align-items: center; */
 }
+
+.not-sidebar > h3 {
+    padding-bottom: 0.75em;
+}
+
+.checkout-header {
+    border: 1px solid black;
+    border-radius: 5px 5px 0px 0px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width:100.1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+.checkout-header > li {
+    height: 2em;
+    text-align: center;
+    padding-top: 0.5em;
+    font-family: var(--font-secondary);
+    font-size: 1.25em;
+}
+
+
+.checkout-header > .not {
+    border: 1px solid black;
+    width: 20%;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.emphasised {
+    width: 40%;
+    text-decoration: underline;
+}
+
 
