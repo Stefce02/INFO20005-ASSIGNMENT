@@ -126,12 +126,14 @@
     /* display: none; */
 }
 
-.step-1 > * {
-    padding-bottom: 1.25em;
+.login {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.login > .float-input > input {
-    width: 33.5em;
+.step-1 > * {
+    padding-bottom: 1.25em;
 }
 
 .login > * {
