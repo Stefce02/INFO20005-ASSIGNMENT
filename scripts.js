@@ -26,6 +26,6 @@ function nextStep(){
     var next = document.getElementById("next");
     next.classList.toggle("display-none");
     if(next.classList.contains("display-none")){
-        document.getElementById('step').style.display = "block";
+        document.getElementById('step').style.display = "flex";
     }
 }

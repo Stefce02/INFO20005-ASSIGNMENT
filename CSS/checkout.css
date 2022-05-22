@@ -168,33 +168,39 @@
 
 /* Person Information */
 .step-2 {
-    display: none;
-    margin-top: 2em;
+    margin-top: 1.25em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
+    
 } 
 
-.personal-info > .float-input > input {
-    width: 20em;
-}
-
 .personal-info {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
+    width: 85%;
+    margin: auto;
 }
 
-.personal-info > .float-input {
-    padding: 0.5em 0.5em 0.5em 0.5em;
+.personal-info > .float-input, .two-in-row > .float-input, .three-in-row > .float-input{
+    padding: 1em 0em 1em 0em;
+}
+
+.two-in-row, .three-in-row{
+    display: flex;
+    justify-content: space-between;
+    /* width: 80%; */
+}
+
+.two-in-row > .float-input{
+    width: 48%;
+}
+
+.three-in-row > .float-input {
+    width: 30%;
 }
 
 .proceed {
-    width: 90%;
+    width: 85%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -202,9 +208,10 @@
 }
 
 .proceed > .btn {
-    width: 25%;
-    margin-top: 2em;
-    /* height: 2.5em; */
+    width: 30%;
+    margin-top: 1em;
+    height: 2.5em;
+    font-size: var(--font-size-text);
 }
 
 /* Payment */

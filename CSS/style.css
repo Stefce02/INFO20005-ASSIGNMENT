@@ -235,7 +235,19 @@ h3 {
     font-size: 16px;
     padding-top: 1em;
     padding-left: 0.6em;
+    /* width: 100%; */
+}
+
+.full-box {
     width: 100%;
+}
+
+.half-box {
+    width: 50%;
+}
+
+.third-box {
+    width: 33.3%;
 }
 
 .float-input > label {
@@ -254,9 +266,6 @@ input {
     font-family: var(--font-secondary);
 }
 
-/* .half-box {
-    width: 0%;
-} */
 
 .search > input, textarea {
     border-top: none;

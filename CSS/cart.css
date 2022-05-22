@@ -90,17 +90,18 @@
 .discount {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.discount > #code {
-    width: 0em;
+    justify-content: space-around;
+    width: 80%;
 }
 
 .discount > .btn {
     width: 25%;
     height: 2.4em;
     margin-left: 1em;
+}
+
+.discount > .float-input {
+    width: 75%;
 }
 
 .discount > .btn--xsmall {
