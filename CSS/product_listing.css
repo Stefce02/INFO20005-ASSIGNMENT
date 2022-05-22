@@ -79,9 +79,11 @@ main {
 }
 
 .product-info {
-    /* margin-left: var(--indent);
-    margin-right: var(--indent); */
+    margin-left: var(--indent);
+    margin-right: var(--indent);
     margin-top: var(--indent);
+    /* width: 80%;
+    margin: auto; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,7 +92,9 @@ main {
 
 .product-info > .filter-option {
     padding-bottom: 2em;
-    width: 75%;
+    /* margin-left: 0px;
+    margin-right: 0px; */
+    width: 85%;
 }
 
 .product-info > .filter-option:first-child  {
@@ -106,4 +110,5 @@ main {
     font-size: 20px;
     color: var(--colour-btn-more);
     padding-top: 0.75em;
+    line-height: 1.25em;
 }
