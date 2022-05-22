@@ -18,26 +18,28 @@
 }
 
 .product-card__image {
-    height: 20em;
-    width: 25em;
-    margin-left: 5em;
-    margin-right: 5em;
+    height: 12.5em;
+    width: 17.5em;
+    margin-left: 2em;
+    margin-right: 2em;
     margin-bottom: -1.5em;
     margin-top: -1.5em;
 }
 
 .product-card__image--small {
-    height: 12em;
-    width: 17em;
+    height: 10em;
+    width: 15em;
+    margin-bottom: -0.5em;
 }
 
 .not-sidebar > .subsection > .product-card {
-    margin-right: 5em;
+     margin-left: 3em; 
 }
 
 .not-sidebar > .subsection {
     justify-content: flex-start;
-    margin-left: 7em;
+    /* margin-left: 7em; */
+    /* width: 90%; */
 }
 
 .product-card__price--small {

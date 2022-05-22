@@ -51,7 +51,7 @@
 .slogan {
     font-size: 40px;
     padding-top: 20px;
-    padding-bottom: 150px;
+    padding-bottom: 15%;
 }
 
 /* Category Options */
@@ -60,7 +60,7 @@
 }
 
 .category-card__name {
-    font-size: 40px;
+    font-size: var(--font-size-title-big);
     font-family: var(--font-primary);
     color: var(--colour-text);
     text-decoration: underline;
@@ -68,10 +68,10 @@
 }
 
 .category-card__img {
-    height: 12em;
-    width: 15em;
-    margin-left: 4em;
-    margin-right: 4em;
+    height: 10em;
+    width: 12.5em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 /* About Us Section */
