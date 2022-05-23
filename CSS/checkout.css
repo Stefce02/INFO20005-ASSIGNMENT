@@ -271,9 +271,14 @@ input[type='radio']:checked:after {
 .confirmation {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
     height: 92.5%;
+    text-size-adjust: auto;
+}
+
+.confirmation > * {
+    margin: 2%;
 }
 
 .celebrate {
@@ -282,10 +287,18 @@ input[type='radio']:checked:after {
 
 .confirmation > h3 {
     padding: 0px;
+    width: 40%;
+    text-align: center;
 }
 
 .confirmation-txt {
+    text-align: center;
+    font-size: var(--font-size-text);
+    width: 50%;
+}
 
+.confirmation-txt > p {
+    margin-bottom: 4%;
 }
 
 

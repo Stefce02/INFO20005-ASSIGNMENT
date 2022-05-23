@@ -27,6 +27,11 @@ a:visited {
     text-decoration: underline;
 }
 
+p {
+    font-family: var(--font-secondary);
+    color: var(--colour-text);
+}
+
 /* Headings */
 
 h1 {
