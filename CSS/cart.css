@@ -1,7 +1,7 @@
 /* Cart */
 
 .background {
-    width: 35em;
+    width: 27.5em;
     height: 100%;
     background-color: var(--colour-primary);
     display: flex;
@@ -155,7 +155,7 @@
 /* Checkout buttons */
 
 .checkout-btns {
-    width: 32em;
+    width: 100%;
 }
 
 .background > .checkout-btns > .button {
