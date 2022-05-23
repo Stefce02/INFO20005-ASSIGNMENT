@@ -49,9 +49,11 @@ function nextStep(){
     step.setAttribute("id", "next");
     step_head.setAttribute("id", "next-head");
 
-    // Display similar products after confirmation
+    // Display similar products after confirmation and hide discount input box
     if(step.classList.contains("confirmation")) {
         document.getElementById("more").classList.remove("display-none");
+        document.getElementById("hide").classList.add("display-none");
+        document.getElementById("space").classList.add("other-information-hidden");
     }
 }
 

@@ -50,6 +50,10 @@
     margin-top: 20%;
 }
 
+.order-summary > .other-information-hidden {
+    margin-top: 40%;
+}
+
 .order-summary > .discount > .float-input > input{
     width: 14em;
     height: 2.75em;
