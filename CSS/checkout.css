@@ -264,10 +264,6 @@
     width: 1.5em;
 }
 
-.display-none {
-    display: none;
-}
-
 input[type='radio']:checked:after {
     width: 1.5em;
     height: 1.5em;
@@ -313,4 +309,6 @@ input[type='radio']:checked:after {
 }
 
 
-
+.display-none {
+    display: none;
+}

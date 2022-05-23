@@ -31,28 +31,28 @@
             <h3> Checkout </h3>
             <div class="checkout">
 
-                <ol class = "checkout-header" id="checkout-header-one">
+                <ol class = "checkout-header" id="next-head">
                     <li class = "emphasised"> 1. Login </li>
                     <li class = "not"> 2 </li>
                     <li class = "not"> 3 </li>
                     <li class = "not"> 4 </li>
                 </ol>
 
-                <ol class = "checkout-header display-none" id="checkout-header-two">
+                <ol class = "checkout-header display-none" id="step-head">
                     <li class = "not complete"> <image src="Images/Icons/tick-svgrepo-com.svg" alt="checkmark"> </li>
                     <li class = "emphasised"> 2. Shipping Information </li>
                     <li class = "not"> 3 </li>
                     <li class = "not"> 4 </li>
                 </ol>
 
-                <ol class = "checkout-header display-none" id="checkout-header-three">
+                <ol class = "checkout-header display-none" id="step-head">
                     <li class = "not complete"> <image src="Images/Icons/tick-svgrepo-com.svg" alt="checkmark"> </li>
                     <li class = "not complete"> <image src="Images/Icons/tick-svgrepo-com.svg" alt="checkmark"> </li>
                     <li class = "emphasised"> 3. Payment Details </li>
                     <li class = "not"> 4 </li>
                 </ol>
 
-                <ol class = "checkout-header display-none" id="checkout-header-finish">
+                <ol class = "checkout-header display-none" id="step-head">
                     <li class = "not complete"> <image src="Images/Icons/tick-svgrepo-com.svg" alt="checkmark"> </li>
                     <li class = "not complete"> <image src="Images/Icons/tick-svgrepo-com.svg" alt="checkmark"> </li>
                     <li class = "not complete"> <image src="Images/Icons/tick-svgrepo-com.svg" alt="checkmark"> </li>
@@ -85,7 +85,7 @@
                 </div>
                 
                 <!-- Step 2: Shipping Information -->
-                <div class="step-2 display-none">
+                <div id="step" class="step-2 display-none">
                     <form class = "personal-info">
 
                         <div class = "float-input">
@@ -136,13 +136,13 @@
         
                     <div class = "proceed">
                         <button class = "btn btn-secondary btn--xsmall"> Go Back </button>
-                        <button class = "btn btn-primary btn--xsmall"> Continue </button>
+                        <button class = "btn btn-primary btn--xsmall" onclick="nextStep()"> Continue </button>
                     </div>     
                 </div>
 
 
                 <!-- Payment Information -->
-                <div class="step-3 display-none">
+                <div id="step" class="step-3 display-none">
                     <div class="payment-options">
                         <div class="pay-choice">
                             <input type="radio"> </input>
@@ -187,11 +187,11 @@
     
                     <div class = "proceed">
                         <button class = "btn btn-secondary btn--xsmall"> Go Back </button>
-                        <button class = "btn btn-primary btn--xsmall"> Continue </button>
+                        <button class = "btn btn-primary btn--xsmall" onclick="nextStep()"> Continue </button>
                     </div>     
                 </div>
 
-                <div class = "confirmation display-none">
+                <div id="step" class = "confirmation display-none">
                     <image class = "celebrate" src="Images/Icons/Party Popper.svg" alt="party popper"></image>
                     <h3> Thank You for Shopping With OZ</h3>
                     <div class = "confirmation-txt">

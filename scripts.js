@@ -9,24 +9,59 @@ $(function() {
     $(".footer").load("footer.html");
 });
 
-// Open cart
+// Load cart html
 $(function() {
     $("#cart").load("cart.html");
 });
 
 
+// Open Cart on click
 function cartDisplay(){
     console.log("clicked");
     var cart = document.getElementById("cart");
     cart.classList.toggle("cart-shown");
 }
 
+// Progress forward through the stages of the cart
 function nextStep(){
     console.log("clicked");
     var next = document.getElementById("next");
-    next.classList.toggle("display-none");
-    if(next.classList.contains("display-none")){
-        document.getElementsByClassName("step-2").style.display = "flex";
-        // document.getElementById('step').style.display = "flex";
-    }
+    var step = document.getElementById("step");
+    var next_head = document.getElementById("next-head");
+    var step_head = document.getElementById("step-head");
+    
+    next.classList.add("display-none");
+    next_head.classList.add("display-none");
+
+    next.removeAttribute("id", "next");
+    next_head.removeAttribute("id", "next-head");
+
+    step.classList.remove("display-none");
+    step_head.classList.remove("display-none");
+
+    step.setAttribute("id", "next");
+    step_head.setAttribute("id", "next-head");
 }
+
+// Progress backward through the stages of the cart
+function lastStep(){
+    console.log("clicked");
+    var next = document.getElementById("next");
+    var step = document.getElementById("step");
+    var next_head = document.getElementById("next-head");
+    var step_head = document.getElementById("step-head");
+    
+    next.classList.add("display-none");
+    next_head.classList.add("display-none");
+
+    next.removeAttribute("id", "next");
+    next_head.removeAttribute("id", "next-head");
+
+    step.classList.remove("display-none");
+    step_head.classList.remove("display-none");
+
+    step.setAttribute("id", "next");
+    step_head.setAttribute("id", "next-head");
+}
+
+
