@@ -49,6 +49,10 @@ function nextStep(){
     step.setAttribute("id", "next");
     step_head.setAttribute("id", "next-head");
 
+    // Display similar products after confirmation
+    if(step.classList.contains("confirmation")) {
+        document.getElementById("more").classList.remove("display-none");
+    }
 }
 
 // Progress backward through the stages of the checkout
