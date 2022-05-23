@@ -78,8 +78,10 @@
     padding-bottom: 0.75em;
 }
 
+
+/* Checkout Headers */
 .checkout-header {
-    border: 1px solid black;
+    border: 1.5px solid black;
     border-radius: 5px 5px 0px 0px;
     border-top: none;
     border-left: none;
@@ -112,6 +114,15 @@
     width: 40%;
     text-decoration: underline;
 }
+
+.complete {
+    background-color: var(--colour-text-other);
+}
+
+.complete:first-child {
+    border-radius: 5px 0px 0px 0px;
+}
+
 
 /* Checkout Forms */
 
