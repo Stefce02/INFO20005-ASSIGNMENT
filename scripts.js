@@ -14,6 +14,18 @@ $(function() {
     $("#cart").load("cart.html");
 });
 
+// Load hamburger menu html code
+$(function() {
+    $("#hamburger").load("hamburger.html");
+});
+
+// Open Hamburger Menu on click
+function menuDisplay(){
+    console.log("clicked");
+    var menu = document.getElementById("hamburger");
+    menu.classList.toggle("menu-shown");
+}
+
 // Open Cart on click
 function cartDisplay(){
     console.log("clicked");
