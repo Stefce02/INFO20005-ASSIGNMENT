@@ -195,7 +195,7 @@ h3 {
     background-color: var(--colour-btn-tertiary);
 }
 
-.btn:hover, .btn:hover {
+.btn:hover {
     box-shadow: 0px 0px 10px black;
 }
 
@@ -220,6 +220,16 @@ h3 {
     justify-content: center;
     margin-top: 5em;
     width: 100%;
+}
+
+.btn-more {
+    border: none;
+    text-decoration: underline;
+}
+
+.btn-more:hover {
+    box-shadow: none;
+    text-shadow:  0px 2px 25px black;;
 }
 
 /* Input Boxes */
