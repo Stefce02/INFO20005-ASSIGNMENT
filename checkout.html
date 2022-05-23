@@ -38,7 +38,7 @@
                 </ol>
 
                 <!-- Step 1: Login -->
-                <div class="step-1" id="next">
+                <div class="step-1 display-none" id="next">
                     <form class="login">
                         <div class = "float-input">
                             <label for = "Username"> Username/Email </label>
@@ -122,42 +122,61 @@
                 <!-- Payment Information -->
                 <div class="step-3 display-none">
                     <div class="payment-options">
-                        <input type="radio"> </input>
-                        <image src="Images/Afterpay_Logo_Black-1.png" alt="Afterpay Logo"></image>
+                        <div class="pay-choice">
+                            <input type="radio"> </input>
+                            <image class = "pay-logo" src="Images/Afterpay_Logo_Black-1.png" alt="Afterpay Logo"></image>
+                        </div>
                        
-                        <input type="radio"> </input>
-                        <image src="Images/PayPal-Logo.png" alt="Paypal Logo"></image>
-
-                        <input type="radio"> </input>
-                        <image src="Images/visa-mastercard-icon-6.jpg" alt="Credit card logos"></image>
+                        <div class="pay-choice">
+                            <input type="radio"> </input>
+                            <image class = "pay-logo" src="Images/PayPal-Logo.png" alt="Paypal Logo"></image>
+                        </div>
+                        <div class="pay-choice">
+                            <input type="radio"> </input>
+                            <image class = "pay-logo" src="Images/visa-mastercard-icon-6.jpg" alt="Credit card logos"></image>
+                        </div>
                     </div>
 
                     <form class = "personal-info">
 
                         <div class = "float-input">
                             <label for = "card-name"> Card Name </label>
-                            <input id = "card-name" class = "half-box"> </input>
+                            <input id = "card-name" class = "full-box"> </input>
                         </div>
     
                         <div class = "float-input">
                             <label for = "email"> Card Number </label>
                             <input id = "email" class = "full-box"> </input>
                         </div>
-    
-                        <div class = "float-input">
-                            <label for = "phone"> Card Expiry Date </label>
-                            <input id = "phone" class = "full-box" type="month"> </input>
-                        </div>
-    
-                        <div class = "float-input">
-                            <label for = "address"> Card CVN </label>
-                            <input id = "address" class = "half-box"> </input>
+                        
+                        <div class="two-in-row">
+                            <div class = "float-input">
+                                <label for = "phone"> Card Expiry Date </label>
+                                <input id = "phone" class = "full-box" type="month"> </input>
+                            </div>
+        
+                            <div class = "float-input">
+                                <label for = "address"> Card CVN </label>
+                                <input id = "address" class = "full-box"> </input>
+                            </div>
                         </div>
                         
                     </form>
     
-                    <button class = "btn btn-secondary btn--xsmall"> Go Back </button>
-                    <button class = "btn btn-primary btn--xsmall"> Pay Now </button>
+                    <div class = "proceed">
+                        <button class = "btn btn-secondary btn--xsmall"> Go Back </button>
+                        <button class = "btn btn-primary btn--xsmall"> Continue </button>
+                    </div>     
+                </div>
+
+                <div class = "confirmation">
+                    <image class = "celebrate" src="Images/Icons/Party Popper.svg" alt="party popper"></image>
+                    <h3> Thank You for Shopping With OZ</h3>
+                    <div class = "confirmation-txt">
+                        <p> You will shortly receive the order confirmation 
+                            and order details through email </p>
+                        <p> Order Number: #157156 </p>
+                    </div>
                 </div>
 
             </div>
