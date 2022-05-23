@@ -22,46 +22,58 @@ function cartDisplay(){
     cart.classList.toggle("cart-shown");
 }
 
-// Progress forward through the stages of the cart
+// Progress forward through the stages of the checkout
 function nextStep(){
     console.log("clicked");
     var next = document.getElementById("next");
     var step = document.getElementById("step");
+    var back = document.getElementById("back");
+    var back_head = document.getElementById("back-head");
     var next_head = document.getElementById("next-head");
     var step_head = document.getElementById("step-head");
+
+    if(back) {
+        back.removeAttribute("id", "back");
+        back_head.removeAttribute("id", "back");
+    }
     
     next.classList.add("display-none");
     next_head.classList.add("display-none");
 
-    next.removeAttribute("id", "next");
-    next_head.removeAttribute("id", "next-head");
+    next.setAttribute("id", "back");
+    next_head.setAttribute("id", "back-head");
 
     step.classList.remove("display-none");
     step_head.classList.remove("display-none");
 
     step.setAttribute("id", "next");
     step_head.setAttribute("id", "next-head");
+
 }
 
-// Progress backward through the stages of the cart
+// Progress backward through the stages of the checkout
+
+// Going back two steps doesn't work
 function lastStep(){
     console.log("clicked");
     var next = document.getElementById("next");
     var step = document.getElementById("step");
+    var back = document.getElementById("back");
+    var back_head = document.getElementById("back-head");
     var next_head = document.getElementById("next-head");
     var step_head = document.getElementById("step-head");
     
     next.classList.add("display-none");
     next_head.classList.add("display-none");
 
-    next.removeAttribute("id", "next");
-    next_head.removeAttribute("id", "next-head");
+    next.setAttribute("id", "step");
+    next_head.setAttribute("id", "step-head");
 
-    step.classList.remove("display-none");
-    step_head.classList.remove("display-none");
-
-    step.setAttribute("id", "next");
-    step_head.setAttribute("id", "next-head");
+    back.classList.remove("display-none");
+    back_head.classList.remove("display-none");
+    
+    back.setAttribute("id", "next");
+    back_head.setAttribute("id", "next-head");
 }
 
 
