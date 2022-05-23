@@ -70,12 +70,6 @@ h3 {
     font-family: var(--font-secondary);
 }
 
-/* Set font for headings */
-.menu {
-    font-family: var(--font-primary);
-    font-size: 2em;
-}
-
 /* Footer */
 .footer-icons {
     display: flex;
