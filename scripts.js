@@ -9,11 +9,10 @@ $(function() {
     $(".footer").load("footer.html");
 });
 
-// Load cart html
+// Load cart html code
 $(function() {
     $("#cart").load("cart.html");
 });
-
 
 // Open Cart on click
 function cartDisplay(){
@@ -58,16 +57,13 @@ function nextStep(){
 }
 
 // Progress backward through the stages of the checkout
-
 // Going back two steps doesn't work
 function lastStep(){
     console.log("clicked");
     var next = document.getElementById("next");
-    var step = document.getElementById("step");
     var back = document.getElementById("back");
     var back_head = document.getElementById("back-head");
     var next_head = document.getElementById("next-head");
-    var step_head = document.getElementById("step-head");
     
     next.classList.add("display-none");
     next_head.classList.add("display-none");
