@@ -160,3 +160,18 @@
         width: 2.5em;
     }
 }
+
+@media screen and (max-width: 550px) {
+    .menu-icon{
+        height: 2em;
+        width: 2em;
+    }
+    .hamburger-line {
+        width: 1.5em;
+        height: 0.1em;
+    }
+    #logo {
+        height: 3em;
+        width: 10em;
+    }
+}
