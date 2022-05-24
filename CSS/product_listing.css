@@ -23,11 +23,10 @@ main {
 }
 
 .product-sub-image {
-    height: 13em;
-    width: 15em;
-    /* height: 50%; */
-    width: 100%; 
-    
+    /* height: 13em;
+    width: 15em; */
+    height: 50%;
+    width: 100%;  
 }
 
 /* Product Info + Actions */
@@ -39,6 +38,41 @@ main {
     justify-content: space-between;
 }
 
+.product-actions-under {
+    width: 80%;
+    margin: auto;
+    display: none;
+    padding-top: 1em;
+
+}
+
+.main-product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-product-info > .product-title {
+    width: 50%;
+}
+
+.product-actions-under > .in-stock {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+}
+
+.product-actions-under > .in-stock > .in-stock-icon {
+    height: 1em
+}
+
+.product-actions-under > .in-stock > .sub-txt {
+    font-size: 16px;
+}
+
+.product-actions-under > .purchase-btns  .btn {
+    font-size: 1.25em;
+}
 
 .product-title {
     font-family: var(--font-secondary);
@@ -52,7 +86,7 @@ main {
 }
 
 .sub-txt {
-    font-size: 20px;
+    font-size: var(--font-size-text);
     font-family: var(--font-secondary);
 }
 
@@ -79,8 +113,10 @@ main {
 }
 
 .product-info {
-    margin-left: var(--indent);
-    margin-right: var(--indent);
+    /* margin-left: var(--indent);
+    margin-right: var(--indent); */
+    width: 90%;
+    margin: auto;
     margin-top: var(--indent);
     display: flex;
     justify-content: center;
@@ -103,8 +139,31 @@ main {
 
 .filter-option > .description-txt {
     font-family: var(--font-secondary);
-    font-size: 20px;
+    font-size: var(--font-size-text);
     color: var(--colour-btn-more);
     padding-top: 0.75em;
     line-height: 1.25em;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 800px) {
+    .other-images {
+        display: none;
+    }
+    .product-image {
+        width: 100%;
+        height: 100%;
+        margin-left: 0em;
+    }
+    .product-image-gallery {
+        width: 100%;
+    }
+    .product-actions {
+        display: none;
+    }
+    .product-actions-under {
+        display: block;
+    }
+
 }
