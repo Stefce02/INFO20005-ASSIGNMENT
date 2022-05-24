@@ -129,7 +129,7 @@ h3 {
 }
 
 .not-sidebar{
-    flex-basis: 0;
+    flex-basis: 0rem;
     flex-grow: 999;
     min-width: 50%;
 }
@@ -301,22 +301,22 @@ input {
 }
 
 /* Media Queries */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
     .chat {
         width: 2.5em;
     }
     .history {
-        padding-top: 0em;
+        display: none;
     }
-}
-
-@media screen and (max-width: 950px) {
     .h2-left {
         display: block;
         margin: 0em;
         text-align: center;
     }
-    .history, .chat {
+}
+
+@media screen and (max-width: 950px) {
+    .chat {
         display: none;
     }
 }
