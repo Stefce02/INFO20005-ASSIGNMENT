@@ -92,18 +92,11 @@ h3 {
 
 /* Chat Icon */
 .chat {
-    height: 60px;
-    width: 60px;
+    width: 3em;
     filter: var(--colour-icons);
     position: fixed;
-    right: 20px;
-    bottom: 20px;
-}
-
-@media screen and (max-width: 600px) {
-    .chat {
-        display: none;
-    }
+    right: 10px;
+    bottom: 10px;
 }
 
 /* Page History */
@@ -302,10 +295,29 @@ input {
     outline: none;
     padding-top: 1rem;
     padding-bottom: 0.76em;
-    width: 10em;
+    width: 100%;
     height: 2.5em;
     font-size: 1.25em;
 }
 
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .chat {
+        width: 2.5em;
+    }
+    .history {
+        padding-top: 0em;
+    }
+}
 
+@media screen and (max-width: 950px) {
+    .h2-left {
+        display: block;
+        margin: 0em;
+        text-align: center;
+    }
+    .history, .chat {
+        display: none;
+    }
+}
 

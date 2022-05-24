@@ -39,9 +39,7 @@
 }
 
 .not-sidebar > .subsection {
-    /* justify-content: flex-start; */
-    margin-left: 7em;
-
+    margin-left: 5em;
 }
 
 .product-card__price--small {
@@ -115,3 +113,34 @@
     height: 1em;
 }
 
+/* Mobile Changes */
+
+.phone-search {
+  display: none;
+  justify-content: center;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+.filter-icon {
+    width:2em;
+    position: relative;
+    top: 0.25em;
+    margin-left: 2em;
+    filter: var(--colour-icons);
+}
+
+@media screen and (max-width: 950px) {
+    .phone-search {
+        display: flex;
+    }
+    .sort-by, .filter {
+        display: none;
+    }
+    .not-sidebar > .subsection {
+        margin-left: 0em;
+        width: 85%;
+        margin: auto;
+    }
+    
+}
