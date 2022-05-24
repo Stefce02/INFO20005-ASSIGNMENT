@@ -33,6 +33,9 @@
     text-align: center;
     color: var(--colour-text);
     font-family: var(--font-primary);
+    padding-top: 0.1em;
+    margin: auto;
+    width: 80%;
 }
 
 #line-through{
@@ -50,7 +53,7 @@
 
 .slogan {
     font-size: var(--font-size-h3);
-    padding-top: 20px;
+    padding-top: 0.5em;
     padding-bottom: 15%;
 }
 
@@ -88,4 +91,34 @@
 
 .about > p {
     padding-bottom: 33px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+    .home-image-back {
+        width: 60%;
+    }
+    .home-image {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .home-image-back {
+        width: 70%;
+    }
+    .home-image {
+        width: 85%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .home-image-back {
+        width: 75%;
+    }
+    .home-image {
+        width: 90%;
+        height: 55%;
+    }
 }

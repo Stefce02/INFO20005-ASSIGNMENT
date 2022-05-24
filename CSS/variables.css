@@ -37,9 +37,9 @@
 
 @media screen and (max-width: 1200px) {
     :root {
-    --font-size-h1: 56px;
-    --font-size-h2: 40px;
-    --font-size-h3: 30px; 
+    --font-size-h1: 52px;
+    --font-size-h2: 36px;
+    --font-size-h3: 26px; 
 
     --font-size-price-big: 27.5px;
     --font-size-title-big: 22.5px;
