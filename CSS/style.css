@@ -100,6 +100,12 @@ h3 {
     bottom: 20px;
 }
 
+@media screen and (max-width: 600px) {
+    .chat {
+        display: none;
+    }
+}
+
 /* Page History */
 .history {
     font-size: 15px;
