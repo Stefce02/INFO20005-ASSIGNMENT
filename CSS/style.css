@@ -19,7 +19,7 @@ body {
 }
 
 a {
-    color: black;
+    color: var(--colour-text);
     text-decoration: none;
 }
 

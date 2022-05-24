@@ -50,6 +50,7 @@
 }
 
 .menu {
+    color: var(--colour-text);
     font-family: var(--font-primary);
     font-size: 2em;
 }
