@@ -142,7 +142,7 @@ main {
 
 /* Media Queries */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 650px) {
     .product-image {
         width: 100%;
         height: 100%;
