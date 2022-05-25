@@ -101,6 +101,10 @@
     .home-image {
         width: 80%;
     }
+    .category-card__img {
+        height: 8em;
+        width: 10em;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -120,5 +124,9 @@
     .home-image {
         width: 90%;
         height: 55%;
+    }
+    .category-card__img {
+        height: 6em;
+        width: 8em;
     }
 }
