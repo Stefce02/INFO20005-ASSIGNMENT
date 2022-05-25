@@ -83,8 +83,6 @@
     font-size: var(--font-size-text);
     font-family: var(--font-secondary);
     text-align: center;
-    /* padding-left: 20rem;
-    padding-right: 20rem; */
     width: 70%;
     margin: auto;
 }
