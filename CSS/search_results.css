@@ -153,5 +153,13 @@
         width: 85%;
         margin: auto;
     }
+    .product-card__image {
+        height: 10em;
+        width: 15em;
+    }
+    .product-card__image--small {
+        height: 8em;
+        width: 12em;
+    }
     
 }
