@@ -13,6 +13,8 @@
     --font-size-title-big: 27.5px;
     --font-size-price-small: 30px;
     --font-size-title-small: 25px;
+
+    --font-size-btn: 1.5em;
     
     /* Colour Palette */
     --colour-primary: #F2F5F4;
@@ -46,6 +48,28 @@
     --font-size-title-big: 22.5px;
     --font-size-price-small: 25px;
     --font-size-title-small: 20px;
+
+    --font-size-btn: 1.25em;
     }
     
 }
+
+@media screen and (max-width: 700px) {
+    :root {
+    --font-size-h1: 40px;
+    --font-size-h2: 34px;
+    --font-size-h3: 24px; 
+    --font-size-text: 16px;
+
+    --font-size-price-big: 22px;
+    --font-size-title-big: 18px;
+    --font-size-price-small: 20px;
+    --font-size-title-small: 16px;
+
+    --font-size-btn: 1.125em;
+
+    }
+    
+    
+}
+

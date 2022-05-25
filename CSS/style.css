@@ -176,7 +176,7 @@ h3 {
 .btn {
     font-family: var(--font-secondary);
     padding: 0.5em 0.75em;
-    font-size: 1.5em;
+    font-size: var(--font-size-btn);
     border: 1.5px solid black; 
     border-radius: 2px;
     text-align: center;
