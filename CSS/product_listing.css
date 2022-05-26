@@ -132,7 +132,7 @@ main {
 }
 
 .product-info > .filter-option:first-child > .filter-name  {
-    font-size: 30px;
+    font-size: var(--font-size-price-big);
 }
 
 .filter-option > .description-txt {
