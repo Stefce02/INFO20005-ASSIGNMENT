@@ -133,40 +133,37 @@ h3 {
 }
 
 /* Open Cart and Hamburger Menu */
-.hidden {
-   display: none;
+.hidden-cart {
+   position: fixed;
+   right: -100em;
 }
+
+.hidden-menu {
+    position: fixed;
+    left: -100em;
+ }
 
 .cart-shown {
     display: block;
-    position: fixed;
     height: 100%;
     z-index: 100;
     top: 0em;
-    right:0em;
-    animation: swipe 0.25s;
-    transform-origin: 95% 10%;
+    right: 0em;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .menu-shown {
     display: block;
-    position: fixed;
     height: 100%;
     z-index: 100;
     top: 0em;
-    left:0em;
-    animation: swipe 0.25s;
-    transform-origin: 25% 10%;
+    left: 0em;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-@keyframes swipe {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-
+#cart {
+    width: 30%;
+    height: 100%;
 }
 
 /* Buttons */
@@ -297,6 +294,18 @@ input {
 }
 
 /* Media Queries */
+@media screen and (max-width: 1600px) {
+    #cart {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #cart {
+        width: 40%;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .chat {
         width: 2.5em;
@@ -312,6 +321,9 @@ input {
     .footer-icons > img {
         width: 2.5em;
         margin: -1em 0.75em 5em 0.5em;
+    }
+    #cart {
+        width: 45%;
     }
 }
 
@@ -331,6 +343,9 @@ input {
         flex-grow: 0;
         min-width: 0%;
     }
+    #cart {
+        width: 55%;
+    }
 
 }
 
@@ -347,6 +362,9 @@ input {
     .footer-icons > img {
         width: 2em;
         margin: -0.5em 0.75em 5em 0.5em;
+    }
+    #cart {
+        width: 100%;
     }
 }
 
