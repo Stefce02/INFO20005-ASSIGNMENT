@@ -180,6 +180,9 @@
     .spacer {
         height: 10em;
     }
+    .spacer {
+        height: 6em;
+    }
 }
 
 @media screen and (max-width: 300px) {
@@ -195,4 +198,5 @@
         height: 2.5em;
         width: 7.5em;
     }
+   
 }
