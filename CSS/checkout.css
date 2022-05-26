@@ -97,7 +97,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* margin-bottom: 1em; */
 }
 
 .checkout-header > li {
@@ -105,7 +104,8 @@
     text-align: center;
     padding-top: 0.5em;
     font-family: var(--font-secondary);
-    font-size: var(--font-size-btn);
+    font-size: var(--font-size-text);
+    width: 50%;
 }
 
 
@@ -140,7 +140,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 3em;
 }
 
 .login {
@@ -150,11 +149,11 @@
 }
 
 .step-1 > * {
-    padding-bottom: 1.25em;
+    margin-bottom: 1.25em;
 }
 
 .login > * {
-    padding-bottom: 0.75em;
+    margin-bottom: 0.75em;
 }
 
 .forgot {
@@ -185,7 +184,6 @@
 
 /* Personal Information */
 .step-2 {
-    margin-top: 1.25em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -204,7 +202,6 @@
 .two-in-row, .three-in-row{
     display: flex;
     justify-content: space-between;
-    /* width: 80%; */
 }
 
 .two-in-row > .float-input{
@@ -226,7 +223,7 @@
 .proceed > .btn {
     width: 30%;
     margin-top: 1em;
-    height: 2.5em;
+    height: 2.125em;
     font-size: var(--font-size-btn);
 }
 
@@ -385,5 +382,9 @@ input[type='radio']:checked:after {
     .two-in-row .float-input, .three-in-row .float-input{
         width: 100%;  
     }
-    
+
+    .pay-choice > .pay-logo {
+        width: 60%;
+        margin-left: 0.375em;
+    }
 }
