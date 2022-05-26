@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Questrial&display=swap');
+
+:root {
+    /* Fonts and Sizing */
+    --font-primary: 'Playfair Display', serif;
+    --font-secondary: 'Questrial', sans-serif;  
+    --font-size-h1: 64px;
+    --font-size-h2: 56px;
+    --font-size-h3: 40px; 
+    --font-size-text: 20px;
+
+    --font-size-price-big: 32.5px;
+    --font-size-title-big: 27.5px;
+    --font-size-price-small: 30px;
+    --font-size-title-small: 25px;
+
+    --font-size-btn: 1.5em;
+}
+
+@media screen and (max-width: 1200px) {
+    :root {
+    --font-size-h1: 56px;
+    --font-size-h2: 40px;
+    --font-size-h3: 30px; 
+    --font-size-text: 16px;
+
+    --font-size-price-big: 27.5px;
+    --font-size-title-big: 22.5px;
+    --font-size-price-small: 25px;
+    --font-size-title-small: 20px;
+
+    --font-size-btn: 1.25em;
+    }  
+}
+
+@media screen and (max-width: 700px) {
+    :root {
+    --font-size-h1: 40px;
+    --font-size-h2: 34px;
+    --font-size-h3: 24px; 
+    --font-size-text: 16px;
+
+    --font-size-price-big: 22px;
+    --font-size-title-big: 18px;
+    --font-size-price-small: 20px;
+    --font-size-title-small: 16px;
+
+    --font-size-btn: 1.125em;
+
+    } 
+    
+}
+

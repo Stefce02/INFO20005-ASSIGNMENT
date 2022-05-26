@@ -1,3 +1,5 @@
+@import url("fonts.css");
+@import url("colours.css");
 @import url("variables.css");
 @import url("nav.css");
 @import url("search_results.css");
@@ -5,7 +7,6 @@
 @import url("product_listing.css");
 @import url("checkout.css");
 @import url("home.css");
-
 
 html {
     box-sizing: border-box;

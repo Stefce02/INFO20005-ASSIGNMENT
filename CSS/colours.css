@@ -1,0 +1,22 @@
+:root {
+    /* Colour Palette */
+    --colour-primary: #F2F5F4;
+    --colour-secondary: #EDF2F1;
+    --colour-tertiary: #EDF2F1;
+    --colour-other: rgb(255, 255, 255, 0.8);
+    --colour-text: #3B393F;
+    --colour-text-other: #707070;
+    --colour-icons: invert(22%) sepia(8%) saturate(438%) hue-rotate(219deg) brightness(92%) contrast(93%);
+    --colour-number: #000000;
+    --colour-valid: invert(97%) sepia(10%) saturate(2536%) hue-rotate(80deg) brightness(85%) contrast(89%);
+    --colour-input: #E8EDEC;
+
+    /* Button Colours */
+    --colour-btn-primary: #404752;
+    --colour-btn-secondary: #F2F5F4;
+    --colour-btn-tertiary: #DEE7E5;
+
+    /* Positioning */
+    --indent: 3.2rem;
+}
+
