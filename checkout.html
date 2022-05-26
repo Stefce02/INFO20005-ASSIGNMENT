@@ -25,235 +25,237 @@
     </div>
 
     <!-- Checkout Information-->
-    <div class = "sidebar-container">
+    <h3 class="checkout-title"> Checkout </h3>
 
-        <!-- Forms -->
+    <div class="checkout-process">
+        <div class = "sidebar-container">
+
+            <!-- Forms -->
+            <div class = "not-sidebar">
+                
+                <div class="checkout">
+
+                    <ol class = "checkout-header" id="next-head">
+                        <li class = "emphasised"> 1. Login </li>
+                        <li class = "not"> 2 </li>
+                        <li class = "not"> 3 </li>
+                        <li class = "not"> 4 </li>
+                    </ol>
+
+                    <ol class = "checkout-header display-none" id="step-head">
+                        <li class = "not complete"> <image src="Images/Icons/tick-svgrepo-com.svg" alt="checkmark"> </li>
+                        <li class = "emphasised"> 2. Shipping Information </li>
+                        <li class = "not"> 3 </li>
+                        <li class = "not"> 4 </li>
+                    </ol>
+
+                    <ol class = "checkout-header display-none" id="step-head">
+                        <li class = "not complete"> <image src="Images/Icons/tick-svgrepo-com.svg" alt="checkmark"> </li>
+                        <li class = "not complete"> <image src="Images/Icons/tick-svgrepo-com.svg" alt="checkmark"> </li>
+                        <li class = "emphasised"> 3. Payment Details </li>
+                        <li class = "not"> 4 </li>
+                    </ol>
+
+                    <ol class = "checkout-header display-none" id="step-head">
+                        <li class = "not complete"> <image src="Images/Icons/tick-svgrepo-com.svg" alt="checkmark"> </li>
+                        <li class = "not complete"> <image src="Images/Icons/tick-svgrepo-com.svg" alt="checkmark"> </li>
+                        <li class = "not complete"> <image src="Images/Icons/tick-svgrepo-com.svg" alt="checkmark"> </li>
+                        <li class = "emphasised"> 4. Confirmation </li>
+                    </ol>
+
+                    <!-- Step 1: Login -->
+                    <div class="step-1 back" id="next">
+                        <form class="login">
+                            <div class = "float-input">
+                                <label for = "Username"> Username/Email </label>
+                                <input id = "Username" type="email" class = "full-box"> </input>
+                            </div>
         
+                            <div class = "float-input">
+                                <label for = "full-name"> Password</label>
+                                <input id = "full-name" class = "full-box" type="password"> </input>
+                            </div>
+                            <p class="forgot"> Forgot Password? </pc>
+                        </form>
 
-        <div class = "not-sidebar">
-            <h3> Checkout </h3>
-            <div class="checkout">
-
-                <ol class = "checkout-header" id="next-head">
-                    <li class = "emphasised"> 1. Login </li>
-                    <li class = "not"> 2 </li>
-                    <li class = "not"> 3 </li>
-                    <li class = "not"> 4 </li>
-                </ol>
-
-                <ol class = "checkout-header display-none" id="step-head">
-                    <li class = "not complete"> <image src="Images/Icons/tick-svgrepo-com.svg" alt="checkmark"> </li>
-                    <li class = "emphasised"> 2. Shipping Information </li>
-                    <li class = "not"> 3 </li>
-                    <li class = "not"> 4 </li>
-                </ol>
-
-                <ol class = "checkout-header display-none" id="step-head">
-                    <li class = "not complete"> <image src="Images/Icons/tick-svgrepo-com.svg" alt="checkmark"> </li>
-                    <li class = "not complete"> <image src="Images/Icons/tick-svgrepo-com.svg" alt="checkmark"> </li>
-                    <li class = "emphasised"> 3. Payment Details </li>
-                    <li class = "not"> 4 </li>
-                </ol>
-
-                <ol class = "checkout-header display-none" id="step-head">
-                    <li class = "not complete"> <image src="Images/Icons/tick-svgrepo-com.svg" alt="checkmark"> </li>
-                    <li class = "not complete"> <image src="Images/Icons/tick-svgrepo-com.svg" alt="checkmark"> </li>
-                    <li class = "not complete"> <image src="Images/Icons/tick-svgrepo-com.svg" alt="checkmark"> </li>
-                    <li class = "emphasised"> 4. Confirmation </li>
-                </ol>
-
-                <!-- Step 1: Login -->
-                <div class="step-1 back" id="next">
-                    <form class="login">
-                        <div class = "float-input">
-                            <label for = "Username"> Username/Email </label>
-                            <input id = "Username" type="email" class = "full-box"> </input>
+                        <div class="login-btns">
+                            <button class = "btn btn-tertiary btn--medium" onclick="nextStep()"> Login </button>
+                            <p> </p>
+                            <button class = "btn btn-primary btn--medium"> Sign Up </button>
+                            <button class = "btn btn-secondary btn--medium" onclick="nextStep()"> Continue as Guest </button>
                         </div>
-    
-                        <div class = "float-input">
-                            <label for = "full-name"> Password</label>
-                            <input id = "full-name" class = "full-box" type="password"> </input>
-                        </div>
-                        <p class="forgot"> Forgot Password? </pc>
-                    </form>
+                        
 
-                    <div class="login-btns">
-                        <button class = "btn btn-tertiary btn--medium" onclick="nextStep()"> Login </button>
-                        <p> </p>
-                        <button class = "btn btn-primary btn--medium"> Sign Up </button>
-                        <button class = "btn btn-secondary btn--medium" onclick="nextStep()"> Continue as Guest </button>
                     </div>
                     
+                    <!-- Step 2: Shipping Information -->
+                    <div id="step" class="step-2 display-none">
+                        <form class = "personal-info">
 
-                </div>
-                
-                <!-- Step 2: Shipping Information -->
-                <div id="step" class="step-2 display-none">
-                    <form class = "personal-info">
-
-                        <div class = "float-input">
-                            <label for = "full-name"> Full Name </label>
-                            <input id = "full-name" class = "full-box"> </input>
-                        </div>
-    
-                        <div class = "float-input">
-                            <label for = "email"> Email </label>
-                            <input id = "email" class = "full-box" type="email"> </input>
-                        </div>
-    
-                        <div class = "float-input">
-                            <label for = "phone"> Phone (Optional) </label>
-                            <input id = "phone" class = "full-box" type="number"> </input>
-                        </div>
-
-                        <div class = "two-in-row">
                             <div class = "float-input">
-                                <label for = "address"> Address </label>
-                                <input id = "address" class = "full-box" size="10"> </input>
+                                <label for = "full-name"> Full Name </label>
+                                <input id = "full-name" class = "full-box"> </input>
                             </div>
         
                             <div class = "float-input">
-                                <label for = "address-other">  Apartment, suite, etc. (Optional) </label>
-                                <input id = "address-other" class = "full-box"> </input>
-                            </div>
-                        </div>
-    
-                        <div class = "three-in-row">
-                            <div class = "float-input">
-                                <label for = "region"> Region </label>
-                                <input id = "region" class = "full-box"> </input>
+                                <label for = "email"> Email </label>
+                                <input id = "email" class = "full-box" type="email"> </input>
                             </div>
         
                             <div class = "float-input">
-                                <label for = "city"> City </label>
-                                <input id = "city" class = "full-box"> </input>
+                                <label for = "phone"> Phone (Optional) </label>
+                                <input id = "phone" class = "full-box" type="number"> </input>
                             </div>
-        
-                            <div class = "float-input">
-                                <label for = "post-code"> Post Code </label>
-                                <input id = "post-code" class = "full-box"> </input>
-                            </div>
-                        </div>
-                        
-                    </form>
-        
-                    <div class = "proceed">
-                        <button class = "btn btn-secondary btn--xsmall" onclick="lastStep()"> Go Back </button>
-                        <button class = "btn btn-primary btn--xsmall" onclick="nextStep()"> Continue </button>
-                    </div>     
-                </div>
 
-
-                <!-- Payment Information -->
-                <div id="step" class="step-3 display-none">
-                    <div class="payment-options">
-                        <div class="pay-choice">
-                            <input type="radio"> </input>
-                            <image class = "pay-logo" src="Images/Afterpay_Logo_Black-1.png" alt="Afterpay Logo"></image>
-                        </div>
-                       
-                        <div class="pay-choice">
-                            <input type="radio"> </input>
-                            <image class = "pay-logo" src="Images/PayPal-Logo.png" alt="Paypal Logo"></image>
-                        </div>
-                        <div class="pay-choice">
-                            <input type="radio"> </input>
-                            <image class = "pay-logo" src="Images/visa-mastercard-icon-6.jpg" alt="Credit card logos"></image>
-                        </div>
-                    </div>
-
-                    <form class = "personal-info">
-
-                        <div class = "float-input">
-                            <label for = "card-name"> Card Name </label>
-                            <input id = "card-name" class = "full-box"> </input>
-                        </div>
-    
-                        <div class = "float-input">
-                            <label for = "email"> Card Number </label>
-                            <input id = "email" class = "full-box"> </input>
-                        </div>
-                        
-                        <div class="two-in-row">
-                            <div class = "float-input">
-                                <label for = "phone"> Card Expiry Date </label>
-                                <input id = "phone" class = "full-box" type="month"> </input>
-                            </div>
-        
-                            <div class = "float-input">
-                                <label for = "address"> Card CVN </label>
-                                <input id = "address" class = "full-box"> </input>
-                            </div>
-                        </div>
-                        
-                    </form>
-    
-                    <div class = "proceed">
-                        <button class = "btn btn-secondary btn--xsmall" onclick="lastStep()"> Go Back </button>
-                        <button class = "btn btn-primary btn--xsmall" onclick="nextStep()"> Continue </button>
-                    </div>     
-                </div>
-
-                <div id="step" class = "confirmation display-none">
-                    <image class = "celebrate" src="Images/Icons/Party Popper.svg" alt="party popper"></image>
-                    <h3> Thank You for Shopping With OZ</h3>
-                    <div class = "confirmation-txt">
-                        <p> You will shortly receive the order confirmation 
-                            and order details through email </p>
-                        <p> Order Number: #157156 </p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Order Summary -->
-        <div class = "order-summary sidebar">
-            <h3 class = "h3-other cart cart-heading"> Order Summary </h3>
-
-            <div class = "cart-product"> 
-                <img class = "cart-image" src="Images/Lounges/LOUNGE_SEYMOUR_11.png" alt = "Seymour Lounge" id = "product-image">
-                <div class = "cart-product-info">
-                    <p class = "cart-product-title"> Seymour Lounge </p>
-                    <p class = "quantity-value"> 1 </p>
-                </div>  
-                <p class = "cart-product-price"> $1799 </p>
-
-            </div> 
+                            <div class = "two-in-row">
+                                <div class = "float-input">
+                                    <label for = "address"> Address </label>
+                                    <input id = "address" class = "full-box" size="10"> </input>
+                                </div>
             
-            <div class = "discount" id="hide">
-                <div class = "float-input">
-                    <label for = "code"> Discount Code </label>
-                    <input id = "code" class = "half-box"> </input>
-                </div>
-                <button class = "btn btn-tertiary btn--xsmall"> Apply </button>
-            </div>
-    
-            <!-- Other Information -->
-            <div class = "other-information" id="space">
-                <div class = "sub-info">
-                    <p> Sub-Total </p>
-                    <p> $1619.10 </p>
-                </div>
-                <div class = "sub-info">
-                    <p> GST </p>
-                    <p> $179.90 </p>
-                </div>
-                <div class = "sub-info">
-                    <p> Shipping </p>
-                    <p> Calculated at next step </p>
-                </div>
-            </div>
-    
-            <!-- Final Information -->
-            <div class = "order-info">
-                <p class="order-total"> Total </p>
-                <p class="order-total-price"> $1799</p>
-            </div>
-        </div>
+                                <div class = "float-input">
+                                    <label for = "address-other">  Apartment, suite, etc. (Optional) </label>
+                                    <input id = "address-other" class = "full-box"> </input>
+                                </div>
+                            </div>
+        
+                            <div class = "three-in-row">
+                                <div class = "float-input">
+                                    <label for = "region"> Region </label>
+                                    <input id = "region" class = "full-box"> </input>
+                                </div>
+            
+                                <div class = "float-input">
+                                    <label for = "city"> City </label>
+                                    <input id = "city" class = "full-box"> </input>
+                                </div>
+            
+                                <div class = "float-input">
+                                    <label for = "post-code"> Post Code </label>
+                                    <input id = "post-code" class = "full-box"> </input>
+                                </div>
+                            </div>
+                            
+                        </form>
+            
+                        <div class = "proceed">
+                            <button class = "btn btn-secondary btn--xsmall" onclick="lastStep()"> Go Back </button>
+                            <button class = "btn btn-primary btn--xsmall" onclick="nextStep()"> Continue </button>
+                        </div>     
+                    </div>
 
-    </div>
+
+                    <!-- Payment Information -->
+                    <div id="step" class="step-3 display-none">
+                        <div class="payment-options">
+                            <div class="pay-choice">
+                                <input type="radio"> </input>
+                                <image class = "pay-logo" src="Images/Afterpay_Logo_Black-1.png" alt="Afterpay Logo"></image>
+                            </div>
+                        
+                            <div class="pay-choice">
+                                <input type="radio"> </input>
+                                <image class = "pay-logo" src="Images/PayPal-Logo.png" alt="Paypal Logo"></image>
+                            </div>
+                            <div class="pay-choice">
+                                <input type="radio"> </input>
+                                <image class = "pay-logo" src="Images/visa-mastercard-icon-6.jpg" alt="Credit card logos"></image>
+                            </div>
+                        </div>
+
+                        <form class = "personal-info">
+
+                            <div class = "float-input">
+                                <label for = "card-name"> Card Name </label>
+                                <input id = "card-name" class = "full-box"> </input>
+                            </div>
+        
+                            <div class = "float-input">
+                                <label for = "email"> Card Number </label>
+                                <input id = "email" class = "full-box"> </input>
+                            </div>
+                            
+                            <div class="two-in-row">
+                                <div class = "float-input">
+                                    <label for = "phone"> Card Expiry Date </label>
+                                    <input id = "phone" class = "full-box" type="month"> </input>
+                                </div>
+            
+                                <div class = "float-input">
+                                    <label for = "address"> Card CVN </label>
+                                    <input id = "address" class = "full-box"> </input>
+                                </div>
+                            </div>
+                            
+                        </form>
+        
+                        <div class = "proceed">
+                            <button class = "btn btn-secondary btn--xsmall" onclick="lastStep()"> Go Back </button>
+                            <button class = "btn btn-primary btn--xsmall" onclick="nextStep()"> Continue </button>
+                        </div>     
+                    </div>
+
+                    <div id="step" class = "confirmation display-none">
+                        <image class = "celebrate" src="Images/Icons/Party Popper.svg" alt="party popper"></image>
+                        <h3> Thank You for Shopping With OZ</h3>
+                        <div class = "confirmation-txt">
+                            <p> You will shortly receive the order confirmation 
+                                and order details through email </p>
+                            <p> Order Number: #157156 </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Order Summary -->
+            <div class = "order-summary sidebar">
+                <h3 class = "h3-other cart cart-heading"> Order Summary </h3>
+
+                <div class = "cart-product"> 
+                    <img class = "cart-image" src="Images/Lounges/LOUNGE_SEYMOUR_11.png" alt = "Seymour Lounge" id = "product-image">
+                    <div class = "cart-product-info">
+                        <p class = "cart-product-title"> Seymour Lounge </p>
+                        <p class = "quantity-value"> 1 </p>
+                    </div>  
+                    <p class = "cart-product-price"> $1799 </p>
+
+                </div> 
+                
+                <div class = "discount" id="hide">
+                    <div class = "float-input">
+                        <label for = "code"> Discount Code </label>
+                        <input id = "code" class = "full-box"> </input>
+                    </div>
+                    <button class = "btn btn-tertiary btn--xsmall"> Apply </button>
+                </div>
+        
+                <!-- Other Information -->
+                <div class = "other-information" id="space">
+                    <div class = "sub-info">
+                        <p> Sub-Total </p>
+                        <p> $1619.10 </p>
+                    </div>
+                    <div class = "sub-info">
+                        <p> GST </p>
+                        <p> $179.90 </p>
+                    </div>
+                    <div class = "sub-info">
+                        <p> Shipping </p>
+                        <p> Calculated at next step </p>
+                    </div>
+                </div>
+        
+                <!-- Final Information -->
+                <div class = "order-info">
+                    <p class="order-total"> Total </p>
+                    <p class="order-total-price"> $1799</p>
+                </div>
+            </div>
+
+        </div>
+    </div>    
 
     <div class="display-none" id="more">
         <h2> Similar Products </h2>

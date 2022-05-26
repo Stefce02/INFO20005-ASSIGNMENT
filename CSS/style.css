@@ -315,6 +315,25 @@ input {
     }
 }
 
+@media screen and (max-width: 1050px) {
+    .checkout-process > .sidebar-container{
+        flex-direction: column-reverse;
+    }
+    
+    .checkout-process > .sidebar-container > .sidebar{
+        flex-basis: 0rem;
+        flex-grow: 0;
+        height: 25%;
+    }
+    
+    .checkout-process > .sidebar-container > .not-sidebar{
+        flex-basis: 0rem;
+        flex-grow: 0;
+        min-width: 0%;
+    }
+
+}
+
 @media screen and (max-width: 950px) {
     .chat {
         display: none;
@@ -330,4 +349,6 @@ input {
         margin: -0.5em 0.75em 5em 0.5em;
     }
 }
+
+
 
