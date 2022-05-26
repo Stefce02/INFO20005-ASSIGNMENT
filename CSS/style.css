@@ -263,14 +263,6 @@ h3 {
     width: 100%;
 }
 
-.half-box {
-    width: 50%;
-}
-
-.third-box {
-    width: 33.3%;
-}
-
 .float-input > label {
     font-size: 14px;
     font-family: var(--font-secondary);

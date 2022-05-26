@@ -227,7 +227,7 @@
     width: 30%;
     margin-top: 1em;
     height: 2.5em;
-    font-size: var(--font-size-text);
+    font-size: var(--font-size-btn);
 }
 
 /* Payment */
