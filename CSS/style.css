@@ -161,9 +161,13 @@ h3 {
     transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-#cart {
+#cart{
     width: 30%;
     height: 100%;
+}
+
+#hamburger {
+    width: 30%;
 }
 
 /* Buttons */
@@ -322,8 +326,11 @@ input {
         width: 2.5em;
         margin: -1em 0.75em 5em 0.5em;
     }
-    #cart {
+    #cart{
         width: 45%;
+    }
+    #hamburger {
+        width: 35%;
     }
 }
 
@@ -346,6 +353,9 @@ input {
     #cart {
         width: 55%;
     }
+    #hamburger {
+        width: 40%;
+    }
 
 }
 
@@ -363,10 +373,24 @@ input {
         width: 2em;
         margin: -0.5em 0.75em 5em 0.5em;
     }
-    #cart {
+    #cart{
         width: 100%;
+    }
+    #hamburger {
+        width: 50%;
     }
 }
 
+@media screen and (max-width: 600px) {
+    #hamburger {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #hamburger {
+        width: 100%;
+    }
+}
 
 
