@@ -321,15 +321,18 @@ input[type='radio']:checked:after {
 
 /* Media Queries */
 
-@media screen and (max-width: 1200px) {
-}
-
 @media screen and (max-width: 1050px) {
     .checkout {
         margin-left: 0em;
         width: 80%;
         margin: auto;
+        height: 100%;
     }
+
+    .proceed {
+        margin-bottom: 1em;
+    }
+
     .order-summary {
         border-left: none;
         border-right: none;
@@ -369,6 +372,18 @@ input[type='radio']:checked:after {
     .checkout-title {
         text-align: center;
         padding-left: 0em;
+    }
+    .login, .login-btns {
+        width: 80%;
+    }
+    .login-btns > .btn, .login-btns > p {
+        width: 100%;
+    }
+    .two-in-row, .three-in-row {
+        display: inline;
+    }
+    .two-in-row .float-input, .three-in-row .float-input{
+        width: 100%;  
     }
     
 }
