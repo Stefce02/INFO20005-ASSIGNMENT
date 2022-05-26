@@ -22,7 +22,7 @@
     height: 6em;
 }
 
-.order-summary > .cart-product > .cart-product-info > .cart-product-title {
+.order-summary > .cart-product > .cart-product-info > div > .cart-product-title {
     font-size: var(--font-size-text);
     padding-right: 4em;
 }
