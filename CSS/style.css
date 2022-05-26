@@ -120,11 +120,16 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    min-height: auto;
 }
 
 .sidebar{
     flex-basis: 25rem;
     flex-grow: 1;
+}
+
+.filter {
+    flex-basis: 20rem;
 }
 
 .not-sidebar{
@@ -318,11 +323,6 @@ input {
     .history {
         display: none;
     }
-    .h2-left {
-        display: block;
-        margin: 0em;
-        text-align: center;
-    }
     .footer-icons > img {
         width: 2.5em;
         margin: -1em 0.75em 5em 0.5em;
@@ -332,6 +332,14 @@ input {
     }
     #hamburger {
         width: 35%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .h2-left {
+        display: block;
+        margin: 0em;
+        text-align: center;
     }
 }
 

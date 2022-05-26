@@ -38,10 +38,6 @@
      
 }
 
-.not-sidebar > .subsection {
-    margin-left: 5em;
-}
-
 .product-card__price--small {
     font-size: var(--font-size-price-small);
 }
@@ -70,7 +66,6 @@
     margin-left: 1.5em;
 }
 
-
 .filter {
     background-color: var(--colour-tertiary);
     border: 1px solid black;
@@ -87,7 +82,7 @@
 
 .filter-name {
     font-family: var(--font-secondary);
-    font-size: 28px;
+    font-size: var(--font-size-title-small);
     color: var(--colour-text);
 }
 
@@ -114,7 +109,7 @@
 }
 
 .filter > .search {
-    width: 75%;
+    width: 65%;
     margin: auto;
     margin-bottom: 3em;
 }
