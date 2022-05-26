@@ -387,3 +387,35 @@ input[type='radio']:checked:after {
         margin-left: 0.375em;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .proceed > .btn {
+        width: 40%;
+    }
+    .pay-choice > .pay-logo {
+        width: 70%;
+        margin-left: 0.375em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .order-summary > .cart-product > .cart-product-info > div > .cart-product-title {
+        padding-right: 2em;
+    }
+
+    .checkout-header > li {
+        height: 3em;
+        padding-top: 1em;
+    }
+
+    .checkout-header > .emphasised {
+        padding-top: 0.5em;
+    }
+   
+}
+
+@media screen and (max-width: 350px) {
+    .proceed > .btn {
+        font-size: 12px;
+    }
+}

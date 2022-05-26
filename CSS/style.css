@@ -264,7 +264,7 @@ h3 {
 }
 
 .float-input > label {
-    font-size: 14px;
+    font-size: var(--font-size-label);
     font-family: var(--font-secondary);
     padding-top: 0.55em;
     padding-left: 0.85em;

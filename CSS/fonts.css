@@ -15,6 +15,7 @@
     --font-size-title-small: 25px;
 
     --font-size-btn: 1.5em;
+    --font-size-label: 14px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -38,7 +39,7 @@
     --font-size-h1: 40px;
     --font-size-h2: 34px;
     --font-size-h3: 24px; 
-    --font-size-text: 16px;
+    --font-size-text: 14px;
 
     --font-size-price-big: 22px;
     --font-size-title-big: 18px;
@@ -46,6 +47,7 @@
     --font-size-title-small: 16px;
 
     --font-size-btn: 1.125em;
+    --font-size-label: 12.5px;
     } 
 }
 
@@ -53,6 +55,9 @@
 @media screen and (max-width: 500px) {
     :root {
         --font-size-btn: 1em;
+        --font-size-label: 11px;
     } 
 }
+
+
 
