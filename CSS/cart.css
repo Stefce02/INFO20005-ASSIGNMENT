@@ -180,4 +180,9 @@
     .discount > .btn {
         height: 3em;
     }
+    .background > .align-cart > .checkout-btns > .button >.btn {
+        height: 2.5em;
+        text-align: center;
+        padding-top: 0.75em;
+    }
 }
