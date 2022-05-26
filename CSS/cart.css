@@ -61,7 +61,9 @@
 
 .cart-product-info {
     padding-left: 2%;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .cart-product-title {
@@ -76,7 +78,6 @@
     font-family: var(--font-secondary);
     color: var(--colour-text);
     text-decoration: underline;
-    padding-bottom: 1.6em;
 }
 
 .cart-summary > .open {
