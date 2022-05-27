@@ -18,6 +18,38 @@
     --font-size-label: 14px;
 }
 
+@media screen and (min-width: 2400px) {
+    :root {
+    --font-size-h1: 72px;
+    --font-size-h2: 56px;
+    --font-size-h3: 46px; 
+    --font-size-text: 32px;
+
+    --font-size-price-big: 43.5px;
+    --font-size-title-big: 38.5px;
+    --font-size-price-small: 41px;
+    --font-size-title-small: 36px;
+
+    --font-size-btn: 1.75em;
+    }  
+}
+
+@media screen and (min-width: 1800px) {
+    :root {
+    --font-size-h1: 64px;
+    --font-size-h2: 48px;
+    --font-size-h3: 38px; 
+    --font-size-text: 24px;
+
+    --font-size-price-big: 35.5px;
+    --font-size-title-big: 30.5px;
+    --font-size-price-small: 33px;
+    --font-size-title-small: 28px;
+
+    --font-size-btn: 1.5em;
+    }  
+}
+
 @media screen and (max-width: 1200px) {
     :root {
     --font-size-h1: 56px;
