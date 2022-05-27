@@ -66,21 +66,21 @@
 
                     <!-- Step 1: Login -->
                     <div class="step-1 back" id="next">
-                        <form class="login">
+                        <form name="login" class="login">
                             <div class = "float-input">
                                 <label for = "Username"> Username/Email </label>
                                 <input id = "Username" type="email" class = "full-box"> </input>
                             </div>
         
                             <div class = "float-input">
-                                <label for = "full-name"> Password</label>
-                                <input id = "full-name" class = "full-box" type="password"> </input>
+                                <label for = "password"> Password </label>
+                                <input id = "password" class = "full-box" type="password"> </input>
                             </div>
                             <p class="forgot"> Forgot Password? </pc>
                         </form>
 
                         <div class="login-btns">
-                            <button class = "btn btn-tertiary btn--medium" onclick="nextStep()"> Login </button>
+                            <button class = "btn btn-tertiary btn--medium" onclick="validateLoginForm()"> Login </button>
                             <p> </p>
                             <button class = "btn btn-primary btn--medium"> Sign Up </button>
                             <button class = "btn btn-secondary btn--medium" onclick="nextStep()"> Continue as Guest </button>
@@ -91,7 +91,7 @@
                     
                     <!-- Step 2: Shipping Information -->
                     <div id="step" class="form-step display-none">
-                        <form class = "personal-info">
+                        <form name="shipping" class = "personal-info">
 
                             <div class = "float-input">
                                 <label for = "full-name"> Full Name </label>
@@ -122,8 +122,8 @@
         
                             <div class = "three-in-row">
                                 <div class = "float-input">
-                                    <label for = "region"> Country </label>
-                                    <input id = "region" class = "full-box"> </input>
+                                    <label for = "country"> Country </label>
+                                    <input id = "country" class = "full-box"> </input>
                                 </div>
             
                                 <div class = "float-input">
@@ -141,7 +141,7 @@
             
                         <div class = "proceed">
                             <button class = "btn btn-secondary btn--xsmall" onclick="lastStep()"> Go Back </button>
-                            <button class = "btn btn-primary btn--xsmall" onclick="nextStep()"> Continue </button>
+                            <button class = "btn btn-primary btn--xsmall" onclick="validateShippingForm()"> Continue </button>
                         </div>     
                     </div>
 
@@ -164,7 +164,7 @@
                             </div>
                         </div>
 
-                        <form class = "personal-info">
+                        <form name="card" class = "personal-info">
 
                             <div class = "float-input">
                                 <label for = "card-name"> Cardholder Name </label>
@@ -172,19 +172,19 @@
                             </div>
         
                             <div class = "float-input">
-                                <label for = "email"> Card Number </label>
-                                <input id = "email" class = "full-box"> </input>
+                                <label for = "card-number"> Card Number </label>
+                                <input id = "card-number" class = "full-box"> </input>
                             </div>
                             
                             <div class="two-in-row">
                                 <div class = "float-input">
-                                    <label for = "phone"> Card Expiry Date </label>
-                                    <input id = "phone" class = "full-box" type="month"> </input>
+                                    <label for = "expiry"> Card Expiry Date </label>
+                                    <input id = "expiry" class = "full-box" type="month"> </input>
                                 </div>
             
                                 <div class = "float-input">
-                                    <label for = "address"> Card CVN </label>
-                                    <input id = "address" class = "full-box"> </input>
+                                    <label for = "cvn"> Card CVN </label>
+                                    <input id = "cvn" class = "full-box"> </input>
                                 </div>
                             </div>
                             
@@ -192,7 +192,7 @@
         
                         <div class = "proceed">
                             <button class = "btn btn-secondary btn--xsmall" onclick="lastStep()"> Go Back </button>
-                            <button class = "btn btn-primary btn--xsmall" onclick="nextStep()"> Continue </button>
+                            <button class = "btn btn-primary btn--xsmall" onclick="validateCardForm()"> Continue </button>
                         </div>     
                     </div>
 

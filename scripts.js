@@ -97,4 +97,56 @@ function lastStep(){
     back_head.setAttribute("id", "next-head");
 }
 
+// Form Validation
+function validateLoginForm() {
+    var user = document.forms["login"]["Username"].value;
+    var pword = document.forms["login"]["password"].value;
+    if (user == "" || pword == "") {
+      alert("Name must be filled out");
+      document.getElementById("Username").classList.add("incorrect-input");
+      return false;
+    }
+    else {
+        // Continue to next stage of the checkout
+        document.getElementById("Username").classList.remove("incorrect-input");
+        nextStep();
+    }
+}
+
+// Validate shipping information
+function validateShippingForm() {
+    var name = document.forms["shipping"]["full-name"].value;
+    var check_email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var email = document.forms["shipping"]["email"].value;
+    var phone = document.forms["shipping"]["phone"].value;
+    var address = document.forms["shipping"]["address"].value;
+    var country =  document.forms["shipping"]["country"].value;
+    var city =  document.forms["shipping"]["city"].value;
+    var post =  document.forms["shipping"]["post-code"].value;
+    if (name == "" || !(email.match(check_email)) || !(phone.match(/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/))
+        || address == "" || country == "" || city=="" || !(post.match(/^\d+/))) {
+      alert("Incorrect Input");
+      return false;
+    }
+    else {
+        nextStep();
+    }
+}
+
+// Validate credit card information
+function validateCardForm() {
+    var name = document.forms["card"]["card-name"].value;
+    var number = document.forms["card"]["card-number"].value;
+    var expiry = document.forms["card"]["expiry"].value;
+    var cvn = document.forms["card"]["cvn"].value;
+    if (name == "" || !(number.match(/^\d{16}$/)) || expiry == "" || !(cvn.match(/^\d+/))) {
+      alert("Incorrect Input");
+      return false;
+    }
+    else {
+        // Continue to next stage of the checkout
+        nextStep();
+    }
+}
+
 
