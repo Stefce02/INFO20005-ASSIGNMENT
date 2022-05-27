@@ -321,7 +321,7 @@ input[type='radio']:checked:after {
 }
 
 .form-step .float-input .error-msg {
-    margin-bottom: -1em;
+    margin-bottom: -1.25em;
 }
 
 /* Media Queries */
