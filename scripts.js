@@ -24,6 +24,10 @@ function menuDisplay(){
     console.log("clicked");
     var menu = document.getElementById("hamburger");
     menu.classList.toggle("menu-shown");
+    // Close cart if open
+    if(document.getElementById("cart").classList.contains("cart-shown")) {
+        document.getElementById("cart").classList.toggle("cart-shown");
+    }
 }
 
 // Open Cart on click
@@ -31,6 +35,10 @@ function cartDisplay(){
     console.log("clicked");
     var cart = document.getElementById("cart");
     cart.classList.toggle("cart-shown");
+    // Close menu if open
+    if(document.getElementById("hamburger").classList.contains("menu-shown")) {
+        document.getElementById("hamburger").classList.toggle("menu-shown");
+    }
 }
 
 // Progress forward through the stages of the checkout
@@ -69,7 +77,6 @@ function nextStep(){
 }
 
 // Progress backward through the stages of the checkout
-// Going back two steps doesn't work
 function lastStep(){
     console.log("clicked");
     var next = document.getElementById("next");
