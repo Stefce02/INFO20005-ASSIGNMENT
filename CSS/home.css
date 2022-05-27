@@ -75,6 +75,7 @@
     width: 12.5em;
     margin-left: 2em;
     margin-right: 2em;
+    margin-bottom: 1em;
 }
 
 /* About Us Section */
@@ -89,6 +90,15 @@
 
 .about > p {
     padding-bottom: 33px;
+}
+
+@media screen and (min-width: 2000px) {
+    .category-card__img {
+        height: 12.5em;
+        width: 17.5em;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
 }
 
 /* Media Queries */
