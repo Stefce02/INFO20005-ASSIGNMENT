@@ -199,6 +199,10 @@
         text-align: center;
         padding-top: 0.75em;
     }
+    .close {
+        height: 1.5em;
+        margin-bottom: 0.2em;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -208,11 +212,16 @@
     .cart-image {
         width: 37.5%;
     }
+    
 }
 
 @media screen and (max-width: 550px) {
     .cart-image {
         width: 40%;
+    }
+    .close {
+        height: 1.5em;
+        margin-bottom: 0.3em;
     }
 } 
 
