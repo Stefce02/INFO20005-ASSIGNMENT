@@ -8,7 +8,6 @@
     margin: auto;
     padding-top: 2.5%;
     width: 45%;
-    height: 45%;
     margin-bottom: 3em;
 }
 
@@ -18,12 +17,10 @@
     justify-content: center;
     margin: auto;
     position: absolute;
-    height: 70%;
     width: 70%;
 }
 
 #tranparent-back {
-    height: 90%;
     width: 90%;
     margin-left: 40px;
     opacity: 10%;
@@ -121,7 +118,6 @@
     }
     .home-image {
         width: 85%;
-        height: 60%;
     }
 }
 
@@ -131,7 +127,6 @@
     }
     .home-image {
         width: 90%;
-        height: 55%;
     }
     .category-card__img {
         height: 6em;
