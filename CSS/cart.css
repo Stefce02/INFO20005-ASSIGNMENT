@@ -85,7 +85,7 @@
 }
 
 .cart-image {
-    width: 35%;
+    width: 40%;
     height: 8em;
     border: 1px solid black;
     border-radius: 5px;
@@ -183,6 +183,13 @@
 }
 
 /* Media Queries */
+
+@media screen and (min-width: 2000px) {
+    .cart-image {
+        width: 32.5%;
+    }
+} 
+
 @media screen and (max-width: 1200px) {
     .discount > .btn {
         height: 3em;
@@ -202,12 +209,12 @@
         width: 37.5%;
     }
 }
-/* 
+
 @media screen and (max-width: 550px) {
     .cart-image {
         width: 40%;
     }
-} */
+} 
 
 @media screen and (max-width: 400px) {
     .cart-image {

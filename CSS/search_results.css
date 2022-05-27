@@ -49,12 +49,12 @@
 }
 
 /* Image of Danish sofa doesn't resize the same as the other */
-#danish {
+/* #danish {
     height: 200px;
     width: 500px;
     margin-top: 100px;
     margin-bottom: 40px;
-}
+} */
 
 /* Product Filter */
 .sort {

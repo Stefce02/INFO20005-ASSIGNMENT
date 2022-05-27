@@ -17,6 +17,8 @@ html {
 
 body {
     background-color: var(--colour-primary);
+    height: fit-content;
+    min-height: 100vh;
 }
 
 a {
@@ -299,6 +301,13 @@ input {
 }
 
 /* Media Queries */
+@media screen and (min-width: 1600px) {
+    #cart {
+        width: 25%;
+    }
+}
+
+
 @media screen and (max-width: 1600px) {
     #cart {
         width: 35%;
