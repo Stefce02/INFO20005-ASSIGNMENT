@@ -20,33 +20,33 @@
 
 @media screen and (min-width: 2400px) {
     :root {
-    --font-size-h1: 72px;
-    --font-size-h2: 56px;
-    --font-size-h3: 46px; 
-    --font-size-text: 32px;
-
-    --font-size-price-big: 43.5px;
-    --font-size-title-big: 38.5px;
-    --font-size-price-small: 41px;
-    --font-size-title-small: 36px;
-
-    --font-size-btn: 1.75em;
+        --font-size-h1: 80px;
+        --font-size-h2: 72px;
+        --font-size-h3: 56px; 
+        --font-size-text: 36px;
+    
+        --font-size-price-big: 48.5px;
+        --font-size-title-big: 43.5px;
+        --font-size-price-small: 46px;
+        --font-size-title-small: 41px;
+    
+        --font-size-btn: 2em;
     }  
 }
 
 @media screen and (min-width: 1800px) {
     :root {
-    --font-size-h1: 64px;
-    --font-size-h2: 48px;
-    --font-size-h3: 38px; 
-    --font-size-text: 24px;
+    --font-size-h1: 72px;
+    --font-size-h2: 64px;
+    --font-size-h3: 48px; 
+    --font-size-text: 28px;
 
-    --font-size-price-big: 35.5px;
-    --font-size-title-big: 30.5px;
-    --font-size-price-small: 33px;
-    --font-size-title-small: 28px;
+    --font-size-price-big: 40.5px;
+    --font-size-title-big: 35.5px;
+    --font-size-price-small: 38px;
+    --font-size-title-small: 33px;
 
-    --font-size-btn: 1.5em;
+    --font-size-btn: 1.75em;
     }  
 }
 

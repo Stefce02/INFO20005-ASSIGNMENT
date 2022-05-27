@@ -82,7 +82,7 @@
 
 .filter-name {
     font-family: var(--font-secondary);
-    font-size: var(--font-size-title-small);
+    font-size: var(--font-size-text);
     color: var(--colour-text);
 }
 
