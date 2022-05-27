@@ -99,27 +99,33 @@ function lastStep(){
 
 // Form Validation
 function validateLoginForm() {
+    var valid = 1;
     var user = document.forms["login"]["Username"].value;
     var pword = document.forms["login"]["password"].value;
     if (user == "") {
-      alert("Username cannot be blank");
       document.getElementById("Username").classList.add("incorrect-input");
-      return false;
+      document.getElementById("user-error").style.display = "block";
+      valid = 0;
     }
-    else if (pword == "") {
-        alert("Incorrect Password");
+    if (pword == "") {
         document.getElementById("password").classList.add("incorrect-input");
+        document.getElementById("pword-error").style.display = "block";
+        valid = 0;
     }
-    else {
-        // Continue to next stage of the checkout
+    if(valid) {
+        //Reset input box with no error message
         document.getElementById("Username").classList.remove("incorrect-input");
         document.getElementById("password").classList.remove("incorrect-input");
+        document.getElementById("user-error").style.display = "none";
+        document.getElementById("pword-error").style.display = "none";
+        // Continue to next stage of the checkout
         nextStep();
     }
 }
 
 // Validate shipping information
 function validateShippingForm() {
+    var valid = 1;
     var name = document.forms["shipping"]["full-name"].value;
     var check_email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     var email = document.forms["shipping"]["email"].value;
@@ -129,41 +135,41 @@ function validateShippingForm() {
     var city =  document.forms["shipping"]["city"].value;
     var post =  document.forms["shipping"]["post-code"].value;
     if (name == "" || (name.match(/^\d+/))) {
-        alert("Name cannot be blank");
         document.getElementById("full-name").classList.add("incorrect-input");
-        return false;
+        document.getElementById("name-error").style.display = "block";
+        valid=0;
     }
-    else if (!(email.match(check_email))) {
-        alert("Enter a valid email");
+    if (!(email.match(check_email))) {
         document.getElementById("email").classList.add("incorrect-input");
-        return false;
+        document.getElementById("email-error").style.display = "block";
+        valid=0;
     }
-    else if (phone != "" && !(phone.match(/^\(?(\d{4})\)?[- ]?(\d{3})[- ]?(\d{3})$/))) {
-        alert("Enter a valid number");
+    if (phone != "" && !(phone.match(/^\(?(\d{4})\)?[- ]?(\d{3})[- ]?(\d{3})$/))) {
         document.getElementById("phone").classList.add("incorrect-input");
-        return false;
+        document.getElementById("pword-error").style.display = "block";
+        valid=0;
     }
-    else if (address == "") {
-        alert("Enter an address");
+    if (address == "") {
         document.getElementById("address").classList.add("incorrect-input");
-        return false;
+        document.getElementById("address-error").style.display = "block";
+        valid=0;
     }
-    else if (country == "" || (country.match(/^\d+/))) {
-        alert("Enter a country");
+    if (country == "" || (country.match(/^\d+/))) {
         document.getElementById("country").classList.add("incorrect-input");
-        return false;
+        document.getElementById("country-error").style.display = "block";
+        valid=0;
     }
-    else if (city=="" || (city.match(/^\d+/))) {
-        alert("Enter a city");
+    if (city=="" || (city.match(/^\d+/))) {
         document.getElementById("city").classList.add("incorrect-input");
-        return false;
+        document.getElementById("city-error").style.display = "block";
+        valid=0;
     }
-    else if (!(post.match(/^\d+/))) {
-        alert("Enter a valid post code");
+    if (!(post.match(/^\d+/))) {
         document.getElementById("post-code").classList.add("incorrect-input");
-        return false;
+        document.getElementById("post-error").style.display = "block";
+        valid=0;
     }
-    else {
+    if(valid) {
         document.getElementById("full-name").classList.remove("incorrect-input");
         document.getElementById("email").classList.remove("incorrect-input");
         document.getElementById("phone").classList.remove("incorrect-input");
@@ -171,41 +177,54 @@ function validateShippingForm() {
         document.getElementById("country").classList.remove("incorrect-input");
         document.getElementById("city").classList.remove("incorrect-input");
         document.getElementById("post-code").classList.remove("incorrect-input");
+        document.getElementById("name-error").style.display = "none";
+        document.getElementById("email-error").style.display = "none";
+        document.getElementById("pword-error").style.display = "none";
+        document.getElementById("address-error").style.display = "none";
+        document.getElementById("country-error").style.display = "none";
+        document.getElementById("city-error").style.display = "none";
+        document.getElementById("post-error").style.display = "none";
         nextStep();
     }
 }
 
 // Validate credit card information
 function validateCardForm() {
+    var valid = 1;
     var name = document.forms["card"]["card-name"].value;
     var number = document.forms["card"]["card-number"].value;
     var expiry = document.forms["card"]["expiry"].value;
     var cvn = document.forms["card"]["cvn"].value;
     if (name == "") {
         document.getElementById("card-name").classList.add("incorrect-input");
-        alert("Cardholder name cannot be blank");
-        return false;
+        document.getElementById("cname-error").style.display = "block";
+        valid=0;
     }
-    else if (!(number.match(/^\d{16}$/))) {
-        alert("Enter a valid card number with no spaces");
+    if (!(number.match(/^\d{16}$/))) {
         document.getElementById("card-number").classList.add("incorrect-input");
-        return false;
+        document.getElementById("cnumber-error").style.display = "block";
+        valid=0;
     }
-    else if (expiry == "" ) {
-        alert("Enter an expiry date");
+    if (expiry == "" ) {
         document.getElementById("expiry").classList.add("incorrect-input");
-        return false;
+        document.getElementById("expiry-error").style.display = "block";
+        valid=0;
     }
-    else if (!(cvn.match(/^\d+/))) {
-        alert("Enter a valid CVN");
+    if (!(cvn.match(/^\d+/))) {
         document.getElementById("cvn").classList.add("incorrect-input");
-        return false;
+        document.getElementById("cvn-error").style.display = "block";
+        valid=0;
     }
-    else {
+    
+    if(valid){
         document.getElementById("card-name").classList.remove("incorrect-input");
         document.getElementById("card-number").classList.remove("incorrect-input");
         document.getElementById("expiry").classList.remove("incorrect-input");
         document.getElementById("cvn").classList.remove("incorrect-input");
+        document.getElementById("cname-error").style.display = "none";
+        document.getElementById("cnumber-error").style.display = "none";
+        document.getElementById("expiry-error").style.display = "none";
+        document.getElementById("cvn-error").style.display = "none";
         nextStep();
     }
 }
