@@ -164,6 +164,13 @@ function validateShippingForm() {
         return false;
     }
     else {
+        document.getElementById("full-name").classList.remove("incorrect-input");
+        document.getElementById("email").classList.remove("incorrect-input");
+        document.getElementById("phone").classList.remove("incorrect-input");
+        document.getElementById("address").classList.remove("incorrect-input");
+        document.getElementById("country").classList.remove("incorrect-input");
+        document.getElementById("city").classList.remove("incorrect-input");
+        document.getElementById("post-code").classList.remove("incorrect-input");
         nextStep();
     }
 }
@@ -175,8 +182,9 @@ function validateCardForm() {
     var expiry = document.forms["card"]["expiry"].value;
     var cvn = document.forms["card"]["cvn"].value;
     if (name == "") {
-      alert("Cardholder name cannot be blank");
-      return false;
+        document.getElementById("card-name").classList.add("incorrect-input");
+        alert("Cardholder name cannot be blank");
+        return false;
     }
     else if (!(number.match(/^\d{16}$/))) {
         alert("Enter a valid card number with no spaces");
@@ -194,6 +202,10 @@ function validateCardForm() {
         return false;
     }
     else {
+        document.getElementById("card-name").classList.remove("incorrect-input");
+        document.getElementById("card-number").classList.remove("incorrect-input");
+        document.getElementById("expiry").classList.remove("incorrect-input");
+        document.getElementById("cvn").classList.remove("incorrect-input");
         nextStep();
     }
 }
