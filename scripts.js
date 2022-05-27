@@ -102,11 +102,13 @@ function validateLoginForm() {
     var valid = 1;
     var user = document.forms["login"]["Username"].value;
     var pword = document.forms["login"]["password"].value;
+    // Empty value
     if (user == "") {
       document.getElementById("Username").classList.add("incorrect-input");
       document.getElementById("user-error").style.display = "block";
       valid = 0;
     }
+    // Empty
     if (pword == "") {
         document.getElementById("password").classList.add("incorrect-input");
         document.getElementById("pword-error").style.display = "block";
@@ -134,36 +136,43 @@ function validateShippingForm() {
     var country =  document.forms["shipping"]["country"].value;
     var city =  document.forms["shipping"]["city"].value;
     var post =  document.forms["shipping"]["post-code"].value;
+    //Empty value or has numbers
     if (name == "" || (name.match(/^\d+/))) {
         document.getElementById("full-name").classList.add("incorrect-input");
         document.getElementById("name-error").style.display = "block";
         valid=0;
     }
+    //Not an email address
     if (!(email.match(check_email))) {
         document.getElementById("email").classList.add("incorrect-input");
         document.getElementById("email-error").style.display = "block";
         valid=0;
     }
+    // Phone must have 10 digits
     if (phone != "" && !(phone.match(/^\(?(\d{4})\)?[- ]?(\d{3})[- ]?(\d{3})$/))) {
         document.getElementById("phone").classList.add("incorrect-input");
         document.getElementById("pword-error").style.display = "block";
         valid=0;
     }
+    //Empty value
     if (address == "") {
         document.getElementById("address").classList.add("incorrect-input");
         document.getElementById("address-error").style.display = "block";
         valid=0;
     }
+    //Empty value or has numbers
     if (country == "" || (country.match(/^\d+/))) {
         document.getElementById("country").classList.add("incorrect-input");
         document.getElementById("country-error").style.display = "block";
         valid=0;
     }
+    //Empty value or has numbers
     if (city=="" || (city.match(/^\d+/))) {
         document.getElementById("city").classList.add("incorrect-input");
         document.getElementById("city-error").style.display = "block";
         valid=0;
     }
+    //Empty value or doesn't have numbers
     if (!(post.match(/^\d+/))) {
         document.getElementById("post-code").classList.add("incorrect-input");
         document.getElementById("post-error").style.display = "block";
@@ -195,21 +204,25 @@ function validateCardForm() {
     var number = document.forms["card"]["card-number"].value;
     var expiry = document.forms["card"]["expiry"].value;
     var cvn = document.forms["card"]["cvn"].value;
-    if (name == "") {
+    //Empty value or has numbers
+    if (name == "" || (name.match(/^\d+/))) {
         document.getElementById("card-name").classList.add("incorrect-input");
         document.getElementById("cname-error").style.display = "block";
         valid=0;
     }
+    // Card number does not have 16 digits
     if (!(number.match(/^\d{16}$/))) {
         document.getElementById("card-number").classList.add("incorrect-input");
         document.getElementById("cnumber-error").style.display = "block";
         valid=0;
     }
+    // Empty value
     if (expiry == "" ) {
         document.getElementById("expiry").classList.add("incorrect-input");
         document.getElementById("expiry-error").style.display = "block";
         valid=0;
     }
+    //Empty value or doesn't have numbers
     if (!(cvn.match(/^\d+/))) {
         document.getElementById("cvn").classList.add("incorrect-input");
         document.getElementById("cvn-error").style.display = "block";
