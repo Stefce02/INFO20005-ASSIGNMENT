@@ -276,6 +276,7 @@ input {
     height: 3em;
     background-color: var(--colour-input);
     font-family: var(--font-secondary);
+    border-radius: 4px;
 }
 
 
