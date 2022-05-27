@@ -85,7 +85,7 @@
 }
 
 .cart-image {
-    width: 30%;
+    width: 35%;
     height: 8em;
     border: 1px solid black;
     border-radius: 5px;
@@ -198,13 +198,16 @@
     .discount > .btn {
         height: 3.5em;
     }
+    .cart-image {
+        width: 37.5%;
+    }
 }
-
+/* 
 @media screen and (max-width: 550px) {
     .cart-image {
         width: 40%;
     }
-}
+} */
 
 @media screen and (max-width: 400px) {
     .cart-image {

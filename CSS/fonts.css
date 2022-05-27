@@ -18,7 +18,7 @@
     --font-size-label: 14px;
 }
 
-@media screen and (min-width: 2400px) {
+/* @media screen and (min-width: 2400px) {
     :root {
         --font-size-h1: 80px;
         --font-size-h2: 72px;
@@ -48,7 +48,7 @@
 
     --font-size-btn: 1.75em;
     }  
-}
+} */
 
 @media screen and (max-width: 1200px) {
     :root {
