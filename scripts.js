@@ -101,14 +101,19 @@ function lastStep(){
 function validateLoginForm() {
     var user = document.forms["login"]["Username"].value;
     var pword = document.forms["login"]["password"].value;
-    if (user == "" || pword == "") {
-      alert("Name must be filled out");
+    if (user == "") {
+      alert("Username cannot be blank");
       document.getElementById("Username").classList.add("incorrect-input");
       return false;
+    }
+    else if (pword == "") {
+        alert("Incorrect Password");
+        document.getElementById("password").classList.add("incorrect-input");
     }
     else {
         // Continue to next stage of the checkout
         document.getElementById("Username").classList.remove("incorrect-input");
+        document.getElementById("password").classList.remove("incorrect-input");
         nextStep();
     }
 }
@@ -123,10 +128,40 @@ function validateShippingForm() {
     var country =  document.forms["shipping"]["country"].value;
     var city =  document.forms["shipping"]["city"].value;
     var post =  document.forms["shipping"]["post-code"].value;
-    if (name == "" || !(email.match(check_email)) || !(phone.match(/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/))
-        || address == "" || country == "" || city=="" || !(post.match(/^\d+/))) {
-      alert("Incorrect Input");
-      return false;
+    if (name == "" || (name.match(/^\d+/))) {
+        alert("Name cannot be blank");
+        document.getElementById("full-name").classList.add("incorrect-input");
+        return false;
+    }
+    else if (!(email.match(check_email))) {
+        alert("Enter a valid email");
+        document.getElementById("email").classList.add("incorrect-input");
+        return false;
+    }
+    else if (phone != "" && !(phone.match(/^\(?(\d{4})\)?[- ]?(\d{3})[- ]?(\d{3})$/))) {
+        alert("Enter a valid number");
+        document.getElementById("phone").classList.add("incorrect-input");
+        return false;
+    }
+    else if (address == "") {
+        alert("Enter an address");
+        document.getElementById("address").classList.add("incorrect-input");
+        return false;
+    }
+    else if (country == "" || (country.match(/^\d+/))) {
+        alert("Enter a country");
+        document.getElementById("country").classList.add("incorrect-input");
+        return false;
+    }
+    else if (city=="" || (city.match(/^\d+/))) {
+        alert("Enter a city");
+        document.getElementById("city").classList.add("incorrect-input");
+        return false;
+    }
+    else if (!(post.match(/^\d+/))) {
+        alert("Enter a valid post code");
+        document.getElementById("post-code").classList.add("incorrect-input");
+        return false;
     }
     else {
         nextStep();
@@ -139,12 +174,26 @@ function validateCardForm() {
     var number = document.forms["card"]["card-number"].value;
     var expiry = document.forms["card"]["expiry"].value;
     var cvn = document.forms["card"]["cvn"].value;
-    if (name == "" || !(number.match(/^\d{16}$/)) || expiry == "" || !(cvn.match(/^\d+/))) {
-      alert("Incorrect Input");
+    if (name == "") {
+      alert("Cardholder name cannot be blank");
       return false;
     }
+    else if (!(number.match(/^\d{16}$/))) {
+        alert("Enter a valid card number with no spaces");
+        document.getElementById("card-number").classList.add("incorrect-input");
+        return false;
+    }
+    else if (expiry == "" ) {
+        alert("Enter an expiry date");
+        document.getElementById("expiry").classList.add("incorrect-input");
+        return false;
+    }
+    else if (!(cvn.match(/^\d+/))) {
+        alert("Enter a valid CVN");
+        document.getElementById("cvn").classList.add("incorrect-input");
+        return false;
+    }
     else {
-        // Continue to next stage of the checkout
         nextStep();
     }
 }

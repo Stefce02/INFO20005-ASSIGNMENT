@@ -31,10 +31,11 @@
         --font-size-title-small: 41px;
     
         --font-size-btn: 2em;
+        --font-size-label: 20px; 
     }  
-}
+} */
 
-@media screen and (min-width: 1800px) {
+/* @media screen and (min-width: 1800px) {
     :root {
     --font-size-h1: 72px;
     --font-size-h2: 64px;

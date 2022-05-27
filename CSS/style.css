@@ -301,6 +301,19 @@ input {
 }
 
 /* Media Queries */
+/* @media screen and (min-width: 1800px) {
+    .order-summary {
+        flex-basis: 35rem;
+        height: 50rem;
+    }
+    .checkout-process > .sidebar-container > .not-sidebar > .checkout {
+        height: 50rem;
+    }
+    input {
+        height: 4em;
+    }
+} */
+
 @media screen and (min-width: 1600px) {
     #cart {
         width: 25%;
