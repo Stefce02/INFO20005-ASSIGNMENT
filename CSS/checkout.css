@@ -425,7 +425,11 @@ input[type='radio']:checked:after {
         padding-top: 1em;
     }
 
-    .checkout-header > .emphasised {
+    .checkout-header > .not ~ .not ~ .emphasised {
+        padding-top: 1em;
+    }
+
+    .checkout-header > .not ~ .emphasised {
         padding-top: 0.5em;
     }
    
@@ -445,6 +449,11 @@ input[type='radio']:checked:after {
         padding-right: 1.25em;
     }
 
-
    
+}
+
+@media screen and (max-width: 321px) {
+    .checkout-header > .not ~ .not ~ .emphasised {
+        padding-top: 0.5em;
+    }
 }
