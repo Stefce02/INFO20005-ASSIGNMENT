@@ -151,7 +151,7 @@ function validateShippingForm() {
     // Phone must have 10 digits
     if (phone != "" && !(phone.match(/^\(?(\d{4})\)?[- ]?(\d{3})[- ]?(\d{3})$/))) {
         document.getElementById("phone").classList.add("incorrect-input");
-        document.getElementById("pword-error").style.display = "block";
+        document.getElementById("phone-error").style.display = "block";
         valid=0;
     }
     //Empty value
