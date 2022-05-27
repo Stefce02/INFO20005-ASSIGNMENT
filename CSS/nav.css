@@ -82,7 +82,11 @@
     margin: auto;
     height: 20%;
     text-align: center;
+}
 
+.menu-heading > a h2 {
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 
 .category-list {
