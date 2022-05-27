@@ -273,7 +273,6 @@ h3 {
 }
 
 input {
-    /* width: 21.5em; */
     height: 3em;
     background-color: var(--colour-input);
     font-family: var(--font-secondary);
@@ -390,6 +389,12 @@ input {
 @media screen and (max-width: 500px) {
     #hamburger {
         width: 100%;
+    }
+}
+
+@media  screen and (max-width: 400px) {
+    .input-quantity {
+        width: 50%;
     }
 }
 

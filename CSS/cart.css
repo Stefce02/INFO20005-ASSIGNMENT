@@ -67,7 +67,7 @@
 }
 
 .cart-product-title {
-    font-size: 20px;
+    font-size: var(--font-size-text);
     font-family: var(--font-secondary);
     color: var(--colour-text);
     padding-bottom: 5%;
@@ -131,6 +131,12 @@
     padding-bottom: 0.5em;
 }
 
+.sub-info p:last-child {
+    width: 50%;
+    margin-left: auto;
+    text-align: right;
+}
+
 .order-info {
     display: flex;
     justify-content: space-between;
@@ -185,5 +191,27 @@
         height: 2.5em;
         text-align: center;
         padding-top: 0.75em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .discount > .btn {
+        height: 3.5em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .cart-image {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cart-image {
+        width: 45%;
+    }
+    .discount > .btn {
+        height: 4em;
+        font-size: 0.75em;
     }
 }
