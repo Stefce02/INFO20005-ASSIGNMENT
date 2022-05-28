@@ -270,6 +270,8 @@ function validateCardForm() {
     // Continue to confirmation
     if(valid){
         nextStep();
+        // Reformat order summary container
+        document.getElementById("space").classList.add("other-information-checkout");
     }
 }
 
