@@ -80,8 +80,9 @@
     justify-content: center; 
     width: 85%;
     margin: auto;
-    height: 20%;
     text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 .menu-heading > a h2 {
