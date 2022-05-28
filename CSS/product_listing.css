@@ -158,6 +158,10 @@ main {
         height: 2.25em;
         width: 20%;
     }
+    .in-stock-icon {
+        height: 1.75em;
+        margin-bottom: 1em;
+    }
 }
 
 @media screen and (min-width: 2000px) {
@@ -168,9 +172,12 @@ main {
 }
 
 @media screen and (min-width: 2400px) {
-
     .sub-txt + .input-quantity {
         height: 2.5em;
+    }
+    .in-stock-icon {
+        height: 2em;
+        margin-bottom: 1.25em;
     }
 }
 
