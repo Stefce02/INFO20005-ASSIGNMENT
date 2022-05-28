@@ -159,7 +159,7 @@
 
 .forgot {
     font-family: var(--font-secondary);
-    font-size: 12.5px;
+    font-size: var(--font-size-label-small);
     opacity: 60%;
 }
 
@@ -325,6 +325,15 @@ input[type='radio']:checked:after {
 }
 
 /* Media Queries */
+@media screen and (min-width: 1800px) {
+    .form-step {
+        margin-top: 2em;
+    }
+    .step-1 {
+        margin-top: 0em;
+        height: 95%;
+    }
+}
 
 @media screen and (max-width: 1050px) {
     .checkout {
