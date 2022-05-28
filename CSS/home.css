@@ -132,4 +132,18 @@
         height: 6em;
         width: 8em;
     }
+
+}
+
+@media screen and (max-width: 455px) {
+
+    .category-card__img {
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 0.5em;
+    }
+    .category-card {
+        margin-bottom: -1em;
+    }
+
 }

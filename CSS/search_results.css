@@ -181,3 +181,16 @@
     }
     
 }
+
+@media screen and (max-width: 450px) {
+    .product-card__image {
+        height: 8em;
+        width: 12.5em;
+        margin-bottom: -0.625em;
+    }
+    .product-card__image--small {
+        height: 7em;
+        width: 10em;
+    }
+    
+}
