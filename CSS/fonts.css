@@ -99,5 +99,19 @@
     } 
 }
 
+@media screen and (max-width: 350px) {
+    :root {
+    --font-size-h1: 36px;
+    --font-size-h2: 30px;
+    --font-size-h3: 20px; 
+    --font-size-text: 12px;
+
+    --font-size-price-big: 18px;
+    --font-size-title-big: 16px;
+    --font-size-price-small: 16px;
+    --font-size-title-small: 14px;
+    } 
+}
+
 
 
