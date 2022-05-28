@@ -1,22 +1,22 @@
 // Insert nav bar at top of all pages
 // modified from https://syntaxfix.com/question/4881/how-can-i-reuse-a-navigation-bar-on-multiple-pages
 $(function() {
-    $(".nav-bar").load("navigation.html");
+    $(".nav-bar").load("../HTML/navigation.html");
 });
 
 // Insert footer at bottom of all pages
 $(function() {
-    $(".footer").load("footer.html");
+    $(".footer").load("../HTML/footer.html");
 });
 
 // Load cart html code
 $(function() {
-    $("#cart").load("cart.html");
+    $("#cart").load("../HTML/cart.html");
 });
 
 // Load hamburger menu html code
 $(function() {
-    $("#hamburger").load("hamburger.html");
+    $("#hamburger").load("../HTML/hamburger.html");
 });
 
 // Open Hamburger Menu on click
