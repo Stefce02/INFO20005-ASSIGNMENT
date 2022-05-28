@@ -1,44 +1,38 @@
 // Insert nav bar at top of all pages
 // modified from https://syntaxfix.com/question/4881/how-can-i-reuse-a-navigation-bar-on-multiple-pages
 $(function() {
-    if(document.URL.includes("index.html")) {
-        $(".nav-bar").load("HTML/navigation.html");
-    }
-    else {
-        $(".nav-bar").load("../HTML/navigation.html");
-    }
+    $(".nav-bar").load("../HTML/navigation.html");
+});
+
+$(function() {
+    $(".nav-bar-index").load("HTML/navigation_index.html");
 });
 
 // Insert footer at bottom of all pages
 $(function() {
-    if(document.URL.includes("index.html")) {
-        $(".footer").load("HTML/footer.html");
-    }
-    else {
-        $(".footer").load("../HTML/footer.html");
-    }
-    
+    $(".footer").load("../HTML/footer.html");
+});
+
+$(function() {
+    $(".footer-index").load("../HTML/footer_index.html");
 });
 
 // Load cart html code
-$(function() {
-    if(document.URL.includes("index.html")) {
-        $("#cart").load("HTML/cart.html");
-    }
-    else {
-        $("#cart").load("../HTML/cart.html");
-    }
-    
+$(function() { 
+    $("#cart").load("../HTML/cart.html"); 
+});
+
+$(function() { 
+    $(".cart-index").load("../HTML/cart_index.html"); 
 });
 
 // Load hamburger menu html code
 $(function() {
-    if(document.URL.includes("index.html")) {
-        $("#hamburger").load("HTML/hamburger.html");
-    }
-    else {
-        $("#hamburger").load("../HTML/hamburger.html");
-    }
+    $("#hamburger").load("../HTML/hamburger.html");
+});
+
+$(function() {
+    $(".hamburger-index").load("../HTML/hamburger_index.html");
 });
 
 // Open Hamburger Menu on click
