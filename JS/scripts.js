@@ -286,6 +286,7 @@ function validateCardForm() {
     if(valid){
         nextStep();
         // Reformat order summary container
+        document.getElementById("space").scrollIntoView({behavior: "smooth", block: "end"});
         document.getElementById("space").classList.add("other-information-confirmation");
     }
 }
