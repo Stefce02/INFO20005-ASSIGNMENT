@@ -1,22 +1,44 @@
 // Insert nav bar at top of all pages
 // modified from https://syntaxfix.com/question/4881/how-can-i-reuse-a-navigation-bar-on-multiple-pages
 $(function() {
-    $(".nav-bar").load("../HTML_extra/navigation.html");
+    if(document.URL.includes("index.html")) {
+        $(".nav-bar").load("HTML/navigation.html");
+    }
+    else {
+        $(".nav-bar").load("../HTML/navigation.html");
+    }
 });
 
 // Insert footer at bottom of all pages
 $(function() {
-    $(".footer").load("../HTML_extra/footer.html");
+    if(document.URL.includes("index.html")) {
+        $(".footer").load("HTML/footer.html");
+    }
+    else {
+        $(".footer").load("../HTML/footer.html");
+    }
+    
 });
 
 // Load cart html code
 $(function() {
-    $("#cart").load("../HTML/cart.html");
+    if(document.URL.includes("index.html")) {
+        $("#cart").load("HTML/cart.html");
+    }
+    else {
+        $("#cart").load("../HTML/cart.html");
+    }
+    
 });
 
 // Load hamburger menu html code
 $(function() {
-    $("#hamburger").load("../HTML_extra/hamburger.html");
+    if(document.URL.includes("index.html")) {
+        $("#hamburger").load("HTML/hamburger.html");
+    }
+    else {
+        $("#hamburger").load("../HTML/hamburger.html");
+    }
 });
 
 // Open Hamburger Menu on click
