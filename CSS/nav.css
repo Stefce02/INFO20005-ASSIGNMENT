@@ -34,8 +34,19 @@
     position: absolute;
     top: 0.5em;
     right: 0em;
-    filter: var(--colour-icons)
+    filter: var(--colour-icons);
 }
+
+/* .phone-menu-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone-menu-options > .menu-icon ~ .menu-icon {
+    margin-left: 1em;
+} */
 
 .nav-bar {
     background-color: var(--colour-primary);
@@ -55,9 +66,11 @@
     font-size: 2em;
 }
 
+
 /* Hamburger Menu */
 .hamburger {
     display: none;
+    /* width: 4em; */
 }
 
 .hamburger-line {
@@ -167,6 +180,9 @@
 }
 
 @media screen and (max-width: 1350px) {
+    .search-icon-self {
+        display: block;
+    }
     .hide-menu {
         display: none;
     }
