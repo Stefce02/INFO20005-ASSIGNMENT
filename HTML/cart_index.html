@@ -1,0 +1,70 @@
+    <div class = "background">
+        <div class="align-cart">
+            <!-- Title -->
+            <div class = "cart-heading">
+                <h2> Your Cart </h2>
+                <img class = "close" onclick="cartDisplay()" src = "Images/Close.png" alt = "cross">
+            </div>
+
+            <!-- Cart Summary -->
+            <div class = "cart-summary">
+                <div class = "cart-product"> 
+                    <img class = "cart-image" src="Images/Lounges/LOUNGE_SEYMOUR_11.png" alt = "Seymour Lounge" id = "product-image">
+                    <div class = "cart-product-info">
+                        <div>
+                            <p class = "cart-product-title"> Seymour Lounge </p>
+                            <p class = "cart-product-price"> $1799 </p>
+                        </div>
+                        <input class="input-quantity" type="number"> </input>
+                    </div>  
+                    <img class = "open"  src = "Images/Close.png" alt = "cross">
+                </div>    
+            </div>
+
+            <div class = "discount">
+                <div class = "float-input">
+                    <label for = "code"> Discount Code </label>
+                    <input id = "code" class = "full-box"> </input>
+                </div>
+                <button class = "btn btn-tertiary btn--xsmall"> Apply </button>
+            </div>
+        </div> 
+
+        <div class="align-cart">
+            <!-- Other Information -->
+            <div class = "other-information">
+                <div class = "sub-info">
+                    <p> Sub-Total </p>
+                    <p> $1619.10 </p>
+                </div>
+                <div class = "sub-info">
+                    <p> GST </p>
+                    <p> $179.90 </p>
+                </div>
+                <div class = "sub-info">
+                    <p> Shipping </p>
+                    <p> Calculated at next step </p>
+                </div>
+            </div>
+
+            <!-- Final Information -->
+            <div class = "order-info">
+                <p class="order-total"> Total </p>
+                <p class="order-total-price"> $1799</p>
+            </div>
+
+            <!-- Checkout buttons -->
+            <div class="checkout-btns">
+                <!-- Checkout Button -->
+                <div class = "button">
+                    <a href="HTML/checkout.html" class="btn btn-primary btn--medium"> Checkout </a> 
+                </div>
+
+                <!-- Checkout with Afterpay-->
+                <div class = "button">
+                    <a class = "btn btn-secondary btn--medium">  Checkout with Afterpay  </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
