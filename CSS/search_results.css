@@ -1,4 +1,10 @@
 /* Product Cards */
+.product-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 .product-card__title {
     font-size: var(--font-size-title-big);
@@ -156,6 +162,11 @@
         height: 20em;
         width: 25em;
     }
+    .not-sidebar > .subsection > .product-card {
+        margin-left: 3em;
+        margin-right: 3em;  
+        margin-bottom: 2em;
+   }
 }
 
 
