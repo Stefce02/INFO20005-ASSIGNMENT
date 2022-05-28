@@ -1,53 +1,32 @@
 // Insert nav bar at top of all pages
 // modified from https://syntaxfix.com/question/4881/how-can-i-reuse-a-navigation-bar-on-multiple-pages
 $(function() {
-    $(".nav-bar").load("../HTML/navigation.html");
-});
-
-$(function() {
-    $(".nav-bar-index").load("HTML/navigation_index.html");
+    $(".nav-bar").load("navigation.html");
 });
 
 // Insert footer at bottom of all pages
 $(function() {
-    $(".footer").load("../HTML/footer.html");
-});
-
-$(function() {
-    $(".footer-index").load("../HTML/footer_index.html");
+    $(".footer").load("footer.html");
 });
 
 // Load cart html code
-$(function() { 
-    $("#cart").load("../HTML/cart.html"); 
-});
-
-$(function() { 
-    $(".cart-index").load("../HTML/cart_index.html"); 
+$(function() {
+    $("#cart").load("cart.html");
 });
 
 // Load hamburger menu html code
 $(function() {
-    $("#hamburger").load("../HTML/hamburger.html");
-});
-
-$(function() {
-    $(".hamburger-index").load("../HTML/hamburger_index.html");
+    $("#hamburger").load("hamburger.html");
 });
 
 // Open Hamburger Menu on click
 function menuDisplay(){
     console.log("clicked");
     var menu = document.getElementById("hamburger");
-    var menuIndex = document.getElementsByClassName("hamburger-index");
     menu.classList.toggle("menu-shown");
-    menuIndex.classList.toggle("menu-shown");
     // Close cart if open
-    if(document.getElementById("cart").classList.contains("cart-shown") || 
-        document.getElementsByClassName("cart-index").classList.contains("cart-shown")) {
-
+    if(document.getElementById("cart").classList.contains("cart-shown")) {
         document.getElementById("cart").classList.toggle("cart-shown");
-        document.getElementsByClassName("cart-index").classList.toggle("cart-shown");
     }
 }
 
@@ -55,15 +34,10 @@ function menuDisplay(){
 function cartDisplay(){
     console.log("clicked");
     var cart = document.getElementById("cart");
-    var cartIndex = document.getElementsByClassName("cart-index");
-    cartIndex.classList.toggle("cart-shown");
     cart.classList.toggle("cart-shown");
     // Close menu if open
-    if(document.getElementById("hamburger").classList.contains("menu-shown") || 
-        document.getElementsByClassName("hamburger-index").classList.contains("menu-shown")) {
-
+    if(document.getElementById("hamburger").classList.contains("menu-shown")) {
         document.getElementById("hamburger").classList.toggle("menu-shown");
-        document.getElementsByClassName("hamburger-index").classList.toggle("menu-shown")
     }
 }
 
@@ -310,9 +284,7 @@ function validateCardForm() {
     
     // Continue to confirmation
     if(valid){
-        document.getElementById("space").scrollIntoView({behavior: "smooth", block: "end"});
         nextStep();
-        document.getElementById("space").scrollIntoView({behavior: "smooth", block: "end"});
         // Reformat order summary container
         document.getElementById("space").classList.add("other-information-confirmation");
     }
