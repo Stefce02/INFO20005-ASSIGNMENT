@@ -284,9 +284,9 @@ function validateCardForm() {
     
     // Continue to confirmation
     if(valid){
+        document.getElementById("space").scrollIntoView({behavior: "smooth", block: "end"});
         nextStep();
         // Reformat order summary container
-        document.getElementById("space").scrollIntoView({behavior: "smooth", block: "end"});
         document.getElementById("space").classList.add("other-information-confirmation");
     }
 }
