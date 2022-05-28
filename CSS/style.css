@@ -119,6 +119,11 @@ h3 {
     margin: auto;
 }
 
+/* .scroll > .subsection {
+    flex-wrap: nowrap;
+    overflow: scroll;
+} */
+
 .sidebar-container{
     display: flex;
     flex-direction: row;
