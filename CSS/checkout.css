@@ -32,6 +32,7 @@
     border-radius: 2.5px;
     text-align: center;
     width:25%;
+    font-size: var(--font-size-input);
     height: 1em;
     background-color: white;
     font-family: var(--font-secondary);
@@ -57,6 +58,10 @@
 
 .order-summary > .other-information-hidden {
     margin-top: 40%;
+}
+
+.order-summary > .order-info {
+    margin-top: 1vh;
 }
 
 .order-summary > .discount > .float-input > input{
@@ -333,7 +338,41 @@ input[type='radio']:checked:after {
         margin-top: 0em;
         height: 95%;
     }
+    .order-summary > .other-information {
+        margin-top: 40%;
+    }
+    .order-summary > .cart-product > .cart-image {
+       height: 8em;
+       width: 10em;
+    }
+    .order-summary > .cart-product > .cart-product-info > div > .cart-product-title {
+        padding-right: 1.5em;
+    }
+    .order-summary > .discount > .btn{
+        height: 2.75em;
+        font-size: 20px;
+    }
 }
+
+@media screen and (min-width: 2400px) {
+
+    .order-summary > .other-information {
+        margin-top: 30%;
+    }
+    .order-summary > .cart-product > .cart-image {
+       height: 10em;
+       width: 12em;
+    }
+    .quantity-value {
+        height: 1.5em;
+        padding-top: 0.25em;
+    }
+    .order-summary > .discount > .btn{
+        height: 2.625em;
+        font-size: 25px;
+    }
+}
+
 
 @media screen and (max-width: 1050px) {
     .checkout {
