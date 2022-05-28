@@ -342,6 +342,10 @@
     .order-summary > .other-information {
         margin-top: 40%;
     }
+    .order-summary > .other-information-checkout {
+        margin-top: 60%;
+    }
+
     .order-summary > .cart-product > .cart-image {
        height: 8em;
        width: 10em;
@@ -360,6 +364,9 @@
     .order-summary > .other-information {
         margin-top: 30%;
     }
+    .order-summary > .other-information-checkout {
+        margin-top: 45%;
+    }
     .order-summary > .cart-product > .cart-image {
        height: 10em;
        width: 12em;
@@ -367,6 +374,12 @@
     .order-summary > .discount > .btn{
         height: 2.625em;
         font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .order-summary > .other-information-checkout {
+        margin-top: 55%;
     }
 }
 
