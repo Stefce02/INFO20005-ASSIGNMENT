@@ -271,7 +271,7 @@ function validateCardForm() {
     if(valid){
         nextStep();
         // Reformat order summary container
-        document.getElementById("space").classList.add("other-information-checkout");
+        document.getElementById("space").classList.add("other-information-confirmation");
     }
 }
 
