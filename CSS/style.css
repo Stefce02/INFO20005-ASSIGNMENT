@@ -108,6 +108,8 @@ h3 {
 
 
 /* Layout */
+
+/* Elements  */
 .subsection {
     display: flex;
     flex-wrap: wrap;
