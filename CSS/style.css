@@ -142,12 +142,12 @@ h3 {
 /* Open Cart and Hamburger Menu */
 .hidden-cart {
    position: fixed;
-   right: -100em;
+   right: -100%;
 }
 
 .hidden-menu {
     position: fixed;
-    left: -100em;
+    left: -100%;
  }
 
 .cart-shown {
