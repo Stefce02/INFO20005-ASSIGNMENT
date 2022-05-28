@@ -104,10 +104,12 @@ function validateLoginForm() {
     var pword = document.forms["login"]["password"].value;
     // Empty value
     if (user == "") {
-      document.getElementById("username").classList.add("incorrect-input");
-      document.getElementById("user-error").style.display = "block";
-      document.getElementById("username").scrollIntoView({behavior: "smooth", block: "center"});
-      valid = 0;
+        // Change input box colour to red and display error message
+        document.getElementById("username").classList.add("incorrect-input");
+        document.getElementById("user-error").style.display = "block";
+        // Scroll to where error occured 
+        document.getElementById("username").scrollIntoView({behavior: "smooth", block: "center"});
+        valid = 0;
     }
     // Remove error message if correct
     else {
