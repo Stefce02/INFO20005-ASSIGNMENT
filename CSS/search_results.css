@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 1.5em;
 }
 
 .product-card__title {
@@ -21,7 +22,6 @@
     color: var(--colour-text);
     text-align: center;
     padding-top: 0.5rem;
-    margin-bottom: 0.5em;
 }
 
 .product-card__image {
@@ -40,8 +40,8 @@
 }
 
 .not-sidebar > .subsection > .product-card {
-     margin-left: 1em;
-     margin-right: 1em;  
+     margin-left: 3em;
+     margin-right: 3em;  
 }
 
 .product-card__price--small {
@@ -142,10 +142,6 @@
         height: 17.5em;
         width: 22.5em;
     }
-    .not-sidebar > .subsection > .product-card {
-        margin-left: 2em;
-        margin-right: 2em;  
-   }
    .filter > .search {
        font-size: var(--font-size-input);
        width: 75%;
@@ -162,10 +158,8 @@
         height: 20em;
         width: 25em;
     }
-    .not-sidebar > .subsection > .product-card {
-        margin-left: 3em;
-        margin-right: 3em;  
-        margin-bottom: 2em;
+    .product-card {
+        margin-bottom: 3em;
    }
 }
 
