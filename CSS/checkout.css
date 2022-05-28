@@ -36,8 +36,7 @@
     background-color: white;
     font-family: var(--font-secondary);
     height: 1.5em;
-    padding-top: 0.25em;
-    
+    padding-top: 0.25em;  
 }
 
 .order-summary > .cart-product > .cart-product-price {
@@ -502,11 +501,18 @@
     .order-summary > .cart-product > .cart-product-info > div > .cart-product-title {
         padding-right: 1.25em;
     }
-
-   
+    .checkout-header > .not ~ .emphasised {
+        padding-top: 1em;
+    }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 340px) {
+    .checkout-header > .not ~ .emphasised {
+        padding-top: 0.5em;
+    }
+}
+
+@media screen and (max-width: 275px) {
     .checkout-header > .not ~ .not ~ .emphasised {
         padding-top: 0.5em;
     }
