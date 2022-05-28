@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="JS/scripts.js"> </script>
+    <title> Lounge Product Page </title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar"> </div>
+    <div class = "spacer"></div>
+
+    <!-- Hamburger Menu -->
+    <div class = "hidden-menu" id="hamburger"> </div>
+
+    <!-- Page History -->
+    <p class = "history"> Home > Lounge Room > Seymour Lounge </p>
+
+    <!-- Product -->
+    <main>
+        
+        <div class = "product-image-gallery">
+            <div class = "other-images">
+                <img class = "product-sub-image" src="Images/Image 2.png" alt = "Seymour lounge in a living room surrounded by other furniture">
+                <img class = "product-sub-image" src="Images/Image 3.png" alt = "Seymour lounge in a living room surrounded by other furniture">
+            </div>
+            <img class = "product-image" src="Images/Lounges/LOUNGE_SEYMOUR_11.png" alt = "Seymour Lounge">
+        </div>
+
+        <!--  Product Actions -->
+        <div class = "product-actions">
+            <div>
+                <p class = "product-title"> Seymour Lounge </p>
+                <p class = "product-price"> $1799 </p>
+                <div class="in-stock">
+                    <p class = "sub-txt"> In Stock </p>
+                    <img class = "in-stock-icon" src="Images/Icons/In-stock_icon.svg" alt = "Checkmark">
+                </div>
+            </div>
+
+            <div> 
+                <div>
+                    <p class = "sub-txt"> Quantity</p>
+                    <input class="input-quantity" type="number"> </input>
+                </div>
+
+                <!-- Purchase Buttons  -->
+                <div class = "purchase-btns">
+                    <button class= "btn btn-secondary btn--small" onclick="cartDisplay()"> Add to Cart </button>
+                    <a href="checkout.html"> <button class= "btn btn-primary btn--small"> Buy Now </button></a>
+                </div>
+            </div> 
+        </div> 
+
+    </main>
+
+    <!--  Product Actions -->
+    <div class = "product-actions-under">
+        <div class = "main-product-info">
+            <p class = "product-title"> Seymour Lounge </p>
+            <p class = "product-price"> $1799 </p>
+        </div>
+        <div class="in-stock">
+            <p class = "sub-txt"> In Stock </p>
+            <img class = "in-stock-icon" src="Images/Icons/In-stock_icon.svg" alt = "Checkmark">
+        </div>
+
+         <!-- Purchase Buttons  -->
+        <div class = "purchase-btns">
+            <button class= "btn btn-secondary btn--small" onclick="cartDisplay()"> Add to Cart </button>
+            <a href="checkout.html"> <button class= "btn btn-primary btn--small"> Buy Now </button></a>
+        </div>
+
+    </div> 
+
+    <!-- Product Information -->
+    <div class = "product-info">
+
+         <!-- Product Description -->
+         <div class = "filter-option"> 
+            <p class="filter-name"> Description </p>
+            <p class = "description-txt"> 
+                The Seymour sofa expresses a softly feminine comfort and sensual elegance, 
+                drawing its inspiration from a dynamic,  
+                sinuous architectural language. The system comprises linear and curved seating
+                elements with a one-piece seat cushion matched with foam seat backs in two heights
+                that form three-dimensional curves and make it possible to create both fixed sofas as well as linear or corner sectional compositions.
+            </p> 
+        </div>
+
+        <div class = "filter-option"> 
+            <p class="filter-name"> Materials & Finish </p>
+            <img class = "open" src="Images/Open.png">
+            <!-- <p class = "description-txt"> Channelled goose down backrest cushion padding. The 50x50 cm cushion also includes a centre insert in Memory Foam. </p> -->
+        </div>
+            
+        
+        <div class = "filter-option"> 
+            <p class="filter-name"> Dimensions </p>
+            <img class = "open" src="Images/Open.png">
+        </div>  
+
+        <div class = "filter-option"> 
+            <p class="filter-name"> Shipping, Returns & Warranty </p>
+            <img class = "open" src="Images/Open.png">
+        </div>
+
+    </div>
+
+    <!-- Similar Products -->
+    <h2> Similar Products </h2>
+    <div class = "subsection">
+
+        <div class = "product-card">
+            <img class = "product-card__image" src= "Images/Lounges/john-3-seater-sofa-biscuit beige-1.png" alt = "John 3 Seater">
+            <p class = "product-card__title"> John 3 Seater Sofa </p>
+            <p class = "product-card__price"> $1374 </p>
+        </div>
+
+        <div class = "product-card">
+            <img class = "product-card__image" src= "Images/Lounges/Richmond.png" alt = "Richmond Lounge">
+            <p class = "product-card__title"> Richmond Lounge </p>
+            <p class = "product-card__price"> $1299 </p>
+        </div>
+
+        <div class = "product-card">
+            <img class = "product-card__image" src= "Images/Lounges/Jasper-metro.png" alt = "Jasper Metro Sofa">
+            <p class = "product-card__title"> Jasper Metro Sofa </p>
+            <p class = "product-card__price"> $2299 </p>
+        </div>
+
+        <div class = "product-card">
+            <img class = "product-card__image" src= "Images/Lounges/Opera.png" alt = "Opera Sofa">
+            <p class = "product-card__title"> Opera Sofa </p>
+            <p class = "product-card__price"> $999 </p>
+        </div>
+
+    </div>
+
+    <div class = "button">
+        <button class = "btn btn-secondary btn-more">  View More  </button>
+    </div>
+
+    <!-- Chat -->
+    <img class = "chat" src="Images/Icons/Chat Icon.svg" alt="text bubble">
+
+    <!-- Footer -->
+    <div class="footer"> </div>
+
+     <!-- Cart -->
+     <div class="hidden-cart" id="cart"></div>
+
+</body>
+</html>
