@@ -194,6 +194,9 @@
     .cart-summary .input-quantity {
         font-size: 24px;
     }
+    .discount > .btn {
+        height: 2.8em;
+    }
 } 
 
 @media screen and (min-width: 2400px) {
@@ -204,6 +207,10 @@
     .cart-summary .input-quantity {
         height: 2em;
     }
+    .discount > .btn {
+        height: 2.275em;
+    }
+    
 } 
 
 @media screen and (max-width: 1200px) {
