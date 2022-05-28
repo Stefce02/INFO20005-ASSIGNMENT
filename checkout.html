@@ -69,14 +69,14 @@
                         <form name="login" class="login">
                             <div class = "float-input">
                                 <label for = "Username"> Username/Email </label>
-                                <input id = "Username" type="email" class = "full-box"> </input>
+                                <input id = "Username" type="email" autocomplete="username" class = "full-box"> </input>
                                 <p class = "error-msg"  id="user-error"> Username cannot be blank </p>
                             </div>
                             
         
                             <div class = "float-input">
                                 <label for = "password"> Password </label>
-                                <input id = "password" class = "full-box" type="password"> </input>
+                                <input id = "password" class = "full-box" autocomplete="current-password" type="password"> </input>
                                 <p class = "error-msg"  id="pword-error"> Incorrect Password </p>
                             </div>
                             <p class="forgot"> Forgot Password? </pc>
@@ -98,26 +98,26 @@
 
                             <div class = "float-input">
                                 <label for = "full-name"> Full Name </label>
-                                <input id = "full-name" class = "full-box"> </input>
+                                <input id = "full-name" class = "full-box" autocomplete="name"> </input>
                                 <p class = "error-msg" id="name-error"> Name cannot be blank </p>
                             </div>
         
                             <div class = "float-input">
                                 <label for = "email"> Email </label>
-                                <input id = "email" class = "full-box" type="email"> </input>
+                                <input id = "email" class = "full-box" type="email" autocomplete="email"> </input>
                                 <p class = "error-msg"  id="email-error"> Enter a valid email </p>
                             </div>
         
                             <div class = "float-input">
                                 <label for = "phone"> Phone (Optional) </label>
-                                <input id = "phone" class = "full-box" type="number"> </input>
+                                <input id = "phone" class = "full-box" type="tel" autocomplete="tel"> </input>
                                 <p class = "error-msg"  id="phone-error"> Enter a valid phone number </p>
                             </div>
 
                             <div class = "two-in-row">
                                 <div class = "float-input">
                                     <label for = "address"> Address </label>
-                                    <input id = "address" class = "full-box" size="10"> </input>
+                                    <input id = "address" class = "full-box" size="10" autocomplete="street-address"> </input>
                                     <p class = "error-msg"  id="address-error"> Enter an address </p>
                                 </div>
             
@@ -130,7 +130,7 @@
                             <div class = "three-in-row">
                                 <div class = "float-input">
                                     <label for = "country"> Country </label>
-                                    <input id = "country" class = "full-box"> </input>
+                                    <input id = "country" class = "full-box" autocomplete="country"> </input>
                                     <p class = "error-msg"  id="country-error"> Enter a country </p>
                                 </div>
             
@@ -142,7 +142,7 @@
             
                                 <div class = "float-input">
                                     <label for = "post-code"> Post Code </label>
-                                    <input id = "post-code" class = "full-box"> </input>
+                                    <input id = "post-code" class = "full-box" autocomplete="postal-code"> </input>
                                     <p class = "error-msg"  id="post-error"> Enter a valid post code </p>
                                 </div>
                             </div>
@@ -178,26 +178,26 @@
 
                             <div class = "float-input">
                                 <label for = "card-name"> Cardholder Name </label>
-                                <input id = "card-name" class = "full-box"> </input>
+                                <input id = "card-name" class = "full-box" autocomplete="cc-name"> </input>
                                 <p class = "error-msg"  id="cname-error"> Cardholder name cannot be blank </p>
                             </div>
         
                             <div class = "float-input">
                                 <label for = "card-number"> Card Number </label>
-                                <input id = "card-number" class = "full-box"> </input>
+                                <input id = "card-number" class = "full-box" autocomplete="cc-number"> </input>
                                 <p class = "error-msg"  id="cnumber-error"> Enter a valid card number (16 Digits) with no spaces </p>
                             </div>
                             
                             <div class="two-in-row">
                                 <div class = "float-input">
                                     <label for = "expiry"> Card Expiry Date </label>
-                                    <input id = "expiry" class = "full-box" type="month"> </input>
+                                    <input id = "expiry" class = "full-box" type="month" autocomplete="cc-exp"> </input>
                                     <p class = "error-msg"  id="expiry-error"> Enter an expiry date </p>
                                 </div>
             
                                 <div class = "float-input">
                                     <label for = "cvn"> Card CVN </label>
-                                    <input id = "cvn" class = "full-box"> </input>
+                                    <input id = "cvn" class = "full-box" autocomplete="cc-csc"> </input>
                                     <p class = "error-msg"  id="cvn-error"> Enter a valid CVN </p>
                                 </div>
                             </div>
