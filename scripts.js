@@ -100,23 +100,25 @@ function lastStep(){
 // Form Validation
 function validateLoginForm() {
     var valid = 1;
-    var user = document.forms["login"]["Username"].value;
+    var user = document.forms["login"]["username"].value;
     var pword = document.forms["login"]["password"].value;
     // Empty value
     if (user == "") {
-      document.getElementById("Username").classList.add("incorrect-input");
+      document.getElementById("username").classList.add("incorrect-input");
       document.getElementById("user-error").style.display = "block";
+      document.getElementById("username").scrollIntoView({behavior: "smooth", block: "center"});
       valid = 0;
     }
     // Remove error message if correct
     else {
-        document.getElementById("Username").classList.remove("incorrect-input");
+        document.getElementById("username").classList.remove("incorrect-input");
         document.getElementById("user-error").style.display = "none";
     }
     // Empty
     if (pword == "") {
         document.getElementById("password").classList.add("incorrect-input");
         document.getElementById("pword-error").style.display = "block";
+        document.getElementById("password").scrollIntoView({behavior: "smooth", block: "center"});
         valid = 0;
     }
     else {
@@ -144,6 +146,7 @@ function validateShippingForm() {
     if (name == "" || (name.match(/^\d+/))) {
         document.getElementById("full-name").classList.add("incorrect-input");
         document.getElementById("name-error").style.display = "block";
+        document.getElementById("full-name").scrollIntoView({behavior: "smooth", block: "end"});
         valid=0;
     }
     // Remove error message if correct
@@ -155,6 +158,7 @@ function validateShippingForm() {
     if (!(email.match(check_email))) {
         document.getElementById("email").classList.add("incorrect-input");
         document.getElementById("email-error").style.display = "block";
+        document.getElementById("email").scrollIntoView({behavior: "smooth", block: "end"});
         valid=0;
     }
     else {
@@ -165,6 +169,7 @@ function validateShippingForm() {
     if (phone != "" && !(phone.match(/^\(?(\d{4})\)?[- ]?(\d{3})[- ]?(\d{3})$/))) {
         document.getElementById("phone").classList.add("incorrect-input");
         document.getElementById("phone-error").style.display = "block";
+        document.getElementById("phone").scrollIntoView({behavior: "smooth", block: "center"});
         valid=0;
     }
     else {
@@ -175,6 +180,7 @@ function validateShippingForm() {
     if (address == "") {
         document.getElementById("address").classList.add("incorrect-input");
         document.getElementById("address-error").style.display = "block";
+        document.getElementById("address").scrollIntoView({behavior: "smooth", block: "center"});
         valid=0;
     }
     else {
@@ -185,6 +191,7 @@ function validateShippingForm() {
     if (country == "" || (country.match(/^\d+/))) {
         document.getElementById("country").classList.add("incorrect-input");
         document.getElementById("country-error").style.display = "block";
+        document.getElementById("country").scrollIntoView({behavior: "smooth", block: "start"});
         valid=0;
     }
     else {
@@ -195,6 +202,7 @@ function validateShippingForm() {
     if (city=="" || (city.match(/^\d+/))) {
         document.getElementById("city").classList.add("incorrect-input");
         document.getElementById("city-error").style.display = "block";
+        document.getElementById("city").scrollIntoView({behavior: "smooth", block: "start"});
         valid=0;
     }
     else {
@@ -205,6 +213,7 @@ function validateShippingForm() {
     if (!(post.match(/^\d+/))) {
         document.getElementById("post-code").classList.add("incorrect-input");
         document.getElementById("post-error").style.display = "block";
+        document.getElementById("post-code").scrollIntoView({behavior: "smooth", block: "start"});
         valid=0;
     }
     else {
@@ -229,6 +238,7 @@ function validateCardForm() {
     if (name == "" || (name.match(/^\d+/))) {
         document.getElementById("card-name").classList.add("incorrect-input");
         document.getElementById("cname-error").style.display = "block";
+        document.getElementById("card-name").scrollIntoView({behavior: "smooth", block: "end"});
         valid=0;
     }
     // Remove error message if correct
@@ -240,6 +250,7 @@ function validateCardForm() {
     if (!(number.match(/^\d{16}$/))) {
         document.getElementById("card-number").classList.add("incorrect-input");
         document.getElementById("cnumber-error").style.display = "block";
+        document.getElementById("card-number").scrollIntoView({behavior: "smooth", block: "center"});
         valid=0;
     }
     else {
@@ -250,6 +261,7 @@ function validateCardForm() {
     if (expiry == "" ) {
         document.getElementById("expiry").classList.add("incorrect-input");
         document.getElementById("expiry-error").style.display = "block";
+        document.getElementById("expiry").scrollIntoView({behavior: "smooth", block: "start"});
         valid=0;
     }
     else {
@@ -260,6 +272,7 @@ function validateCardForm() {
     if (!(cvn.match(/^\d+/))) {
         document.getElementById("cvn").classList.add("incorrect-input");
         document.getElementById("cvn-error").style.display = "block";
+        document.getElementById("cvn").scrollIntoView({behavior: "smooth", block: "start"});
         valid=0;
     }
     else {
