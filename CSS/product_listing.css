@@ -144,6 +144,17 @@ main {
 }
 
 /* Media Queries */
+@media screen and (min-width: 1400px) {
+    .sort > .btn {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .sort > .btn {
+        font-size: 24px;
+    }
+}
 
 @media screen and (max-width: 650px) {
     .product-image {

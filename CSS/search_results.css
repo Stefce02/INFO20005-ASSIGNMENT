@@ -7,7 +7,6 @@
     text-decoration: underline;
     text-align: center;
     margin-bottom: 0.125em;
-
 }
 
 .product-card__price {
@@ -37,7 +36,6 @@
 .not-sidebar > .subsection > .product-card {
      margin-left: 1em;
      margin-right: 1em;  
-     
 }
 
 .product-card__price--small {
@@ -47,14 +45,6 @@
 .product-card__title--small {
     font-size: var(--font-size-title-small);
 }
-
-/* Image of Danish sofa doesn't resize the same as the other */
-/* #danish {
-    height: 200px;
-    width: 500px;
-    margin-top: 100px;
-    margin-bottom: 40px;
-} */
 
 /* Product Filter */
 .sort {
@@ -118,7 +108,6 @@
 
 
 /* Mobile Changes */
-
 .phone-search {
   display: none;
   justify-content: center;
@@ -143,13 +132,32 @@
         height: 15em;
         width: 20em;
     }
-    @media screen and (min-width: 1800px) {
-        .product-card__image {
-            height: 17.5em;
-            width: 22.5em;
-        }
+    .product-card__image {
+        height: 17.5em;
+        width: 22.5em;
+    }
+    .not-sidebar > .subsection > .product-card {
+        margin-left: 2em;
+        margin-right: 2em;  
+   }
+   .filter > .search {
+       font-size: var(--font-size-input);
+       width: 75%;
+   }
+   
+}
+
+@media screen and (min-width: 2200px) {
+    .product-card__image--small {
+        height: 17.5em;
+        width: 22.5em;
+    }
+    .product-card__image {
+        height: 20em;
+        width: 25em;
     }
 }
+
 
 @media screen and (max-width: 1100px) {
     .phone-search {
