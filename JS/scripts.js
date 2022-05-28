@@ -39,10 +39,15 @@ $(function() {
 function menuDisplay(){
     console.log("clicked");
     var menu = document.getElementById("hamburger");
+    var menuIndex = document.getElementsByClassName("hamburger-index");
     menu.classList.toggle("menu-shown");
+    menuIndex.classList.toggle("menu-shown");
     // Close cart if open
-    if(document.getElementById("cart").classList.contains("cart-shown")) {
+    if(document.getElementById("cart").classList.contains("cart-shown") || 
+        document.getElementsByClassName("cart-index").classList.contains("cart-shown")) {
+
         document.getElementById("cart").classList.toggle("cart-shown");
+        document.getElementsByClassName("cart-index").classList.toggle("cart-shown");
     }
 }
 
@@ -50,10 +55,15 @@ function menuDisplay(){
 function cartDisplay(){
     console.log("clicked");
     var cart = document.getElementById("cart");
+    var cartIndex = document.getElementsByClassName("cart-index");
+    cartIndex.classList.toggle("cart-shown");
     cart.classList.toggle("cart-shown");
     // Close menu if open
-    if(document.getElementById("hamburger").classList.contains("menu-shown")) {
+    if(document.getElementById("hamburger").classList.contains("menu-shown") || 
+        document.getElementsByClassName("hamburger-index").classList.contains("menu-shown")) {
+
         document.getElementById("hamburger").classList.toggle("menu-shown");
+        document.getElementsByClassName("hamburger-index").classList.toggle("menu-shown")
     }
 }
 
