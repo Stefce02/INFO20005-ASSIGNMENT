@@ -333,21 +333,19 @@ input {
     input {
         height: 3.5em;
     }
-}
-
-@media screen and (min-width: 1600px) {
     #cart {
-        width: 25%;
+        width: 40%;
     }
+
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 3000px) {
     #cart {
         width: 35%;
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
     #cart {
         width: 40%;
     }
