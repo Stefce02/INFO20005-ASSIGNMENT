@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="scripts.js"> </script>
+    <title>Search Results</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar"> </div>
+    <div class = "spacer"></div>
+
+    <!-- Hamburger Menu -->
+    <div class = "hidden-menu" id="hamburger"> </div>
+
+    <!-- Page History -->
+    <div>
+        <p class = "history"> Home > Lounge Room </p>
+    </div>
+
+    <!-- Sorting -->
+    <div class = "sort-by">
+        <h3> Sort By </h3>
+
+        <!-- Filter buttons -->
+        <div class = "sort">
+            <button class = "btn btn-secondary btn--xsmall" type="button"> Price </button>
+            <button class = "btn btn-secondary btn--xsmall" type="button"> Rating </button>
+            <button class = "btn btn-secondary btn--xsmall" type="button"> Size </button>
+        </div>
+
+    </div>
+
+    <h2 class = "h2-left"> Lounge Room </h2>
+
+    <div class ="phone-search">
+        <div class = "search">
+            <input id = "search-bar" placeholder="Search"> </input>
+            <img class = "search-icon" src="Images/Home/Search.svg" alt = "Search Bar">
+        </div>
+        <image src="Images/Icons/filter-svgrepo-com.svg" alt="filter" class="filter-icon"></image>
+    </div>
+
+    <div class = "sidebar-container">
+        <div class = "filter sidebar">
+            <h3> Filter </h3>
+
+            <div class = "search">
+                <input id = "search-bar" placeholder="Search"> </input>
+                <img class = "search-icon" src="Images/Home/Search.svg" alt = "Search Bar">
+            </div>
+            
+            <div class = "filter-option">
+                <p class = "filter-name"> Price </p>
+                <img class = "open" src="Images/Open.png">
+            </div>
+
+            <div class = "filter-option">
+                <p class = "filter-name"> Material </p>
+                <img class = "open" src="Images/Open.png">
+            </div>
+
+            <div class = "filter-option">
+                <p class = "filter-name"> Rating </p>
+                <img class = "open" src="Images/Open.png">
+            </div>
+
+            <div class = "filter-option">
+                <p class = "filter-name"> Brand </p>
+                <img class = "open" src="Images/Open.png">
+            </div>
+
+        </div>
+
+        <div class = "not-sidebar">
+
+            <div class = "subsection">
+                <div class = "product-card">
+                    <img class = "product-card__image--small" src= "Images/Lounges/Koala.png" alt = "Koala Lounging Sofa">
+                    <p class = "product-card__title product-card__title--small"> Koala Lounging Sofa </p>
+                    <p class = "product-card__price product-card__price--small"> $1599 </p>
+                </div>
+
+                <div class = "product-card">
+                    <a href = "product_listing.html">
+                        <img class = "product-card__image--small" src="Images/Lounges/LOUNGE_SEYMOUR_11.png" alt = "Seymour Lounge"> 
+                    </a> 
+                    <p class = "product-card__title product-card__title--small"> Seymour Lounge </p>
+                    <p class = "product-card__price product-card__price--small"> $1799 </p>
+                </div>
+
+                <div class = "product-card">
+                    <img class = "product-card__image--small" src= "Images/Lounges/john-3-seater-sofa-biscuit beige-1.png" alt = "John 3 Seater">
+                    <p class = "product-card__title product-card__title--small"> John 3 Seater Sofa </p>
+                    <p class = "product-card__price product-card__price--small"> $1374 </p>
+                </div>
+
+                <div class = "product-card">
+                    <img class = "product-card__image--small" src= "Images/Lounges/Richmond.png" alt = "Richmond Lounge">
+                    <p class = "product-card__title product-card__title--small"> Richmond Lounge </p>
+                    <p class = "product-card__price product-card__price--small"> $1299 </p>
+                </div>
+
+                <div class = "product-card">
+                    <img class = "product-card__image--small" src= "Images/Lounges/Jasper-metro.png" alt = "Jasper Metro Sofa">
+                    <p class = "product-card__title product-card__title--small"> Jasper Metro Sofa </p>
+                    <p class = "product-card__price product-card__price--small"> $2299 </p>
+                </div>
+
+                <div class = "product-card">
+                    <img class = "product-card__image--small" src= "Images/Lounges/Opera.png" alt = "Opera Sofa">
+                    <p class = "product-card__title product-card__title--small"> Opera Sofa </p>
+                    <p class = "product-card__price product-card__price--small"> $999 </p>
+                </div>
+
+                <div class = "product-card">
+                    <img class = "product-card__image--small" src= "Images/Lounges/sonata-2.png" alt = "Sonata Lounge">
+                    <p class = "product-card__title product-card__title--small"> Sonata Lounge </p>
+                    <p class = "product-card__price product-card__price--small"> $1099 </p>
+                </div>
+
+                <div class = "product-card">
+                    <img class = "product-card__image--small" src= "Images/Lounges/Koala.png" alt = "Koala Lounging Sofa">
+                    <p class = "product-card__title product-card__title--small"> Koala Lounging Sofa </p>
+                    <p class = "product-card__price product-card__price--small"> $1599 </p>
+                </div>
+
+                <div class = "product-card">
+                    <a href = "product_listing.html">
+                        <img class = "product-card__image--small" src="Images/Lounges/LOUNGE_SEYMOUR_11.png" alt = "Seymour Lounge"> 
+                    </a> 
+                    <p class = "product-card__title product-card__title--small"> Seymour Lounge </p>
+                    <p class = "product-card__price product-card__price--small"> $1799 </p>
+                </div>
+
+                <div class = "product-card">
+                    <img class = "product-card__image--small" src= "Images/Lounges/john-3-seater-sofa-biscuit beige-1.png" alt = "John 3 Seater">
+                    <p class = "product-card__title product-card__title--small"> John 3 Seater Sofa </p>
+                    <p class = "product-card__price product-card__price--small"> $1374 </p>
+                </div>
+
+                <div class = "product-card">
+                    <img class = "product-card__image--small" src= "Images/Lounges/Richmond.png" alt = "Richmond Lounge">
+                    <p class = "product-card__title product-card__title--small"> Richmond Lounge </p>
+                    <p class = "product-card__price product-card__price--small"> $1299 </p>
+                </div>
+
+                <div class = "product-card">
+                    <img class = "product-card__image--small" src= "Images/Lounges/Jasper-metro.png" alt = "Jasper Metro Sofa">
+                    <p class = "product-card__title product-card__title--small"> Jasper Metro Sofa </p>
+                    <p class = "product-card__price product-card__price--small"> $2299 </p>
+                </div>
+
+                <div class = "product-card">
+                    <img class = "product-card__image--small" src= "Images/Lounges/Opera.png" alt = "Opera Sofa">
+                    <p class = "product-card__title product-card__title--small"> Opera Sofa </p>
+                    <p class = "product-card__price product-card__price--small"> $999 </p>
+                </div>
+
+
+                <div class = "product-card">
+                    <img class = "product-card__image--small" src= "Images/Lounges/sonata-2.png" alt = "Sonata Lounge">
+                    <p class = "product-card__title product-card__title--small"> Sonata Lounge </p>
+                    <p class = "product-card__price product-card__price--small"> $1099 </p>
+                </div>
+
+                <div class = "product-card">
+                    <img class = "product-card__image--small" src= "Images/Lounges/Koala.png" alt = "Koala Lounging Sofa">
+                    <p class = "product-card__title product-card__title--small"> Koala Lounging Sofa </p>
+                    <p class = "product-card__price product-card__price--small"> $1599 </p>
+                </div>
+
+
+                <div class = "button">
+                    <a href = "search_results.html" class = "btn btn-secondary btn-more">  View More </a>
+                </div>
+            </div>
+
+            
+
+        </div>
+    
+    </div>
+
+    
+    <!-- Chat -->
+    <img class = "chat" src="Images/Icons/Chat Icon.svg" alt="text bubble">
+
+    <!-- Footer -->
+    <div class="footer"> </div>
+
+     <!-- Cart -->
+     <div class="hidden-cart" id="cart"></div>
+
+</body>
+</html>
