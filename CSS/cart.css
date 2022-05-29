@@ -141,6 +141,8 @@
 
 /* Total Price styled differently to sub costs */
 .order-info {
+    display: flex;
+    justify-content: space-between;
     width: 80%;
     align-items: center;
     border-bottom: 1px;
