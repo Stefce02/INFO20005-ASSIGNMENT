@@ -27,6 +27,20 @@ main {
     width: 100%;  
 }
 
+.product-sub-image-other {
+    border: 1px solid black;
+    width: 95%;
+    height: 50%;
+}
+
+.other-images > .product-sub-image-other:first-child {
+    margin-bottom: 0.5em;
+}
+
+.other-images > .product-sub-image-other:last-child {
+    margin-top: 0.5em;
+}
+
 /* Product Info + Actions */
 .product-actions {
     margin-left: 2em;
