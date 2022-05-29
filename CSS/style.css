@@ -213,6 +213,7 @@ h3 {
 
 .btn:hover {
     box-shadow: 0px 0px 10px black;
+    transform: scale(1.025);
 }
 
 .btn--medium {

@@ -84,6 +84,10 @@ main {
     margin-bottom: 0.5em;
 }
 
+.out-of-stock {
+    filter: var(--colour-invalid);
+}
+
 .sub-txt + .input-quantity {
     height: 1.75em;
     width: 25%;
@@ -93,10 +97,22 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* Temporary fix */
     margin-top: 1em;
     margin-bottom: -0.5em;
     width: 100%;
+}
+
+.unactionable {
+    opacity: 75%;
+}
+
+.unactionable .btn:hover {
+    box-shadow: 0px 0px 0px black;
+    transform: scale(1);
+}
+
+.unactionable .btn:last-child {
+    box-shadow: 0px 0px 0px black;
 }
 
 .product-actions-under {

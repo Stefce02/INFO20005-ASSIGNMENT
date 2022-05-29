@@ -9,6 +9,7 @@
     --colour-icons: invert(22%) sepia(8%) saturate(438%) hue-rotate(219deg) brightness(92%) contrast(93%);
     --colour-number: #000000;
     --colour-valid: invert(97%) sepia(10%) saturate(2536%) hue-rotate(80deg) brightness(85%) contrast(89%);
+    --colour-invalid: invert(49%) sepia(13%) saturate(7047%) hue-rotate(323deg) brightness(105%) contrast(98%);
     --colour-input: #E8EDEC;
 
     /* Button Colours */
