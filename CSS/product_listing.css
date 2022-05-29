@@ -28,6 +28,12 @@ main {
     height: 50%;
 }
 
+.product-sub-image:hover {
+    box-shadow: 0px 0px 5px var(--colour-btn-primary);
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
 .other-images > .product-sub-image:first-child {
     margin-bottom: 0.5em;
 }
