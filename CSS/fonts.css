@@ -41,15 +41,15 @@
 
 @media screen and (min-width: 2400px) {
     :root {
-        --font-size-h1: 80px;
-        --font-size-h2: 72px;
-        --font-size-h3: 56px; 
-        --font-size-text: 36px;
+        --font-size-h1: 76px;
+        --font-size-h2: 68px;
+        --font-size-h3: 52px; 
+        --font-size-text: 32px;
     
-        --font-size-price-big: 42.5px;
-        --font-size-title-big: 37.5px;
-        --font-size-price-small: 40px;
-        --font-size-title-small: 35px;
+        --font-size-price-big: 38.5px;
+        --font-size-title-big: 33.5px;
+        --font-size-price-small: 36px;
+        --font-size-title-small: 31px;
     
         --font-size-btn: 2em;
         --font-size-label: 20px; 
