@@ -10,6 +10,7 @@
     justify-content: space-between;
 }
 
+/* Keep every thing in the center */
 .align-cart {
     display: flex;
     align-items: center;
@@ -17,6 +18,7 @@
     width: 100%;
 }
 
+/* Push info up from bottom */
 .background .align-cart:last-child {
     margin-bottom: 5em;
 }
@@ -35,6 +37,7 @@
     margin-top: 1em;
 }
 
+/* Style close button and place next to header */
 .close {
     display: flex;
     margin-left: auto;
@@ -54,6 +57,7 @@
     margin-bottom: -1em;
 }
 
+/* Display all cart elements next to eachother */
 .cart-product {
     display: flex;
 }
@@ -79,10 +83,6 @@
     text-decoration: underline;
 }
 
-.cart-summary > .open {
-    display: flex;
-}
-
 .cart-image {
     width: 40%;
     height: 8em;
@@ -106,10 +106,12 @@
     margin-left: 1em;
 }
 
+/* Discount input only takes 75% of the page */
 .discount > .float-input {
     width: 75%;
 }
 
+/* Small button but larger text */
 .discount > .btn--xsmall {
     font-size: var(--font-size-text);
 }
@@ -124,6 +126,7 @@
     margin-top: 20%;
 }
 
+/* Align heading to left and price on the right */
 .sub-info {
     display: flex;
     justify-content: space-between;
@@ -136,9 +139,8 @@
     text-align: right;
 }
 
+/* Total Price styled differently to sub costs */
 .order-info {
-    display: flex;
-    justify-content: space-between;
     width: 80%;
     align-items: center;
     border-bottom: 1px;
@@ -148,7 +150,6 @@
     border-right: none;
     padding-bottom: 0.75em;
 }
-
 
 .order-total {
     font-size: var(--font-size-title-small);
@@ -165,7 +166,6 @@
 }
 
 /* Checkout buttons */
-
 .checkout-btns {
     width: 100%;
 }
