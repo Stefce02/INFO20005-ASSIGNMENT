@@ -362,10 +362,10 @@
 @media screen and (min-width: 2400px) {
 
     .order-summary > .other-information {
-        margin-top: 30%;
+        margin-top: 40%;
     }
     .order-summary > .other-information-confirmation {
-        margin-top: 45%;
+        margin-top: 50%;
     }
     .order-summary > .cart-product > .cart-image {
        height: 10em;
