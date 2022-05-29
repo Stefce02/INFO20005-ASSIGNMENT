@@ -217,6 +217,9 @@ main {
         margin-top: 1.25em;
         padding-bottom: 1.25em;
     }
+    .product-info {
+        margin-top: 0.5em;
+    }
 }
 
 @media screen and (max-width: 700px) {
