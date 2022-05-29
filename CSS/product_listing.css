@@ -23,21 +23,16 @@ main {
 }
 
 .product-sub-image {
-    height: 50%;
-    width: 100%;  
-}
-
-.product-sub-image-other {
     border: 1px solid black;
     width: 95%;
     height: 50%;
 }
 
-.other-images > .product-sub-image-other:first-child {
+.other-images > .product-sub-image:first-child {
     margin-bottom: 0.5em;
 }
 
-.other-images > .product-sub-image-other:last-child {
+.other-images > .product-sub-image:last-child {
     margin-top: 0.5em;
 }
 
