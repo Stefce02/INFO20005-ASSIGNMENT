@@ -262,6 +262,12 @@ h3 {
     background-color: white;
 }
 
+/* Remove arrows from input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .float-input > input {
     font-size: var(--font-size-input);
     padding-top: 1em;
