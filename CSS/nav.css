@@ -74,6 +74,10 @@
     border: 1px solid black; 
 }
 
+.menu-heading > .search {
+    width: 60%;
+}
+
 .menu-heading {
     display: flex;
     align-items: center;
@@ -85,9 +89,16 @@
     margin-bottom: 3em;
 }
 
-.menu-heading > a h2 {
+/* .menu-heading > a h2 {
     margin-top: 0em;
     margin-bottom: 0em;
+} */
+
+.category-list > li > a h2 {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    width: 85%;
+    text-align: left;
 }
 
 .category-list {
@@ -116,14 +127,12 @@
     border-left: none;
     border-right: none;
     padding-top: 1em;
-
 }
 
 .hamburger-menu > .footer-icons > img {
    margin-top: 0em;
    width: 2em;
 }
-
 @media screen and (min-width: 2000px) {
     .menu {
         font-size: 2.5em;
