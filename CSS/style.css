@@ -8,6 +8,7 @@
 @import url("checkout.css");
 @import url("home.css");
 
+/* Box Model */
 html {
     box-sizing: border-box;
   }
@@ -17,8 +18,6 @@ html {
 
 body {
     background-color: var(--colour-primary);
-    height: fit-content;
-    min-height: 100vh;
 }
 
 a {
@@ -26,11 +25,7 @@ a {
     text-decoration: none;
 }
 
-a:hover{
-    text-decoration: underline;
-}
-
-a:visited {
+a:hover, a:visited {
     text-decoration: underline;
 }
 
@@ -55,6 +50,7 @@ h2 {
     margin-bottom: 1em;
 }
 
+/* Move heading to the left of the page instead of the center */
 .h2-left {
     display: inline-block;
     margin: 2rem 0rem 0rem var(--indent);
@@ -107,6 +103,7 @@ h3 {
 .history {
     padding: 0rem 0rem 1.5rem var(--indent);
 }
+
 .history > *{
     font-size: var(--font-size-input);
     font-family: var(--font-primary);
@@ -116,7 +113,7 @@ h3 {
 
 /* Layout */
 
-/* Elements  */
+/* Used to display multiple product cards  */
 .subsection {
     display: flex;
     flex-wrap: wrap;
@@ -125,11 +122,6 @@ h3 {
     width: 85%;
     margin: auto;
 }
-
-/* .scroll > .subsection {
-    flex-wrap: nowrap;
-    overflow: scroll;
-} */
 
 .sidebar-container{
     display: flex;
@@ -143,6 +135,7 @@ h3 {
     flex-grow: 1;
 }
 
+/* Change size of sidebar when it is used as a filter */
 .filter {
     flex-basis: 20rem;
 }
@@ -154,6 +147,8 @@ h3 {
 }
 
 /* Open Cart and Hamburger Menu */
+
+/* hide cart and menu until screen is small enough */
 .hidden-cart {
    position: fixed;
    right: -100%;
@@ -164,6 +159,7 @@ h3 {
     left: -100%;
  }
 
+ /* Display cart and menu */
 .cart-shown {
     display: block;
     height: 100%;
@@ -182,6 +178,7 @@ h3 {
     transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+/* Decide how much of the screen the menus take up */
 #cart{
     width: 30%;
     height: 100%;
@@ -227,7 +224,6 @@ h3 {
     width: 50%;
 }
 
-/* Fix in product listing */
 .btn--small {
     width: 100%;
     margin-bottom: 0.5em;
@@ -238,6 +234,7 @@ h3 {
     font-size: 1em;
 }
 
+/* Button container */
 .button {
     display: flex;
     align-items: center;
@@ -284,6 +281,7 @@ input::-webkit-inner-spin-button {
     width: 100%;
 }
 
+/* Place label inside input, but so input doesn't cover it */
 .float-input > label {
     font-size: var(--font-size-label);
     font-family: var(--font-secondary);
@@ -305,7 +303,7 @@ input {
     border-color: red;
 }
 
-
+/* Styling of search bar input */
 .search > input, textarea {
     border-top: none;
     border-left: none;

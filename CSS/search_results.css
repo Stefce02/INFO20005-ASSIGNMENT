@@ -33,6 +33,13 @@
     margin-top: -1.5em;
 }
 
+.product-card__image--small {
+    height: 10em;
+    width: 15em;
+    margin-bottom: -0.5em;
+}
+
+/* Resize image for different type of product */
 .other-product-image {
     height: 8em;
     width: 17.5em;
@@ -40,12 +47,7 @@
     margin-bottom: 0.1em;
 }
 
-.product-card__image--small {
-    height: 10em;
-    width: 15em;
-    margin-bottom: -0.5em;
-}
-
+/* Only add in search results */
 .not-sidebar > .subsection > .product-card {
      margin-left: 3em;
      margin-right: 3em;  
@@ -108,11 +110,13 @@
     margin-top: 2em;
 }
 
+/* Plus icon to open extra content */
 .open {
     margin-left: auto;
     height: 1em;
 }
 
+/* Resize search bar in filter */
 .filter > .search {
     width: 65%;
     margin: auto;

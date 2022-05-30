@@ -11,6 +11,7 @@
     flex-direction: column;
 }
 
+/* Reused css from cart with slight changes to fit container */
 .order-summary > .cart-product {
     display: flex;
     width: 80%;
@@ -27,6 +28,7 @@
     padding-right: 4em;
 }
 
+/* Unchangeable quantity */
 .quantity-value {
     border: 1px solid black;
     border-radius: 2.5px;
@@ -47,6 +49,7 @@
     font-size: var(--font-size-text);
 }
 
+/* All costs of the product */
 .summary-info {
     display: flex;
     align-items: flex-start;
@@ -61,6 +64,7 @@
     margin-top: 40%;
 }
 
+/* Gap to emphasise total price */
 .order-summary > .order-info {
     margin-top: 1vh;
 }
@@ -106,6 +110,7 @@
     justify-content: space-around;
 }
 
+/* All elements in header */
 .checkout-header > li {
     height: 2em;
     text-align: center;
@@ -115,7 +120,7 @@
     width: 50%;
 }
 
-
+/* Header of steps not selected */
 .checkout-header > .not {
     border: 1px solid black;
     width: 20%;
@@ -124,14 +129,17 @@
     border-bottom: none;
 }
 
+/* Current step */
 .emphasised {
     width: 40%;
 }
 
+/* Step complete */
 .complete {
     background-color: var(--colour-text-other);
 }
 
+/* Fix border overlap */
 .complete:first-child {
     border-radius: 5px 0px 0px 0px;
 }
@@ -140,7 +148,6 @@
 
 /* Login */
 .step-1 {
-    margin-top: 0.2em;
     height: 100%;
     display: flex;
     align-items: center;
@@ -209,6 +216,7 @@
     padding: 1em 0em 1em 0em;
 }
 
+/* When inputs are beside eachother */
 .two-in-row, .three-in-row{
     display: flex;
     justify-content: space-between;
@@ -222,6 +230,7 @@
     width: 30%;
 }
 
+/* Continue and Go Back */
 .proceed {
     width: 85%;
     display: flex;
@@ -292,6 +301,7 @@
     margin: 2%;
 }
 
+/* Celebration image */
 .celebrate {
     width: 10em;
 }
@@ -312,7 +322,7 @@
     margin-bottom: 4%;
 }
 
-
+/* Hide checkout steps until necessary */
 .display-none {
     display: none;
 }

@@ -11,6 +11,7 @@ main {
     width: 70%;
 }
 
+/* Place sub-images on top of eachother */
 .other-images {
     display: flex;
     flex-direction: column;
@@ -23,18 +24,21 @@ main {
     height: 100%;
 }
 
+/* Smaller images in gallery */
 .product-sub-image {
     border: 1px solid black;
     width: 95%;
     height: 50%;
 }
 
+/* Animation to expand sub-image */
 .product-sub-image:hover {
     box-shadow: 0px 0px 5px var(--colour-btn-primary);
     transform: scale(1.05);
     transition: 0.1s;
 }
 
+/* Space out sub-images */
 .other-images > .product-sub-image:first-child {
     margin-bottom: 0.5em;
 }
@@ -66,6 +70,7 @@ main {
     margin-bottom: 0.5em;
 }
 
+/* Smaller headings in product actions */
 .sub-txt {
     font-size: var(--font-size-text);
     font-family: var(--font-secondary);
@@ -89,11 +94,13 @@ main {
     filter: var(--colour-invalid);
 }
 
+/* Only change input quantity size on this page */
 .sub-txt + .input-quantity {
     height: 1.75em;
     width: 25%;
 }
 
+/* Add to cart and buy now */
 .purchase-btns {
     display: flex;
     flex-wrap: wrap;
@@ -103,10 +110,12 @@ main {
     width: 100%;
 }
 
+/* Item unavilable to purchase so fade out buttons */
 .unactionable {
     opacity: 75%;
 }
 
+/* Remove animations and shadows */
 .unactionable .btn:hover {
     box-shadow: 0px 0px 0px black;
     transform: scale(1);
@@ -116,6 +125,7 @@ main {
     box-shadow: 0px 0px 0px black;
 }
 
+/* New style for when page becomes too small */
 .product-actions-mobile {
     width: 90%;
     margin: auto;
@@ -123,6 +133,7 @@ main {
     padding-top: 1em;
 }
 
+/* Title, Price, In-stock and Buttons */
 .main-product-info {
     display: flex;
     justify-content: space-between;
@@ -146,6 +157,7 @@ main {
     font-size: 1.25em;
 }
 
+/* Description of product */
 .product-info {
     margin: auto;
     margin-top: var(--indent);
@@ -154,6 +166,7 @@ main {
     flex-direction: column;
 }
 
+/* Reuse style of filter in search */
 .product-info > .filter-option {
     padding-bottom: 2em;
     width: 90%;

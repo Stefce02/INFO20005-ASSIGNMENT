@@ -1,7 +1,6 @@
 
 /* Home page Image + Text */
-
-.home-image-back {
+.home-image-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,6 +10,7 @@
     margin-bottom: 3em;
 }
 
+/* Sofa */
 .home-image {
     display: flex;
     align-items: center;
@@ -20,6 +20,7 @@
     width: 70%;
 }
 
+/* OZ Logo behind main image */
 #tranparent-back {
     width: 90%;
     margin-left: 40px;
@@ -35,26 +36,13 @@
     width: 80%;
 }
 
-#line-through{
-    position: relative;
-}
-
-#line-through > span {
-    position: absolute;
-    width: 40%;
-    border-top: 2px solid var(--colour-text-other);
-    left: 30%;
-    top: 70%;
-    opacity: 10%;
-}
-
 .slogan {
     font-size: var(--font-size-h3);
     padding-top: 0.5em;
     padding-bottom: 15%;
 }
 
-/* Category Options */
+/* Categories */
 .category-card {
     padding-bottom: 2.5em;
 }

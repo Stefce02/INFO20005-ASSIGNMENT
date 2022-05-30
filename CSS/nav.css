@@ -1,4 +1,6 @@
 /* Navigation Bar */
+
+/* Alignment */
 .cluster {
     display: flex;
     flex-wrap: wrap;
@@ -11,6 +13,7 @@
     margin: 0.5em 1em 0.5em 1em;
 }
 
+/* Small icons in page */
 .menu-icon{
     height: 2.5em;
     width: 2.5em;
@@ -19,11 +22,13 @@
     top: 0.25em;
 }
 
+/* OZ Logo */
 #logo {
     height: 6.5em;
     width: 18em;
 }
 
+/* Fix search icon to search bar */
 .search {
     position: relative;
 }
@@ -37,6 +42,7 @@
     filter: var(--colour-icons)
 }
 
+/* Ensure nav is always at the top of the page */
 .nav-bar {
     background-color: var(--colour-primary);
     z-index: 1;
@@ -44,6 +50,7 @@
     width: 100%;
 }
 
+/* Place elements below nav */
 .spacer {
     width: 100%;
     height: 10em;
@@ -78,6 +85,7 @@
     width: 60%;
 }
 
+/* Place search beside close option */
 .menu-heading {
     display: flex;
     align-items: center;
@@ -87,13 +95,6 @@
     text-align: center;
     margin-top: 3em;
     margin-bottom: 3em;
-}
-
-.category-list > li > a h2 {
-    margin-top: 0em;
-    margin-bottom: 0em;
-    width: 85%;
-    text-align: left;
 }
 
 .category-list {
@@ -128,6 +129,8 @@
    margin-top: 0em;
    width: 2em;
 }
+
+/* Media Queries */
 
 @media screen and (min-width: 1800px) {
     .menu {
