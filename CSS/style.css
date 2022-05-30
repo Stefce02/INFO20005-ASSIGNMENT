@@ -101,9 +101,12 @@ h3 {
 
 /* Page History */
 .history {
+    padding: 0rem 0rem 1.5rem var(--indent);
+}
+.history > *{
     font-size: var(--font-size-input);
     font-family: var(--font-primary);
-    padding: 1rem 0rem 1.5rem var(--indent);
+    display: inline-block;
 }
 
 
