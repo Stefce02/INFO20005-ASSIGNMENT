@@ -140,7 +140,7 @@
     filter: var(--colour-icons);
 }
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1925px) {
     .other-product-image {
         height: 12em;
         width: 22.5em;
