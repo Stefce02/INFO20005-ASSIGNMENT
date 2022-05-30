@@ -248,12 +248,11 @@ h3 {
 
 .btn-more {
     border: none;
-    text-decoration: underline;
 }
 
 .btn-more:hover {
     box-shadow: none;
-    text-shadow:  0px 2px 25px black;;
+    text-shadow:  0px 2px 40px var(--colour-btn-primary);;
 }
 
 /* Input Boxes */
