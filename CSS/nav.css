@@ -128,9 +128,10 @@
    margin-top: 0em;
    width: 2em;
 }
-@media screen and (min-width: 2000px) {
+
+@media screen and (min-width: 1800px) {
     .menu {
-        font-size: 2.5em;
+        font-size: 2.25em;
     }
     .menu-icon{
         height: 3em;
@@ -145,6 +146,18 @@
     }
 }
 
+@media screen and (min-width: 2400px) {
+    .menu {
+        font-size: 2.5em;
+    }
+    #logo {
+        height: 8em;
+        width: 22em;
+    }
+    .spacer {
+        height: 11em;
+    }
+}
 
 @media screen and (max-width: 1550px) {
     .menu {
