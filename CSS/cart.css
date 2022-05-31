@@ -95,7 +95,6 @@
 /* Discount Code */
 .discount {
     display: flex;
-    align-items: center;
     justify-content: space-around;
     width: 80%;
 }
@@ -109,6 +108,7 @@
 /* Discount input only takes 75% of the page */
 .discount > .float-input {
     width: 75%;
+    align-items: center;
 }
 
 /* Small button but larger text */
