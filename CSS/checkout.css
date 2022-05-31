@@ -99,7 +99,7 @@
 
 /* Checkout Headers */
 .checkout-header {
-    border: 1.5px solid black;
+    border: 1px solid black;
     border-radius: 5px 5px 0px 0px;
     border-top: none;
     border-left: none;
@@ -117,16 +117,15 @@
     padding-top: 0.5em;
     font-family: var(--font-secondary);
     font-size: var(--font-size-text);
-    width: 50%;
+    border: 1px solid black;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
 }
 
 /* Header of steps not selected */
 .checkout-header > .not {
-    border: 1px solid black;
     width: 20%;
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
 }
 
 /* Current step */
@@ -136,12 +135,16 @@
 
 /* Step complete */
 .complete {
-    background-color: var(--colour-text-other);
+    background-color: var(--colour-checkout-complete);
 }
 
 /* Fix border overlap */
 .complete:first-child {
     border-radius: 5px 0px 0px 0px;
+}
+
+.complete:last-child {
+    border-radius: 0px 5px 0px 0px;
 }
 
 /* Checkout Forms */
