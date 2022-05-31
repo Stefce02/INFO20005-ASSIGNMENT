@@ -225,6 +225,11 @@ function validateShippingForm() {
 
     // Continue to next stage of the checkout
     if(valid) {
+        // Update shipping price in order summary
+        document.getElementById("old-ship-price").classList.add("display-none");
+        document.getElementById("ship-price").classList.remove("display-none");
+        document.getElementById("old-total").classList.add("display-none");
+        document.getElementById("new-total").classList.remove("display-none");
         nextStep();
     }
 }
