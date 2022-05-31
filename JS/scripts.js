@@ -308,6 +308,7 @@ function applyDiscount(){
     }
     else {
         document.getElementById("code-error").style.display = "none";
+        document.getElementById("code").classList.add("incorrect-input");
         document.getElementById("code-error-two").style.display = "block";
         document.getElementById("code").scrollIntoView({behavior: "smooth", block: "center"});
     }
