@@ -300,12 +300,14 @@ function validateCardForm() {
 function applyDiscount(){
     var code=document.getElementById("code").value;
 
+    // Code is empty
     if(code == "") {
         document.getElementById("code-error-two").style.display = "none";
         document.getElementById("code").classList.add("incorrect-input");
         document.getElementById("code-error").style.display = "block";
         document.getElementById("code").scrollIntoView({behavior: "smooth", block: "center"});
     }
+    // Code is expired
     else {
         document.getElementById("code-error").style.display = "none";
         document.getElementById("code").classList.add("incorrect-input");
