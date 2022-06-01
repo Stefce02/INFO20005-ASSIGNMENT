@@ -303,6 +303,18 @@ input {
     border-color: red;
 }
 
+/* Error messages for inputs */
+.error-msg {
+    margin-top: 0.3em;
+    font-size: var(--font-size-label);
+    color: red;
+    display: none;
+}
+
+.form-step .float-input .error-msg {
+    margin-bottom: -1.25em;
+}
+
 /* Styling of search bar input */
 .search > input, textarea {
     border-top: none;
@@ -318,6 +330,7 @@ input {
     font-size: 1.25em;
     border-radius: 0px;
 }
+
 
 /* Media Queries */
 

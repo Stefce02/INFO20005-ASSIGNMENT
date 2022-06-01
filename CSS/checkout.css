@@ -330,18 +330,6 @@
     display: none;
 }
 
-/* Checkout Error Messages */
-.error-msg {
-    margin-top: 0.3em;
-    font-size: var(--font-size-label);
-    color: red;
-    display: none;
-}
-
-.form-step .float-input .error-msg {
-    margin-bottom: -1.25em;
-}
-
 /* Media Queries */
 @media screen and (min-width: 1800px) {
     .form-step {
