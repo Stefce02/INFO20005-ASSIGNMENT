@@ -57,11 +57,11 @@
 }
 
 .order-summary > .other-information {
-    margin-top: 22.5%;
+    margin-top: 30%;
 }
 
 .order-summary > .other-information-hidden {
-    margin-top: 40%;
+    margin-top: 50%;
 }
 
 /* Gap to emphasise total price */
