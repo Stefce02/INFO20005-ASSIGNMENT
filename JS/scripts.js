@@ -55,6 +55,8 @@ function nextStep(){
     if(back) {
         back.removeAttribute("id", "back");
         back_head.removeAttribute("id", "back");
+        back.setAttribute("id", "back-again");
+        back_head.setAttribute("id", "back-again-head");
     }
     
     // Hide current step
@@ -87,7 +89,9 @@ function lastStep(){
     var back = document.getElementById("back");
     var back_head = document.getElementById("back-head");
     var next_head = document.getElementById("next-head");
-    
+    var back_again = document.getElementById("back-again");
+    var back_again_head = document.getElementById("back-again-head");  
+
     // Hide current step
     next.classList.add("display-none");
     next_head.classList.add("display-none");
@@ -96,12 +100,22 @@ function lastStep(){
     next_head.setAttribute("id", "step-head");
 
     // Show previous step
-    back.classList.remove("display-none");
-    back_head.classList.remove("display-none");
-    
-    // Previous step becomes current step
-    back.setAttribute("id", "next");
-    back_head.setAttribute("id", "next-head");
+    if(back) {
+        back.classList.remove("display-none");
+        back_head.classList.remove("display-none");
+        
+        // Previous step becomes current step
+        back.setAttribute("id", "next");
+        back_head.setAttribute("id", "next-head");
+    }
+    // Going back twice in a row
+    else {
+        back_again.classList.remove("display-none");
+        back_again_head.classList.remove("display-none");
+        back_again.setAttribute("id", "next");
+        back_again_head.setAttribute("id", "next-head");
+    }
+   
 }
 
 // Form Validation
