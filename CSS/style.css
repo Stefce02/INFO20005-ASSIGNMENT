@@ -275,7 +275,7 @@ input::-webkit-inner-spin-button {
     font-size: var(--font-size-input);
     padding-top: 1em;
     padding-left: 0.6em;
-    box-shadow: 1px 3px 6px lightgray;
+    box-shadow: 1px 3px 8px lightgray;
 }
 
 .full-box {
