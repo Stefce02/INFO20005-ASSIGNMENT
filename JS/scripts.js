@@ -51,17 +51,21 @@ function nextStep(){
     var next_head = document.getElementById("next-head");
     var step_head = document.getElementById("step-head");
 
+    // Previous step no longer the immediate previous step
     if(back) {
         back.removeAttribute("id", "back");
         back_head.removeAttribute("id", "back");
     }
     
+    // Hide current step
     next.classList.add("display-none");
     next_head.classList.add("display-none");
 
+    // Current step becomes the previous
     next.setAttribute("id", "back");
     next_head.setAttribute("id", "back-head");
 
+    // Show next step
     step.classList.remove("display-none");
     step_head.classList.remove("display-none");
 
@@ -84,15 +88,18 @@ function lastStep(){
     var back_head = document.getElementById("back-head");
     var next_head = document.getElementById("next-head");
     
+    // Hide current step
     next.classList.add("display-none");
     next_head.classList.add("display-none");
 
     next.setAttribute("id", "step");
     next_head.setAttribute("id", "step-head");
 
+    // Show previous step
     back.classList.remove("display-none");
     back_head.classList.remove("display-none");
     
+    // Previous step becomes current step
     back.setAttribute("id", "next");
     back_head.setAttribute("id", "next-head");
 }
