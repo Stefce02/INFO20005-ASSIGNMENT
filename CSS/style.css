@@ -216,7 +216,7 @@ h3 {
 }
 
 .btn:hover {
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 5px black;
     transform: scale(1.025);
 }
 
@@ -275,6 +275,7 @@ input::-webkit-inner-spin-button {
     font-size: var(--font-size-input);
     padding-top: 1em;
     padding-left: 0.6em;
+    box-shadow: 1px 3px 6px lightgray;
 }
 
 .full-box {
