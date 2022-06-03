@@ -452,6 +452,9 @@ input {
     #hamburger {
         width: 50%;
     }
+    .float-input > label {
+        padding-left: 0.9em;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -463,6 +466,9 @@ input {
 @media screen and (max-width: 500px) {
     #hamburger {
         width: 100%;
+    }
+    .float-input > label {
+        padding-left: 1em;
     }
 }
 
