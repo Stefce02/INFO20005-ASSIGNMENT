@@ -338,26 +338,27 @@ input {
 @media screen and (min-width: 1800px) {
     .order-summary {
         flex-basis: 35rem;
-        height: 50rem;
+        height: 40em;
+    }
+    .checkout {
+        height: 40em;
     }
     .filter {
         flex-basis: 25rem;
     }
-    .checkout-process > .sidebar-container > .not-sidebar > .checkout {
-        height: 50rem;
-    }
+
 }
 
 @media screen and (min-width: 2400px) {
     .order-summary {
         flex-basis: 45rem;
-        height: 55rem;
+        height: 42.5em;
+    }
+    .checkout {
+        height: 42.5em;
     }
     .filter {
         flex-basis: 30rem;
-    }
-    .checkout-process > .sidebar-container > .not-sidebar > .checkout {
-        height: 55rem;
     }
     #cart {
         width: 40%;

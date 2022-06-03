@@ -189,6 +189,7 @@
     margin-bottom: 0.5em;
 }
 
+/* Divider between buttons */
 .login-btns > p {
     border: 1.5px solid black;
     width: 50%;
@@ -339,6 +340,12 @@
         margin-top: 0em;
         height: 95%;
     }
+    /* .order-summary {
+        height: 25em;
+    }
+    .checkout {
+        height: 25em;
+    } */
     .order-summary > .other-information {
         margin-top: 50%;
     }
