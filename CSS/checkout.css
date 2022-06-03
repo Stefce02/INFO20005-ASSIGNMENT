@@ -340,17 +340,11 @@
         margin-top: 0em;
         height: 95%;
     }
-    /* .order-summary {
-        height: 25em;
-    }
-    .checkout {
-        height: 25em;
-    } */
     .order-summary > .other-information {
-        margin-top: 50%;
+        margin-top: 25%;
     }
     .order-summary > .other-information-confirmation {
-        margin-top: 60%;
+        margin-top: 40%;
     }
 
     .order-summary > .cart-product > .cart-image {
@@ -369,10 +363,10 @@
 @media screen and (min-width: 2400px) {
 
     .order-summary > .other-information {
-        margin-top: 40%;
+        margin-top: 15%;
     }
     .order-summary > .other-information-confirmation {
-        margin-top: 50%;
+        margin-top: 30%;
     }
     .order-summary > .cart-product > .cart-image {
        height: 10em;
