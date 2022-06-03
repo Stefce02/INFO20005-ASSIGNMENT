@@ -312,9 +312,11 @@ input {
     display: none;
 }
 
-.form-step .float-input .error-msg {
+.form-step .float-input .error-msg, .discount > .float-input >.error-msg {
     margin-bottom: -1.25em;
 }
+
+
 
 /* Styling of search bar input */
 .search > input, textarea {
