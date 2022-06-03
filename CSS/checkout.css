@@ -281,16 +281,6 @@
     width: 1.5em;
 }
 
-/* input[type='radio']:checked:after {
-    width: 1.5em;
-    height: 1.5em;
-    border-radius: 1em;
-    background-color: var(--colour-text);
-    content: '';
-    display: block;
-    border: 5px solid white;
-} */
-
 /* Confirmation Screen */
 .confirmation {
     display: flex;
@@ -411,7 +401,7 @@
 
     .order-summary > .order-info {
         margin-bottom: 2vh;
-        margin-top: 2vh;
+        margin-top: 4vh;
         border-bottom: none;
     }
 
