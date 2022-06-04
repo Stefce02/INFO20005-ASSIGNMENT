@@ -518,8 +518,11 @@
 }
 
 @media screen and (max-width: 366px) {
-    .checkout-header > .not ~ .not ~ .emphasised {
+    .checkout-header > .not ~ .not ~ .emphasised{
         padding-top: 0.5em;
+    }
+    .checkout-header > .not ~ .not ~ .not ~ .emphasised {
+        padding-top: 1em;
     }
 }
 
