@@ -43,7 +43,6 @@ function cartDisplay(){
 
 // Open and close descriptive text 
 function openAndClose(){
-
     document.getElementById("open-close").classList.toggle("open-close");
     document.getElementById("desc-txt").classList.toggle("display-none");
 }
