@@ -471,6 +471,15 @@
     .confirmation-txt {
         width: 70%;
     }
+
+    .pay-choice > .pay-logo {
+        width: 59%;
+        margin-left: 0.25em;
+    }
+
+    .pay-choice > input {
+        width: 1em;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -521,14 +530,6 @@
 @media screen and (max-width: 400px) {
     .order-summary > .cart-product > .cart-product-info > div > .cart-product-title {
         padding-right: 2em;
-    }
-    .pay-choice > .pay-logo {
-        width: 59%;
-        margin-left: 0.25em;
-    }
-
-    .pay-choice > input {
-        width: 1em;
     }
 }
 
