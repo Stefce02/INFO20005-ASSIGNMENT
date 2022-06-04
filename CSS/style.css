@@ -332,6 +332,10 @@ input {
     border-radius: 0px;
 }
 
+input[type="month"]{
+    -webkit-appearance: none;
+}
+
 
 /* Media Queries */
 
