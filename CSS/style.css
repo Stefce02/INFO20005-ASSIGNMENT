@@ -334,6 +334,7 @@ input {
 
 input[type="month"]{
     -webkit-appearance: none;
+    text-align: left;
 }
 
 
