@@ -287,6 +287,11 @@
     width: 1.5em;
 }
 
+input[type="month"]{
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
 /* Confirmation Screen */
 .confirmation {
     display: flex;
