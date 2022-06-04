@@ -116,6 +116,15 @@
     height: 1em;
 }
 
+/* Indicate button can be clicked */
+.open:hover {
+    transform: scale(1.2);
+}
+
+.open-close:hover {
+    transform: scale(1.2) rotate(45deg);
+}
+
 /* Resize search bar in filter */
 .filter > .search {
     width: 65%;
