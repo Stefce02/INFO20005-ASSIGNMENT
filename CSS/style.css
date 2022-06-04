@@ -20,7 +20,7 @@ body {
     background-color: var(--colour-primary);
 }
 
-a {
+a, a:active {
     color: var(--colour-text);
     text-decoration: none;
 }
@@ -212,6 +212,7 @@ h3 {
 }
 
 .btn-tertiary {
+    color: black;
     background-color: var(--colour-btn-tertiary);
 }
 
