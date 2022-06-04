@@ -301,7 +301,7 @@ function validateCardForm() {
         document.getElementById("expiry-error").style.display = "none";
     }
     //Empty value or doesn't have numbers
-    if (!(cvn.match(/^\d+/))) {
+    if (!(cvn.match(/^\d{3}$/)) && !(cvn.match(/^\d{4}$/))) {
         document.getElementById("cvn").classList.add("incorrect-input");
         document.getElementById("cvn-error").style.display = "block";
         document.getElementById("cvn").scrollIntoView({behavior: "smooth", block: "start"});
