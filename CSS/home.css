@@ -23,7 +23,7 @@
 /* OZ Logo behind main image */
 #tranparent-back {
     width: 90%;
-    margin-left: 40px;
+    margin-left: 3em;
     opacity: 10%;
 }
 
@@ -94,6 +94,10 @@
     .home-image {
         width: 80%;
     }
+    #tranparent-back {
+        width: 100%;
+        margin-left: 2em;
+    }
     .category-card__img {
         height: 8em;
         width: 10em;
@@ -107,6 +111,9 @@
     .home-image {
         width: 85%;
     }
+    #tranparent-back {
+        width: 120%;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -115,6 +122,10 @@
     }
     .home-image {
         width: 90%;
+    }
+    #tranparent-back {
+        width: 140%;
+        margin-left: 1em;
     }
     .category-card__img {
         height: 6em;
