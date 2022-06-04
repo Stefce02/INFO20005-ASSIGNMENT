@@ -317,8 +317,6 @@ input {
     margin-bottom: -1.25em;
 }
 
-
-
 /* Styling of search bar input */
 .search > input, textarea {
     border-top: none;
@@ -349,7 +347,6 @@ input {
     .filter {
         flex-basis: 25rem;
     }
-
 }
 
 @media screen and (min-width: 2400px) {
@@ -366,7 +363,6 @@ input {
     #cart {
         width: 40%;
     }
-
 }
 
 @media screen and (max-width: 3000px) {
@@ -400,6 +396,7 @@ input {
     }
 }
 
+/* Move left aligned headers to the middle */
 @media screen and (max-width: 1200px) {
     .h2-left {
         display: block;
@@ -409,6 +406,7 @@ input {
 }
 
 @media screen and (max-width: 1050px) {
+    /* Place order summary above checkout steps */
     .checkout-process > .sidebar-container{
         flex-direction: column-reverse;
     }
@@ -433,6 +431,7 @@ input {
 
 }
 
+/* Hide chat menu on smaller screens */
 @media screen and (max-width: 950px) {
     .chat {
         display: none;
@@ -440,9 +439,6 @@ input {
 }
 
 @media screen and (max-width: 700px) {
-    .chat {
-        display: none;
-    }
     .footer-icons > img {
         width: 2em;
         margin: -0.5em 0.75em 5em 0.5em;

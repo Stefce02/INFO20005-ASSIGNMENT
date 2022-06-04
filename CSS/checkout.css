@@ -497,10 +497,12 @@
         height: 3em;
         padding-top: 1em;
     }
+
+    /* Select step 3 header and centrally align */
     .checkout-header > .not ~ .not ~ .emphasised {
         padding-top: 1em;
     }
-
+    /* Centrally align step 2 header */
     .checkout-header > .not ~ .emphasised {
         padding-top: 1em;
     }
@@ -520,6 +522,8 @@
 }
 
 @media screen and (max-width: 453px) {
+
+    /* Centrally align step 2 header */
     .checkout-header > .not ~ .emphasised {
         padding-top: 0.5em;
     }
@@ -534,9 +538,12 @@
 }
 
 @media screen and (max-width: 366px) {
+
+    /* Centrally align step 3 header */
     .checkout-header > .not ~ .not ~ .emphasised{
         padding-top: 0.5em;
     }
+    /* Centrally align confirmaation header */
     .checkout-header > .not ~ .not ~ .not ~ .emphasised {
         padding-top: 1em;
     }
@@ -555,20 +562,24 @@
     .order-summary > .cart-product > .cart-product-info > div > .cart-product-title {
         padding-right: 1.25em;
     }
+    /* Centrally align step 2 header */
     .checkout-header > .not ~ .emphasised {
         padding-top: 0.5em;
     }
+    /* Centrally align step 3 header */
     .checkout-header > .not ~ .not ~ .emphasised {
         padding-top: 1em;
     }
 }
 
+/* Centrally align step 2 header */
 @media screen and (max-width: 340px) {
     .checkout-header > .not ~ .emphasised {
         padding-top: 0.5em;
     }
 }
-
+    
+/* Centrally align step 3 header */
 @media screen and (max-width: 315px) {
     .checkout-header > .not ~ .not ~ .emphasised {
         padding-top: 0.5em;
