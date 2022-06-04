@@ -339,7 +339,7 @@ function applyDiscount(){
     }
 }
 
-// Check if valid discount code in Cart
+// Check if valid discount code in cart
 function applyDiscountCart(){
     var cartCode = document.getElementById("cart-code").value;
 
