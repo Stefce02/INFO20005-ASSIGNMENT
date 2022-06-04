@@ -117,7 +117,7 @@
 }
 
 /* Indicate button can be clicked */
-.open:hover {
+.open:hover, .close:hover {
     transform: scale(1.2);
 }
 
