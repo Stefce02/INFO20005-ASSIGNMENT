@@ -172,12 +172,31 @@ main {
     width: 90%;
 }
 
-.product-info > .filter-option:first-child  {
+/* Display descriptive text underneath heading */
+.product-info > .filter-option:first-child, .product-info > .filter-option:first-child + .filter-option  {
     display: inline;
+}
+
+/* Keep close/open button to the right */
+.product-info > .filter-option:first-child + .filter-option > div  {
+    display: flex;
+}
+
+.product-info > .filter-option > .filter-name, .product-info > .filter-option > div > .filter-name {
+    font-size: var(--font-size-title-small);
+}
+
+.product-info > .filter-option:first-child + .filter-option > .description-txt  {
+    font-size: var(--font-size-text);
+    padding-top: 1.125em;
 }
 
 .product-info > .filter-option:first-child > .filter-name  {
     font-size: var(--font-size-price-big);
+}
+
+.open-close {
+    transform: rotate(45deg);
 }
 
 .filter-option > .description-txt {

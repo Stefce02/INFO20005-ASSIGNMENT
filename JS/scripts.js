@@ -41,9 +41,15 @@ function cartDisplay(){
     }
 }
 
+// Open and close descriptive text 
+function openAndClose(){
+
+    document.getElementById("open-close").classList.toggle("open-close");
+    document.getElementById("desc-txt").classList.toggle("display-none");
+}
+
 // Progress forward through the stages of the checkout
 function nextStep(){
-    console.log("clicked");
     var next = document.getElementById("next");
     var step = document.getElementById("step");
     var back = document.getElementById("back");
@@ -84,7 +90,6 @@ function nextStep(){
 
 // Progress backward through the stages of the checkout
 function lastStep(){
-    console.log("clicked");
     var next = document.getElementById("next");
     var back = document.getElementById("back");
     var back_head = document.getElementById("back-head");
