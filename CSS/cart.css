@@ -185,6 +185,7 @@
 
 /* Media Queries */
 
+/* Resize cart at different screen sizes */
 @media screen and (min-width: 1800px) {
     .cart-image {
         width: 32.5%;

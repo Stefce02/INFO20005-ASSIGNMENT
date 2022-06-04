@@ -370,7 +370,7 @@
     }
 }
 
-
+/* Place order summary on top of checkout forms at 1050px */
 @media screen and (max-width: 1050px) {
     .checkout {
         margin-left: 0em;
@@ -429,6 +429,7 @@
     .login-btns > .btn, .login-btns > p {
         width: 100%;
     }
+    /* All buttons are displayed underneath eachother */
     .two-in-row, .three-in-row {
         display: inline;
     }
