@@ -132,7 +132,6 @@
     margin-bottom: 3em;
 }
 
-
 /* Mobile Changes */
 .phone-search {
   display: none;
@@ -197,6 +196,7 @@
 }
 
 
+/* Place filter options into an expandable menu */
 @media screen and (max-width: 1200px) {
     .other-product-image {
         height: 7em;
@@ -223,14 +223,12 @@
         height: 8em;
         width: 12em;
     }
-    
 }
 
 @media screen and (max-width: 700px) {
     .other-product-image {
         margin-bottom: 0.5em;
     }
-    
 }
 
 @media screen and (max-width: 450px) {
@@ -248,5 +246,4 @@
         height: 7em;
         width: 10em;
     }
-    
 }
