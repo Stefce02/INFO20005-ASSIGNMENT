@@ -276,6 +276,11 @@
     margin-left: 1em;
 }
 
+/* Align Afterpay logo with the other logos */
+.payment-options > .pay-choice:first-child > .pay-logo {
+    margin-bottom: -0.175em;
+}
+
 .pay-choice > input {
     width: 40%;
     height: 1.5em;
@@ -518,12 +523,12 @@
         padding-right: 2em;
     }
     .pay-choice > .pay-logo {
-        width: 57.5%;
+        width: 59%;
         margin-left: 0.25em;
     }
 
     .pay-choice > input {
-        width: 42.5%;
+        width: 1em;
     }
 }
 
