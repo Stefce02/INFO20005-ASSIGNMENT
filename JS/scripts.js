@@ -21,7 +21,6 @@ $(function() {
 
 // Open Hamburger Menu on click
 function menuDisplay(){
-    console.log("clicked");
     var menu = document.getElementById("hamburger");
     menu.classList.toggle("menu-shown");
     // Close cart if open
@@ -32,7 +31,6 @@ function menuDisplay(){
 
 // Open Cart on click
 function cartDisplay(){
-    console.log("clicked");
     var cart = document.getElementById("cart");
     cart.classList.toggle("cart-shown");
     // Close menu if open
@@ -321,9 +319,9 @@ function validateCardForm() {
     }
 }
 
-// Check if valid discount code
+// Check if valid discount code in checkout
 function applyDiscount(){
-    var code=document.getElementById("code").value;
+    var code = document.getElementById("code").value;
 
     // Code is empty
     if(code == "") {
@@ -338,6 +336,26 @@ function applyDiscount(){
         document.getElementById("code").classList.add("incorrect-input");
         document.getElementById("code-error-two").style.display = "block";
         document.getElementById("code").scrollIntoView({behavior: "smooth", block: "center"});
+    }
+}
+
+// Check if valid discount code in Cart
+function applyDiscountCart(){
+    var cartCode = document.getElementById("cart-code").value;
+
+    // Code is empty
+    if(cartCode == "") {
+            document.getElementById("cart-code-error-two").style.display = "none";
+            document.getElementById("cart-code").classList.add("incorrect-input");
+            document.getElementById("cart-code-error").style.display = "block";
+            document.getElementById("cart-code").scrollIntoView({behavior: "smooth", block: "center"});
+        }
+    // Code is invalid
+    else {
+            document.getElementById("cart-code-error").style.display = "none";
+            document.getElementById("cart-code").classList.add("incorrect-input");
+            document.getElementById("cart-code-error-two").style.display = "block";
+            document.getElementById("cart-code").scrollIntoView({behavior: "smooth", block: "center"});
     }
 }
 
