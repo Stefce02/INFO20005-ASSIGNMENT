@@ -298,7 +298,7 @@ input {
     background-color: var(--colour-input);
     font-family: var(--font-secondary);
     border-radius: 4px;
-    border: 2px solid black ;
+    border: 1.5px solid black ;
 }
 
 .incorrect-input {
