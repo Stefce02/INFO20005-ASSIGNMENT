@@ -186,6 +186,7 @@
     }
 }
 
+/* Menu content is pushed into a hamburger menu */
 @media screen and (max-width: 1350px) {
     .hide-menu {
         display: none;
