@@ -332,9 +332,9 @@ input {
     border-radius: 0px;
 }
 
+/* Remove default style for month inputs (card expiry) */
 input[type="month"]{
     -webkit-appearance: none;
-    text-align: left;
 }
 
 
