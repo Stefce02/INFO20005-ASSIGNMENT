@@ -332,8 +332,8 @@ input {
     border-radius: 0px;
 }
 
-/* Remove default style for month inputs (card expiry) */
-input[type="month"]{
+/* Remove default style for month inputs (card expiry) and quantity input */
+input[type="month"], input{
     -webkit-appearance: none;
 }
 
